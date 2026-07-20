@@ -50,5 +50,6 @@ Existe una presentación corporativa mucho más ambiciosa (TAM $24B, ronda de $1
 2. Confirmar fecha real de publicación de la landing (31 jul vs. 5 ago).
 3. Validar costos finales de la Empanada de Cambray con la maquiladora.
 4. HACCP y FUCE en trámite — bloquean el canal hoteles/cruceros mientras tanto.
+5. Rediseño de empaque (quitar espigas de trigo, evaluar "gluten free") — atrasado frente al despacho confirmado del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 
 Detalle completo en [decisiones abiertas](decisiones-abiertas.md). Quién es quién: [personas y contactos](personas-y-contactos.md).

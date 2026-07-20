@@ -7,6 +7,7 @@ Lista viva de cosas que quedaron sin resolver o contradictorias entre los docume
 - **Tabla de márgenes para el colaborador B2B no existe todavía.** Se menciona como pendiente crítico en el documento de costos y en los dos HTML de estrategia. Es la Meta 1.1 del plan ejecutivo, con vencimiento 25 de julio. Sin esto no hay "ficha de rentabilidad" para mostrar en degustaciones ni para la landing page.
 - **Costos de la Empanada de Cambray inestables.** El documento de costos advierte que variaron durante la reunión ("producto nuevo, validar tabla final con la maquiladora"). Es el producto ancla de toda la campaña — un costo inestable ahí afecta la ficha de rentabilidad completa.
 - **HACCP y FUCE aún no están listos.** Sin HACCP no se puede entrar a hoteles/cruceros. Impacta directamente el canal Food Service premium.
+- **Empaque con espigas de trigo, sin certificación gluten free.** El diseño actual de bolsas asocia visualmente el producto con gluten (aunque 3 de los 4 productos no llevan trigo). Falta: (1) confirmar con Daka qué productos se pueden certificar gluten free, (2) rediseño con la diseñadora externa. A fecha 18 jul van atrasados frente al despacho del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 
 ## Contradicción de fechas
 
@@ -29,7 +30,7 @@ La presentación corporativa a inversionistas describe una visión mucho más am
 
 ## Numeración de archivos fuente
 
-Los tres .md originales que se subieron primero empiezan en "05" (costos), "06" (B2B/feria) y "07" (degustaciones) — sugiere que existen documentos 01-04 que no se han subido. Si existen, súbelos a `Datos Xocolata` para completar la serie; si no existen, se puede ignorar esta nota.
+Los .md originales subidos empiezan en "01" (empaques/gluten free, agregado 18 jul), "05" (costos), "06" (B2B/feria) y "07" (degustaciones) — sugiere que existen documentos 02-04 que aún no se han subido. Si existen, súbelos a `Datos Xocolata` para completar la serie; si no existen, se puede ignorar esta nota.
 
 ## Otros
 

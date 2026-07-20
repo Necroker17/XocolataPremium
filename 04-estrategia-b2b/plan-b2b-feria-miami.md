@@ -14,7 +14,7 @@ El enfoque inicial era **B2C** (Shopify como canal principal + contenido). Se re
 | 31 de julio (antes era 5 ago — ver nota de fechas) | Página de aterrizaje lista, validada (los 4 productos, no solo Cambray) |
 | Semana del 13-16 jul | Facebook nuevo + portafolio comercial de Meta |
 | Sábado en 8 días (desde 13 jul) | Primer ensayo/bosquejo del Shopify |
-| 2ª semana de agosto | Despacho del contenedor |
+| 15 de agosto (confirmado) | Despacho del contenedor |
 | 10-26 de agosto | 40 negocios contactados con secuencia completa |
 | Antes de la feria | 15 degustaciones en Miami + 10 negocios piloto |
 | 14-16 de septiembre | Feria Miami |

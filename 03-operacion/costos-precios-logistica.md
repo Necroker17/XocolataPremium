@@ -29,7 +29,8 @@
 - Traslado de pallet individual: ~$4-5M COP por pallet (~$20M por 4) → **inviable**.
 - **Solución:** contenedor compartido con la maquiladora (contenedor pequeño de 16 pallets) → USD $5.700 el contenedor completo → los 10 pallets de Xocolata cuestan **~USD $3.562 (~$11M COP)** vs. ~$50M por unidad si fuera solo.
 - Mezcla del envío: 2 pallets de empanada retail + pan de bono, buñuelo, etc., y lo mismo en food service, hasta completar 10.
-- **Despacho: segunda semana de agosto 2026** → el producto llega a EE. UU. antes de que termine agosto (antes de eso es imposible degustar allá).
+- **Despacho: 15 de agosto de 2026** (fecha confirmada; antes se hablaba de "segunda semana de agosto") → el producto llega a EE. UU. antes de que termine agosto (antes de eso es imposible degustar allá).
+- ⚠️ Con esta fecha confirmada, el rediseño de empaque (ver [empaques y alérgenos](../02-producto/empaques-y-alergenos.md)) queda con poco margen — van atrasados con las bolsas a fecha 18 de julio.
 
 ## Precios de venta y márgenes (USD)
 

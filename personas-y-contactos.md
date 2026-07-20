@@ -14,6 +14,7 @@ Quién es quién en el proyecto Xocolata, para no perder contexto entre reunione
 
 ## Terceros / proveedores
 
+- **Diseñadora externa** — maneja el diseño de las bolsas/empaques y de la página. Encargada de resolver el ajuste del rediseño por el tema gluten free (ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md)); a fecha 18 jul, atrasada con las bolsas frente al despacho del 15 de agosto.
 - **Daka** — Maquilador en Colombia. Su marca comercial es **Cataleya** (panadería congelada, marca básica/artesanal). Entrega Invima, FDA, ICA y BASC/"el buce"; falta HACCP (en trámite) y FUCE (en solicitud). Comparte stand con Xocolata en la feria de Miami.
 - **Bosanet** — Intermediario/distribuidor en EE.UU. Membresía ~$50-60M COP/año (gestión comercial B2C, distribución, despacho). No exige exclusividad. Contacto de ventas para el stand de la feria: **vtrujillo@bosanet.com / +1 (954) 860-6465**.
 
