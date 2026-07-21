@@ -32,6 +32,13 @@ La presentación corporativa a inversionistas describe una visión mucho más am
 
 Los .md originales subidos empiezan en "01" (empaques/gluten free, agregado 18 jul), "05" (costos), "06" (B2B/feria) y "07" (degustaciones) — sugiere que existen documentos 02-04 que aún no se han subido. Si existen, súbelos a `Datos Xocolata` para completar la serie; si no existen, se puede ignorar esta nota.
 
+## Pendientes de la página Shopify (ver [brief](08-shopify/brief-pagina-wholesale-b2b.md))
+
+- **Número de WhatsApp comercial sin confirmar.** No aparece en ningún documento fuente. Necesario para la página, el brochure y todo el material de captación. Pedirlo al equipo — **no inventar** (en una versión anterior del brief del brochure se puso un número que no tenía respaldo; ya se corrigió).
+- **Decisión de fondo de la página:** ¿de acuerdo con que en esta fase la página sea una landing de captación → WhatsApp, **sin checkout** (por LLC en trámite + comprador cierra por WhatsApp)? Recomendado que sí. Si el equipo quiere checkout transaccional real, eso es una fase posterior a la LLC.
+- **Plan Shopify:** el B2B nativo (catálogos/listas de precio por cliente) requiere **Shopify Plus**; hoy la tienda está en **Basic**. Decidir más adelante si el portal de re-orden (Meta 4.4) se hace con área con contraseña, app de wholesale, o upgrade a Plus.
+- **Tag "sin gluten" en el producto Pandebono ya cargado:** está publicado con ese tag, pero la certificación gluten free todavía no está confirmada (ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md)). Quitar el tag hasta validarlo con la maquiladora.
+
 ## Otros
 
 - El brochure/pitch deck menciona una **línea de insumos y materias primas** (B2B para panaderías/restaurantes/industria) como parte de "Nuestra Colección Premium" — esto no aparece mencionado en ningún documento operativo. Confirmar si es una línea real en desarrollo o solo un elemento de la presentación corporativa.

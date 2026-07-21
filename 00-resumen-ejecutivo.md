@@ -12,7 +12,7 @@ Punto de entrada rápido al estado del proyecto. Para el detalle, seguir los enl
 
 El plan arrancó como **B2C** (Shopify + contenido) y se **redireccionó a B2B**, con un solo evento como bisagra: la **feria Americas Food & Beverage Show, Miami, 14-16 de septiembre de 2026**. Meta dura: **firmar un distribuidor máster antes del 31 de octubre de 2026**. Ver [plan B2B y feria de Miami](04-estrategia-b2b/plan-b2b-feria-miami.md).
 
-Como consecuencia, **Shopify cambió de rol**: de canal de venta principal a catálogo vivo + casa de la landing de captación + futuro portal de re-orden wholesale. Ver [rol de Shopify](08-shopify/rol-de-shopify.md).
+Como consecuencia, **Shopify cambió de rol**: de canal de venta principal a catálogo vivo + casa de la landing de captación + futuro portal de re-orden wholesale. Ver [rol de Shopify](08-shopify/rol-de-shopify.md) y el [brief de la página wholesale B2B](08-shopify/brief-pagina-wholesale-b2b.md) (bilingüe, en construcción).
 
 ## Cómo se produce y distribuye
 

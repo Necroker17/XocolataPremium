@@ -28,7 +28,7 @@ Actualizar el brochure corporativo con el contenido real del plan B2B vigente (v
 4. **Entra la feria como urgencia real** (Americas Food & Beverage Show, Miami, 14-16 sep 2026) — solo en la versión B2B comercial, como llamado a la acción con fecha límite.
 5. **Cobertura geográfica realista:** Florida, Texas, Nueva York, Nueva Jersey (Fase 1) — se quita el "Próximamente: expansión a más estados" como promesa vaga; si se menciona expansión, se enmarca como plan, no como hecho.
 6. **Nota de gluten free / alérgenos** (pendiente de validar con la maquiladora, ver [empaques y alérgenos](../02-producto/empaques-y-alergenos.md)) — **no se incluye todavía** en ningún panel porque la certificación no está confirmada. Revisar este brief cuando se resuelva.
-7. **Datos de contacto verificados:** comercial@xocolatafoodpremium.com · +57 301 165 1177 · www.xocolatafoodpremium.com · Cali, Colombia (igual al actual — confirmar que sigan vigentes antes de imprimir).
+7. **Datos de contacto (⚠️ confirmar antes de imprimir):** comercial@xocolatafoodpremium.com · www.xocolatafoodpremium.com · Cali, Colombia. **El número de WhatsApp comercial aún no está confirmado en ningún documento fuente** — pedírselo al equipo antes de ponerlo en cualquier pieza. No inventar.
 
 ## Estructura de paneles
 
