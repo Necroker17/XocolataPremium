@@ -1,0 +1,388 @@
+<style>
+  /* ===== Xocolata Food Premium — Landing wholesale B2B (bilingüe ES/EN) =====
+     Sistema visual de marca: vinotinto + dorado + crema.
+     Toggle de idioma con checkbox-hack (sin JS). ES por defecto. */
+  .xoc * { margin: 0; padding: 0; box-sizing: border-box; }
+  .xoc {
+    --vino: #4A0E1E; --vino-2: #5C1226; --vino-3: #711A31;
+    --oro: #C9A24B; --oro-claro: #E3C87F;
+    --crema: #F7F1E3; --crema-2: #FDFAF2;
+    --tinta: #2E2620; --gris: #6E6258; --borde: #E4D9C3;
+    --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-family: var(--sans);
+    color: var(--tinta);
+    line-height: 1.65;
+    background: var(--crema);
+    -webkit-font-smoothing: antialiased;
+  }
+  .xoc img { max-width: 100%; display: block; }
+
+  /* --- language toggle mechanics --- */
+  .xoc-langswitch { position: absolute; left: -9999px; }
+  .xoc .lang-en { display: none; }
+  .xoc:has(.xoc-langswitch:checked) .lang-en { display: revert; }
+  .xoc:has(.xoc-langswitch:checked) .lang-es { display: none; }
+  .xoc-toggle {
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 1px solid rgba(201,162,75,.5); border-radius: 100px;
+    padding: 5px 14px; font-size: 13px; font-weight: 600; letter-spacing: .04em;
+    color: var(--oro-claro); cursor: pointer; user-select: none;
+    background: rgba(0,0,0,.15);
+  }
+  .xoc-toggle:hover { border-color: var(--oro); }
+  .xoc-toggle .on { color: #fff; }
+
+  /* --- layout scaffolding --- */
+  .xoc-wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+  .xoc-header {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(74,14,30,.96); backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(201,162,75,.25);
+  }
+  .xoc-header .xoc-wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+  .xoc-word { font-family: var(--serif); font-style: italic; font-weight: 700; font-size: 26px; color: var(--oro-claro); letter-spacing: .01em; }
+  .xoc-word small { display: block; font-style: normal; font-size: 9px; letter-spacing: .3em; color: var(--oro); text-transform: uppercase; margin-top: -4px; }
+
+  .xoc-band { padding: 84px 0; }
+  .xoc-band--vino { background: linear-gradient(165deg, var(--vino) 0%, var(--vino-2) 55%, var(--vino-3) 100%); color: var(--crema); }
+  .xoc-band--crema { background: var(--crema); }
+  .xoc-band--crema2 { background: var(--crema-2); }
+
+  .xoc-eyebrow { font-size: 12.5px; letter-spacing: .22em; text-transform: uppercase; font-weight: 700; color: var(--oro); }
+  .xoc-band--vino .xoc-eyebrow { color: var(--oro-claro); }
+  .xoc h1, .xoc h2, .xoc h3 { font-family: var(--serif); font-weight: 700; text-wrap: balance; line-height: 1.12; }
+  .xoc h1 { font-size: clamp(34px, 5.5vw, 58px); margin: 14px 0 20px; }
+  .xoc h2 { font-size: clamp(27px, 3.6vw, 40px); color: var(--vino); margin: 10px 0 18px; }
+  .xoc-band--vino h2 { color: var(--crema-2); }
+  .xoc h3 { font-size: 21px; }
+  .xoc p { max-width: 64ch; }
+  .xoc-lead { font-size: clamp(17px, 1.7vw, 20px); color: #EAD9C2; max-width: 60ch; }
+
+  .xoc-divider { text-align: center; color: var(--oro); font-size: 18px; letter-spacing: .6em; padding: 6px 0; }
+
+  /* buttons */
+  .xoc-cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+  .xoc-btn { display: inline-block; padding: 14px 28px; border-radius: 6px; font-weight: 700; font-size: 15.5px; text-decoration: none; letter-spacing: .01em; transition: transform .15s ease, box-shadow .15s ease; }
+  .xoc-btn--gold { background: linear-gradient(180deg, var(--oro-claro), var(--oro)); color: var(--vino); box-shadow: 0 6px 20px rgba(201,162,75,.28); }
+  .xoc-btn--ghost { background: transparent; color: var(--oro-claro); border: 1px solid rgba(201,162,75,.6); }
+  .xoc-btn:hover { transform: translateY(-2px); }
+  .xoc-btn--ghost:hover { border-color: var(--oro); color: #fff; }
+
+  /* product grid */
+  .xoc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 40px; }
+  .xoc-card { background: var(--crema-2); border: 1px solid var(--borde); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; transition: transform .18s ease, box-shadow .18s ease; }
+  .xoc-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(74,14,30,.13); }
+  .xoc-card__img { aspect-ratio: 4/3; background: linear-gradient(150deg, var(--vino-3), var(--vino)); display: flex; align-items: center; justify-content: center; color: var(--oro-claro); font-family: var(--serif); font-style: italic; font-size: 15px; text-align: center; padding: 14px; border-bottom: 3px solid var(--oro); }
+  .xoc-card__body { padding: 18px 18px 22px; display: flex; flex-direction: column; gap: 8px; }
+  .xoc-card__body h3 { color: var(--vino); }
+  .xoc-card__body p { font-size: 14.5px; color: #4a4038; }
+
+  /* steps + seals + points */
+  .xoc-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 40px; }
+  .xoc-cols--4 { grid-template-columns: repeat(4, 1fr); }
+  .xoc-tile { display: flex; flex-direction: column; gap: 10px; }
+  .xoc-num { width: 42px; height: 42px; border-radius: 50%; border: 1.5px solid var(--oro); color: var(--oro-claro); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 19px; font-weight: 700; }
+  .xoc-band--crema .xoc-num, .xoc-band--crema2 .xoc-num { color: var(--vino); border-color: var(--oro); }
+  .xoc-tile h3 { color: inherit; }
+  .xoc-band--crema .xoc-tile h3, .xoc-band--crema2 .xoc-tile h3 { color: var(--vino); }
+  .xoc-tile p { font-size: 15px; }
+  .xoc-band--vino .xoc-tile p { color: #E8D5BE; }
+  .xoc-band--crema .xoc-tile p, .xoc-band--crema2 .xoc-tile p { color: var(--gris); }
+  .xoc-seal { font-size: 26px; color: var(--oro); }
+
+  .xoc-note { display: inline-block; margin-top: 26px; font-style: italic; color: var(--oro-claro); font-size: 15px; }
+  .xoc-band--crema .xoc-note, .xoc-band--crema2 .xoc-note { color: var(--gris); }
+
+  .xoc-story { max-width: 760px; }
+  .xoc-story .sig { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--oro); margin-top: 22px; }
+  .xoc-band--crema .xoc-story .sig { color: var(--vino-3); }
+
+  .xoc-social { background: #F2EBDA; border: 1px dashed var(--oro); border-radius: 10px; padding: 30px; text-align: center; color: var(--gris); margin-top: 30px; font-style: italic; }
+
+  .xoc-final { text-align: center; }
+  .xoc-final .xoc-cta-row { justify-content: center; }
+  .xoc-final p { margin: 0 auto; }
+  .xoc-altcontact { margin-top: 18px; font-size: 14.5px; color: #EAD9C2; }
+  .xoc-altcontact a { color: var(--oro-claro); }
+
+  .xoc-footer { background: var(--vino); color: #E8D5BE; padding: 40px 0; text-align: center; font-size: 14px; }
+  .xoc-footer .xoc-word { font-size: 30px; }
+  .xoc-footer a { color: var(--oro-claro); }
+
+  @media (max-width: 900px) {
+    .xoc-grid, .xoc-cols, .xoc-cols--4 { grid-template-columns: 1fr 1fr; }
+    .xoc-band { padding: 60px 0; }
+  }
+  @media (max-width: 560px) {
+    .xoc-grid, .xoc-cols, .xoc-cols--4 { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .xoc-btn, .xoc-card { transition: none; }
+  }
+</style>
+
+<div class="xoc">
+  <input type="checkbox" id="xoc-lang" class="xoc-langswitch" aria-hidden="true">
+
+  <header class="xoc-header">
+    <div class="xoc-wrap">
+      <div class="xoc-word">Xocolata<small>Food Premium</small></div>
+      <label for="xoc-lang" class="xoc-toggle">
+        <span class="lang-es"><span class="on">ES</span> · EN</span>
+        <span class="lang-en">ES · <span class="on">EN</span></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- 1 · HERO -->
+  <section class="xoc-band xoc-band--vino">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow">
+        <span class="lang-es">Panadería colombiana premium · Congelada · Lista en 8 minutos</span>
+        <span class="lang-en">Premium Colombian bakery · Frozen · Ready in 8 minutes</span>
+      </p>
+      <h1>
+        <span class="lang-es">El sabor de casa, listo para tu vitrina.</span>
+        <span class="lang-en">The taste of home, ready for your counter.</span>
+      </h1>
+      <p class="xoc-lead">
+        <span class="lang-es">Tus clientes crecieron con este sabor. Ahora puedes ofrecérselo recién horneado —sin panadero y sin complicaciones— directo desde Colombia a tu negocio en Estados Unidos.</span>
+        <span class="lang-en">Your customers grew up with this flavor. Now you can serve it fresh-baked —no baker, no hassle— straight from Colombia to your business in the United States.</span>
+      </p>
+      <div class="xoc-cta-row">
+        <!-- TODO: cambiar href a https://wa.me/{{WHATSAPP}} cuando se confirme el número -->
+        <a class="xoc-btn xoc-btn--gold" href="mailto:comercial@xocolatafoodpremium.com?subject=Quiero%20trabajar%20con%20Xocolata">
+          <span class="lang-es">Hablemos</span><span class="lang-en">Let's talk</span>
+        </a>
+        <a class="xoc-btn xoc-btn--ghost" href="#coleccion">
+          <span class="lang-es">Ver el catálogo mayorista</span><span class="lang-en">See the wholesale catalog</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="xoc-band--crema"><div class="xoc-divider">༄ ༄ ༄</div></div>
+
+  <!-- 2 · EMOCIÓN -->
+  <section class="xoc-band xoc-band--crema">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">La nostalgia como oportunidad</span><span class="lang-en">Nostalgia as opportunity</span></p>
+      <h2>
+        <span class="lang-es">Para ellos, no es solo pan. Es casa.</span>
+        <span class="lang-en">To them, it's not just bread. It's home.</span>
+      </h2>
+      <p>
+        <span class="lang-es">Un pandebono recién horneado no es un producto: es la cocina de la abuela, el desayuno de un domingo, Colombia en un solo bocado. Miles de latinos en Estados Unidos buscan ese recuerdo y no lo encuentran en ningún estante. Tú puedes ser quien se los devuelva —y convertir esa emoción en el producto más comentado de tu negocio.</span>
+        <span class="lang-en">A warm pandebono isn't a product — it's grandma's kitchen, a slow Sunday breakfast, Colombia in a single bite. Thousands of Latinos across the U.S. are looking for that memory and can't find it on any shelf. You can be the one who brings it back — and turn that emotion into the most talked-about item in your business.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 3 · COLECCIÓN -->
+  <section class="xoc-band xoc-band--crema2" id="coleccion">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">La colección</span><span class="lang-en">The collection</span></p>
+      <h2>
+        <span class="lang-es">Cuatro productos. Una tradición completa.</span>
+        <span class="lang-en">Four products. One complete tradition.</span>
+      </h2>
+      <div class="xoc-grid">
+        <div class="xoc-card">
+          <div class="xoc-card__img">Empanada de Cambray</div>
+          <div class="xoc-card__body">
+            <h3>Empanada de Cambray</h3>
+            <p>
+              <span class="lang-es">El contraste dulce-salado que hoy nadie más tiene en EE. UU. Masa hojaldrada, crujiente, imposible de replicar en producción industrial. El producto ancla que hace tu vitrina inolvidable.</span>
+              <span class="lang-en">The sweet-and-savory contrast no one else has in the U.S. right now. Flaky, crisp pastry that mass production can't copy. The anchor product that makes your counter unforgettable.</span>
+            </p>
+          </div>
+        </div>
+        <div class="xoc-card">
+          <div class="xoc-card__img">Buñuelo Relleno</div>
+          <div class="xoc-card__body">
+            <h3>Buñuelo Relleno</h3>
+            <p>
+              <span class="lang-es">El buñuelo de siempre, con un corazón de arequipe o guayaba. Cuando se abre y el relleno se asoma, tus clientes sacan el teléfono. Tu línea de mayor margen.</span>
+              <span class="lang-en">The classic buñuelo, with a molten heart of arequipe (dulce de leche) or guava. When it breaks open, your customers reach for their phones. Your highest-margin item.</span>
+            </p>
+          </div>
+        </div>
+        <div class="xoc-card">
+          <div class="xoc-card__img">Almojábana Especial</div>
+          <div class="xoc-card__body">
+            <h3>Almojábana Especial</h3>
+            <p>
+              <span class="lang-es">El equilibrio perfecto entre maíz y queso maduro. Mantiene su humedad y sabor semanas después de congelada. El desayuno andino que completa tu oferta.</span>
+              <span class="lang-en">The perfect balance of corn and aged cheese. It keeps its moisture and flavor weeks after freezing. The Andean breakfast staple that rounds out your lineup.</span>
+            </p>
+          </div>
+        </div>
+        <div class="xoc-card">
+          <div class="xoc-card__img">Pandebono en Rosca</div>
+          <div class="xoc-card__body">
+            <h3>Pandebono en Rosca</h3>
+            <p>
+              <span class="lang-es">El ícono del queso colombiano, en formato premium que eleva su valor a la vista. Esponjoso por dentro, dorado por fuera. El gancho que genera la mayor recompra.</span>
+              <span class="lang-en">The icon of Colombian cheese bread, in a premium ring format that lifts its value at a glance. Airy inside, golden outside. The hook that drives the most repeat orders.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <span class="xoc-note">
+        <span class="lang-es">Precio mayorista bajo cotización — escríbenos y armamos una propuesta para tu negocio.</span>
+        <span class="lang-en">Wholesale pricing on request — message us and we'll build a proposal for your business.</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- 4 · CÓMO FUNCIONA -->
+  <section class="xoc-band xoc-band--vino">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">Cómo funciona</span><span class="lang-en">How it works</span></p>
+      <h2>
+        <span class="lang-es">De nuestro congelador a tu vitrina, en 8 minutos.</span>
+        <span class="lang-en">From our freezer to your counter, in 8 minutes.</span>
+      </h2>
+      <div class="xoc-cols">
+        <div class="xoc-tile">
+          <div class="xoc-num">1</div>
+          <h3><span class="lang-es">Recibes</span><span class="lang-en">Receive</span></h3>
+          <p><span class="lang-es">Producto congelado, listo para hornear, con cadena de frío garantizada de punta a punta.</span><span class="lang-en">Frozen, ready-to-bake product, with a guaranteed cold chain end to end.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <div class="xoc-num">2</div>
+          <h3><span class="lang-es">Horneas</span><span class="lang-en">Bake</span></h3>
+          <p><span class="lang-es">8 minutos. Sin panadero especializado, sin recetas, sin desperdicio.</span><span class="lang-en">8 minutes. No specialized baker, no recipes, no waste.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <div class="xoc-num">3</div>
+          <h3><span class="lang-es">Vendes</span><span class="lang-en">Sell</span></h3>
+          <p><span class="lang-es">Un producto que sabe a recién hecho —porque lo está— con el estándar de una panadería experta.</span><span class="lang-en">A product that tastes freshly made —because it is— with the standard of an expert bakery.</span></p>
+        </div>
+      </div>
+      <span class="xoc-note">
+        <span class="lang-es">Congelado no significa "sabe a fábrica". Nuestras recetas se diseñaron para la cadena de frío: cada lote sale idéntico al anterior.</span>
+        <span class="lang-en">Frozen doesn't mean "tastes like a factory." Our recipes were engineered for the cold chain: every batch comes out identical to the last.</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- 5 · TRIPLE SELLO -->
+  <section class="xoc-band xoc-band--crema">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">Garantía Triple Sello</span><span class="lang-en">Triple Seal Guarantee</span></p>
+      <h2><span class="lang-es">El riesgo lo asumimos nosotros.</span><span class="lang-en">We take the risk, not you.</span></h2>
+      <div class="xoc-cols">
+        <div class="xoc-tile">
+          <div class="xoc-seal">◆</div>
+          <h3><span class="lang-es">Reposición total</span><span class="lang-en">Full replacement</span></h3>
+          <p><span class="lang-es">Si falla la cadena de frío, reponemos toda la orden.</span><span class="lang-en">If the cold chain fails, we replace the entire order.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <div class="xoc-seal">◆</div>
+          <h3><span class="lang-es">Rotación garantizada</span><span class="lang-en">Guaranteed turnover</span></h3>
+          <p><span class="lang-es">Si tu primera orden no rota en 45 días, llevamos degustaciones y contenido a tu punto de venta, sin costo.</span><span class="lang-en">If your first order doesn't sell in 45 days, we bring tastings and content to your location — at no cost.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <div class="xoc-seal">◆</div>
+          <h3><span class="lang-es">Acompañamiento continuo</span><span class="lang-en">Ongoing support</span></h3>
+          <p><span class="lang-es">No te dejamos solo después de la primera compra.</span><span class="lang-en">We don't leave you alone after the first order.</span></p>
+        </div>
+      </div>
+      <span class="xoc-note">
+        <span class="lang-es">Sabemos que apostarle a una marca nueva da miedo. Por eso tú solo decides con el producto en la mano.</span>
+        <span class="lang-en">We know betting on a new brand feels risky. That's why you decide with the product in your hands.</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- 6 · POR QUÉ SER ALIADO -->
+  <section class="xoc-band xoc-band--crema2">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">Por qué ser aliado</span><span class="lang-en">Why partner with us</span></p>
+      <h2><span class="lang-es">No vendemos congelados. Construimos aliados.</span><span class="lang-en">We don't sell frozen goods. We build partners.</span></h2>
+      <div class="xoc-cols xoc-cols--4">
+        <div class="xoc-tile">
+          <h3><span class="lang-es">Diferénciate</span><span class="lang-en">Stand out</span></h3>
+          <p><span class="lang-es">El único portafolio con productos rellenos de la categoría. Lo que tu competencia no puede copiar.</span><span class="lang-en">The only filled-product lineup in the category. What your competition can't copy.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <h3><span class="lang-es">Sin complicar tu cocina</span><span class="lang-en">No kitchen hassle</span></h3>
+          <p><span class="lang-es">Cero personal especializado, cero merma, food-cost predecible.</span><span class="lang-en">Zero specialized staff, zero waste, predictable food cost.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <h3><span class="lang-es">Llega primero</span><span class="lang-en">Get there first</span></h3>
+          <p><span class="lang-es">Asignamos exclusividad por territorio, condicionada a resultados, en FL, TX, NY y NJ.</span><span class="lang-en">We assign territory exclusivity, based on performance, across FL, TX, NY and NJ.</span></p>
+        </div>
+        <div class="xoc-tile">
+          <h3><span class="lang-es">Respaldo de exportación</span><span class="lang-en">Export-grade backing</span></h3>
+          <p><span class="lang-es">Estándar corporativo, cumplimiento FDA y cadena de frío monitoreada de punta a punta.</span><span class="lang-en">Corporate standard, FDA compliance, and a cold chain monitored end to end.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · QUIÉNES SOMOS -->
+  <section class="xoc-band xoc-band--vino">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">Quiénes somos</span><span class="lang-en">Our story</span></p>
+      <h2><span class="lang-es">Tradición colombiana. Estándar global.</span><span class="lang-en">Colombian tradition. Global standard.</span></h2>
+      <div class="xoc-story">
+        <p class="xoc-lead">
+          <span class="lang-es">Xocolata Food Premium nace para llevar la panadería colombiana al mundo sin perder lo que la hace única. Trabajamos con maquila certificada en Colombia, bajo recetas propias diseñadas para la exportación, y llevamos cada producto —con su cadena de frío intacta— hasta tu negocio en Estados Unidos. No somos una fábrica más: somos el puente entre la receta de siempre y el estante donde tus clientes la están esperando.</span>
+          <span class="lang-en">Xocolata Food Premium was born to take Colombian bakery to the world without losing what makes it unique. We work with certified co-manufacturing in Colombia, using proprietary recipes engineered for export, and we carry every product —cold chain intact— all the way to your business in the United States. We're not just another factory: we're the bridge between the recipe they grew up with and the shelf where your customers are waiting for it.</span>
+        </p>
+        <p class="sig"><span class="lang-es">Nuestra esencia es la tradición, nuestra meta es el mundo.</span><span class="lang-en">Our essence is tradition; our goal is the world.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · PRUEBA SOCIAL -->
+  <section class="xoc-band xoc-band--crema">
+    <div class="xoc-wrap">
+      <p class="xoc-eyebrow"><span class="lang-es">Prueba social</span><span class="lang-en">Social proof</span></p>
+      <h2><span class="lang-es">Míralos probarlo por primera vez.</span><span class="lang-en">Watch them try it for the first time.</span></h2>
+      <p>
+        <span class="lang-es">Grabamos las reacciones reales de extranjeros probando la panadería colombiana de Xocolata. La demanda no es una promesa: es una cara de sorpresa que puedes ver.</span>
+        <span class="lang-en">We filmed real reactions of people tasting Xocolata's Colombian bakery for the first time. Demand isn't a promise — it's a look of surprise you can watch.</span>
+      </p>
+      <div class="xoc-social">
+        <span class="lang-es">▶  Espacio reservado para los clips de degustación (en producción).</span>
+        <span class="lang-en">▶  Reserved for tasting-reaction clips (in production).</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · CTA FINAL -->
+  <section class="xoc-band xoc-band--vino xoc-final">
+    <div class="xoc-wrap">
+      <h2><span class="lang-es">¿Listo para vender un pedazo de casa?</span><span class="lang-en">Ready to sell a piece of home?</span></h2>
+      <p class="xoc-lead" style="margin-left:auto;margin-right:auto;">
+        <span class="lang-es">Miami elige territorio primero. Escríbenos hoy, agenda una degustación antes de la feria (14–16 de septiembre, Miami) y sé de los primeros en tu zona.</span>
+        <span class="lang-en">Miami picks territory first. Message us today, book a tasting before the show (Sept 14–16, Miami), and be among the first in your area.</span>
+      </p>
+      <div class="xoc-cta-row">
+        <!-- TODO: cambiar href a https://wa.me/{{WHATSAPP}} cuando se confirme el número -->
+        <a class="xoc-btn xoc-btn--gold" href="mailto:comercial@xocolatafoodpremium.com?subject=Quiero%20trabajar%20con%20Xocolata">
+          <span class="lang-es">Hablemos</span><span class="lang-en">Let's talk</span>
+        </a>
+      </div>
+      <p class="xoc-altcontact">
+        <span class="lang-es">¿Prefieres correo? <a href="mailto:comercial@xocolatafoodpremium.com">comercial@xocolatafoodpremium.com</a></span>
+        <span class="lang-en">Prefer email? <a href="mailto:comercial@xocolatafoodpremium.com">comercial@xocolatafoodpremium.com</a></span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="xoc-footer">
+    <div class="xoc-wrap">
+      <div class="xoc-word">Xocolata<small>Food Premium</small></div>
+      <p style="margin:14px auto 0;">
+        <span class="lang-es">Panadería colombiana premium congelada · Cali, Colombia</span>
+        <span class="lang-en">Premium frozen Colombian bakery · Cali, Colombia</span>
+      </p>
+      <p style="margin:6px auto 0;"><a href="mailto:comercial@xocolatafoodpremium.com">comercial@xocolatafoodpremium.com</a> · www.xocolatafoodpremium.com</p>
+    </div>
+  </footer>
+</div>

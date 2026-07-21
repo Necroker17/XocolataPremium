@@ -69,7 +69,7 @@ _Detalle completo: [plan ejecutivo, OKRs e indicadores](04-estrategia-b2b/plan-e
 - [ ] **Brochure nuevo (2 versiones)** — brief y prompts de diseño listos, falta generar las piezas finales. Ver [brief](09-materiales-comerciales/brief-brochure.md).
 - [ ] **Certificación gluten free** — validar con Daka, coordinar rediseño con la diseñadora externa. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 - [ ] **Grabación de contenido 23 jul** — guiones listos, falta grabar y editar. Ver [guiones de grabación](05-contenido-y-marketing/guiones-grabacion-23-jul.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
-- [ ] **Página Shopify wholesale B2B (bilingüe)** — brief listo (Meta 1.5 de la landing se apoya en esto). Falta: copy completo ES/EN por sección → construir en el tema. Ver [brief](08-shopify/brief-pagina-wholesale-b2b.md).
+- [~] **Página Shopify wholesale B2B (bilingüe)** — construida: idioma EN habilitado, 4 productos (borrador), colección mayorista y landing bilingüe publicada en `/pages/mayorista`. Pendiente: nombre de tienda, número de WhatsApp, fotos, USD. Ver [build log](08-shopify/build-log.md).
 
 ## Bloqueadores activos
 
