@@ -19,7 +19,7 @@ Comprobar que la Empanada de Cambray es el producto correcto para venderle a neg
 
 ## 🔔 Próximos hitos inmediatos (revisar primero)
 
-- [ ] **Jueves 23 de julio, ~7:30pm** — Degustación grabada en la escuela de baile de San Antonio (20-30 personas, material clave para la feria). Guión y preguntas: [banco de preguntas y formatos](05-contenido-y-marketing/banco-de-preguntas-y-formatos.md). Logística: [degustaciones y producción](05-contenido-y-marketing/degustaciones-y-produccion.md).
+- [ ] **Jueves 23 de julio, ~7:30pm** — Degustación grabada en la escuela de baile de San Antonio (20-30 personas, material clave para la feria). Guiones listos para grabar: [guiones de grabación — 23 jul](05-contenido-y-marketing/guiones-grabacion-23-jul.md). Logística: [degustaciones y producción](05-contenido-y-marketing/degustaciones-y-produccion.md).
 - [ ] **25 de julio** — Ficha de rentabilidad de la Cambray aprobada por los socios (Meta 1.1). Sin esto no hay ficha de rentabilidad para degustaciones ni landing.
 - [ ] **31 de julio** — Landing publicada en Shopify (o 5 ago según el documento — **confirmar cuál rige**, ver [decisiones abiertas](decisiones-abiertas.md)).
 - [ ] **15 de agosto** — Despacho del contenedor. El rediseño de empaque (gluten free) debe estar cerrado antes de esta fecha.
@@ -68,7 +68,7 @@ _Detalle completo: [plan ejecutivo, OKRs e indicadores](04-estrategia-b2b/plan-e
 
 - [ ] **Brochure nuevo (2 versiones)** — brief y prompts de diseño listos, falta generar las piezas finales. Ver [brief](09-materiales-comerciales/brief-brochure.md).
 - [ ] **Certificación gluten free** — validar con Daka, coordinar rediseño con la diseñadora externa. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
-- [ ] **Grabación de contenido 23 jul** — banco de preguntas y parrilla listos, falta grabar y editar. Ver [banco de preguntas y formatos](05-contenido-y-marketing/banco-de-preguntas-y-formatos.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
+- [ ] **Grabación de contenido 23 jul** — guiones listos, falta grabar y editar. Ver [guiones de grabación](05-contenido-y-marketing/guiones-grabacion-23-jul.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
 
 ## Bloqueadores activos
 

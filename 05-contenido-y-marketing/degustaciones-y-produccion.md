@@ -29,6 +29,6 @@ Gustavo llega con:
 
 ## Plan de preguntas y contenido resultante
 
-El guión de entrevista (preguntas, hooks, formato reto, tomas para pantalla de feria) está en [banco de preguntas y formatos](banco-de-preguntas-y-formatos.md). Las piezas que salgan de esta grabación se registran en la [parrilla de contenido](parrilla-contenido.md).
+El pool de preguntas y formatos está en [banco de preguntas y formatos](banco-de-preguntas-y-formatos.md), y los **guiones listos para grabar el jueves** (bloque por bloque, con el guion de ads B2B incluido) están en [guiones de grabación — 23 jul](guiones-grabacion-23-jul.md). Las piezas que salgan de esta grabación se registran en la [parrilla de contenido](parrilla-contenido.md).
 
 Ver también [estrategia de contenido y ads](estrategia-contenido-ads.md).
