@@ -27,4 +27,8 @@ Gustavo llega con:
 3. Primer bosquejo de la página / avance de Shopify.
 4. Plantillas de acercamiento (email) ya compartidas — Marlen trabaja con ellas desde el día siguiente.
 
+## Plan de preguntas y contenido resultante
+
+El guión de entrevista (preguntas, hooks, formato reto, tomas para pantalla de feria) está en [banco de preguntas y formatos](banco-de-preguntas-y-formatos.md). Las piezas que salgan de esta grabación se registran en la [parrilla de contenido](parrilla-contenido.md).
+
 Ver también [estrategia de contenido y ads](estrategia-contenido-ads.md).

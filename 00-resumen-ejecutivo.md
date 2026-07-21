@@ -34,7 +34,7 @@ Detalle completo de objetivos e indicadores: [plan ejecutivo, OKRs e indicadores
 
 ## Marketing y contenido
 
-Estrategia de captación B2B por audiencia (buyer personas), topic clusters y campañas de Meta Ads — ver [estrategia de contenido y ads](05-contenido-y-marketing/estrategia-contenido-ads.md). Producción de la primera degustación grabada (San Antonio, 23 jul): [degustaciones y producción](05-contenido-y-marketing/degustaciones-y-produccion.md).
+Estrategia de captación B2B por audiencia (buyer personas), topic clusters y campañas de Meta Ads — ver [estrategia de contenido y ads](05-contenido-y-marketing/estrategia-contenido-ads.md). Producción de la primera degustación grabada (San Antonio, 23 jul): [degustaciones y producción](05-contenido-y-marketing/degustaciones-y-produccion.md), con su [banco de preguntas y formatos](05-contenido-y-marketing/banco-de-preguntas-y-formatos.md) y la [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md) donde se registran las piezas resultantes.
 
 ## La feria en sí
 
