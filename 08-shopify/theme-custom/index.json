@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "xoc_home": {
+      "type": "xoc-home",
+      "settings": {
+        "cta_url": "mailto:comercial@xocolatafoodpremium.com"
+      }
+    }
+  },
+  "order": ["xoc_home"]
+}

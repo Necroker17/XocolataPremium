@@ -32,4 +32,29 @@ Decisión del [brief](brief-pagina-wholesale-b2b.md): mientras la LLC esté en t
 
 La fuente de diseño es [landing-wholesale.html](landing-wholesale.html) (versionada en git). Para cambiar la página en Shopify: editar ese archivo y volver a subir el `body` a la página `mayorista` (mutación `pageUpdate`), o pegarlo en el editor de la página en Shopify Admin. El Artifact se actualiza volviendo a publicar el mismo archivo.
 
+## Tema a medida (21 jul) — "realmente llamativo"
+
+El tema activo es **Horizon** (el más nuevo de Shopify). En vez de dejar el home de demostración, se construyó una **portada de marca a medida por código** (Shopify CLI), sobre una **copia no publicada** para no tocar el tema en vivo.
+
+**Qué se hizo:**
+- **Identidad global del tema** (`config/settings_data.json`): paleta vinotinto/dorado/crema (background `#F7F1E3`, foreground `#4A0E1E`, acento `#C9A24B`) y fuentes Playfair Display (títulos) + Assistant (cuerpo).
+- **Sección propia** `sections/xoc-home.liquid`: hero a pantalla completa con foto real, narrativa emocional, colección de 4 productos con foto, "cómo funciona", Triple Sello, "por qué ser aliado" y CTA final. Bilingüe vía `request.locale.iso_code` (sigue el selector nativo de Shopify). Fuentes de marca cargadas por Google Fonts. CTA editable desde el editor de tema (setting `cta_url`).
+- **Home** (`templates/index.json`): apunta solo a la sección `xoc-home`.
+- **Imágenes provisionales**: 5 fotos recortadas del deck (hero del grupo sobre mármol + los 4 productos en corte), optimizadas a JPG, en `assets/` del tema. Copia para el equipo en `Material grafico/productos-interinos-deck/`.
+
+**Tema de desarrollo (no publicado):** `Xocolata Premium (desarrollo)` — id **190111580448**.
+- Vista previa: `https://gjkkyq-ac.myshopify.com?preview_theme_id=190111580448` (ábrela con tu sesión de admin abierta).
+- Editor: `https://gjkkyq-ac.myshopify.com/admin/themes/190111580448/editor`
+- Verificado: renderiza sin errores de Liquid ni consola. **No está publicado** — se publica solo cuando lo apruebes.
+
+**El código a medida está versionado** en [theme-custom/](theme-custom/) (`xoc-home.liquid`, `index.json`). El tema completo vive local en `../Shopify/xocolata-theme/` y en Shopify como tema de desarrollo.
+
+### Pendiente del tema
+- [ ] **Publicarlo** (tu decisión) — desde Shopify Admin › Temas › "Xocolata Premium (desarrollo)" › Publicar.
+- [ ] **Nombre de la tienda** "Mi tienda" → "Xocolata Food Premium" (el encabezado del tema muestra ese nombre hasta que se cambie / se suba un logo).
+- [ ] **Logo** en el encabezado: subir PNG transparente en el editor de tema.
+- [ ] **Inglés visible para visitantes:** el contenido EN ya está en el tema, pero la ruta `/en` necesita que un **mercado** ofrezca inglés (hoy solo existe el mercado Colombia en ES). Al activar el mercado de EE. UU. con inglés (y USD), el selector de idioma empieza a funcionar. Pareado con la decisión de USD.
+- [ ] **Fotos reales** reemplazan las provisionales del deck cuando estén (b-roll del 23 jul).
+- [ ] **WhatsApp:** el botón usa `mailto` hasta confirmar el número; se cambia en el setting `cta_url` de la sección.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).

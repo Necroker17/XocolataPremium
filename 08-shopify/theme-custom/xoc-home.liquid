@@ -1,0 +1,211 @@
+{%- comment -%} Xocolata Food Premium — portada de marca a medida (bilingüe ES/EN vía request.locale) {%- endcomment -%}
+{%- assign en = false -%}
+{%- if request.locale.iso_code == 'en' -%}{%- assign en = true -%}{%- endif -%}
+{%- assign cta = section.settings.cta_url | default: 'mailto:comercial@xocolatafoodpremium.com' -%}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+<div class="xhome">
+
+  <!-- HERO -->
+  <section class="xh-hero" style="background-image:linear-gradient(90deg, rgba(46,15,25,.92) 0%, rgba(74,14,30,.72) 45%, rgba(74,14,30,.30) 100%), url({{ 'xoc-hero.jpg' | asset_url }});">
+    <div class="xh-wrap xh-hero__inner">
+      <p class="xh-eyebrow">
+        {%- if en -%}Premium Colombian bakery · Frozen · Ready in 8 minutes{%- else -%}Panadería colombiana premium · Congelada · Lista en 8 minutos{%- endif -%}
+      </p>
+      <h1 class="xh-h1">
+        {%- if en -%}The taste of home, ready for your counter.{%- else -%}El sabor de casa, listo para tu vitrina.{%- endif -%}
+      </h1>
+      <p class="xh-lead">
+        {%- if en -%}Your customers grew up with this flavor. Now you can serve it fresh-baked — no baker, no hassle — straight from Colombia to your business in the United States.{%- else -%}Tus clientes crecieron con este sabor. Ahora puedes ofrecérselo recién horneado — sin panadero y sin complicaciones — directo desde Colombia a tu negocio en Estados Unidos.{%- endif -%}
+      </p>
+      <div class="xh-cta-row">
+        <a class="xh-btn xh-btn--gold" href="{{ cta }}">{% if en %}Let's talk{% else %}Hablemos{% endif %}</a>
+        <a class="xh-btn xh-btn--ghost" href="#xh-coleccion">{% if en %}See the collection{% else %}Ver la colección{% endif %}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSTALGIA -->
+  <section class="xh-band xh-band--crema">
+    <div class="xh-wrap xh-narrow">
+      <p class="xh-eyebrow xh-eyebrow--dark">{% if en %}Nostalgia as opportunity{% else %}La nostalgia como oportunidad{% endif %}</p>
+      <h2 class="xh-h2">{% if en %}To them, it's not just bread. It's home.{% else %}Para ellos, no es solo pan. Es casa.{% endif %}</h2>
+      <p class="xh-body">
+        {%- if en -%}A warm pandebono isn't a product — it's grandma's kitchen, a slow Sunday breakfast, Colombia in a single bite. Thousands of Latinos across the U.S. are looking for that memory and can't find it on any shelf. You can be the one who brings it back — and turn that emotion into the most talked-about item in your business.{%- else -%}Un pandebono recién horneado no es un producto: es la cocina de la abuela, el desayuno de un domingo, Colombia en un solo bocado. Miles de latinos en Estados Unidos buscan ese recuerdo y no lo encuentran en ningún estante. Tú puedes ser quien se los devuelva — y convertir esa emoción en el producto más comentado de tu negocio.{%- endif -%}
+      </p>
+    </div>
+  </section>
+
+  <!-- COLECCIÓN -->
+  <section class="xh-band xh-band--crema2" id="xh-coleccion">
+    <div class="xh-wrap">
+      <p class="xh-eyebrow xh-eyebrow--dark">{% if en %}The collection{% else %}La colección{% endif %}</p>
+      <h2 class="xh-h2">{% if en %}Four products. One complete tradition.{% else %}Cuatro productos. Una tradición completa.{% endif %}</h2>
+      <div class="xh-grid">
+        <article class="xh-card">
+          <div class="xh-card__img" style="background-image:url({{ 'xoc-empanada.jpg' | asset_url }});"></div>
+          <div class="xh-card__body">
+            <h3 class="xh-h3">Empanada de Cambray</h3>
+            <p>{% if en %}The sweet-and-savory contrast no one else has in the U.S. Flaky, crisp, impossible to mass-produce. The anchor of your counter.{% else %}El contraste dulce-salado que nadie más tiene en EE. UU. Hojaldrada, crujiente, imposible de replicar en masa. El ancla de tu vitrina.{% endif %}</p>
+          </div>
+        </article>
+        <article class="xh-card">
+          <div class="xh-card__img" style="background-image:url({{ 'xoc-bunuelo.jpg' | asset_url }});"></div>
+          <div class="xh-card__body">
+            <h3 class="xh-h3">Buñuelo Relleno</h3>
+            <p>{% if en %}The classic buñuelo with a molten heart of arequipe or guava. When it breaks open, phones come out. Your highest margin.{% else %}El buñuelo de siempre con corazón de arequipe o guayaba. Cuando se abre, sale el teléfono. Tu mayor margen.{% endif %}</p>
+          </div>
+        </article>
+        <article class="xh-card">
+          <div class="xh-card__img" style="background-image:url({{ 'xoc-almojabana.jpg' | asset_url }});"></div>
+          <div class="xh-card__body">
+            <h3 class="xh-h3">Almojábana Especial</h3>
+            <p>{% if en %}The perfect balance of corn and aged cheese. Moist and flavorful weeks after freezing. The Andean breakfast that completes your lineup.{% else %}El equilibrio perfecto de maíz y queso maduro. Húmeda y sabrosa semanas después de congelada. El desayuno andino que completa tu oferta.{% endif %}</p>
+          </div>
+        </article>
+        <article class="xh-card">
+          <div class="xh-card__img" style="background-image:url({{ 'xoc-pandebono.jpg' | asset_url }});"></div>
+          <div class="xh-card__body">
+            <h3 class="xh-h3">Pandebono en Rosca</h3>
+            <p>{% if en %}The icon of Colombian cheese bread, in a premium ring format. Airy inside, golden outside. The hook that drives repeat orders.{% else %}El ícono del queso colombiano, en formato premium en rosca. Esponjoso por dentro, dorado por fuera. El gancho que genera la recompra.{% endif %}</p>
+          </div>
+        </article>
+      </div>
+      <p class="xh-note">{% if en %}Wholesale pricing on request — message us and we'll build a proposal for your business.{% else %}Precio mayorista bajo cotización — escríbenos y armamos una propuesta para tu negocio.{% endif %}</p>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="xh-band xh-band--vino">
+    <div class="xh-wrap">
+      <p class="xh-eyebrow">{% if en %}How it works{% else %}Cómo funciona{% endif %}</p>
+      <h2 class="xh-h2 xh-h2--light">{% if en %}From our freezer to your counter, in 8 minutes.{% else %}De nuestro congelador a tu vitrina, en 8 minutos.{% endif %}</h2>
+      <div class="xh-steps">
+        <div class="xh-step"><span class="xh-num">1</span><h3 class="xh-h3 xh-h3--light">{% if en %}Receive{% else %}Recibes{% endif %}</h3><p class="xh-body--light">{% if en %}Frozen, ready-to-bake product, with a guaranteed cold chain end to end.{% else %}Producto congelado, listo para hornear, con cadena de frío garantizada de punta a punta.{% endif %}</p></div>
+        <div class="xh-step"><span class="xh-num">2</span><h3 class="xh-h3 xh-h3--light">{% if en %}Bake{% else %}Horneas{% endif %}</h3><p class="xh-body--light">{% if en %}8 minutes. No specialized baker, no recipes, no waste.{% else %}8 minutos. Sin panadero especializado, sin recetas, sin desperdicio.{% endif %}</p></div>
+        <div class="xh-step"><span class="xh-num">3</span><h3 class="xh-h3 xh-h3--light">{% if en %}Sell{% else %}Vendes{% endif %}</h3><p class="xh-body--light">{% if en %}A product that tastes freshly made — because it is — with the standard of an expert bakery.{% else %}Un producto que sabe a recién hecho — porque lo está — con el estándar de una panadería experta.{% endif %}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIPLE SELLO -->
+  <section class="xh-band xh-band--crema">
+    <div class="xh-wrap">
+      <p class="xh-eyebrow xh-eyebrow--dark">{% if en %}Triple Seal Guarantee{% else %}Garantía Triple Sello{% endif %}</p>
+      <h2 class="xh-h2">{% if en %}We take the risk, not you.{% else %}El riesgo lo asumimos nosotros.{% endif %}</h2>
+      <div class="xh-steps">
+        <div class="xh-step"><span class="xh-seal">◆</span><h3 class="xh-h3">{% if en %}Full replacement{% else %}Reposición total{% endif %}</h3><p>{% if en %}If the cold chain fails, we replace the entire order.{% else %}Si falla la cadena de frío, reponemos toda la orden.{% endif %}</p></div>
+        <div class="xh-step"><span class="xh-seal">◆</span><h3 class="xh-h3">{% if en %}Guaranteed turnover{% else %}Rotación garantizada{% endif %}</h3><p>{% if en %}If your first order doesn't sell in 45 days, we bring tastings and content to your location — at no cost.{% else %}Si tu primera orden no rota en 45 días, llevamos degustaciones y contenido a tu punto de venta, sin costo.{% endif %}</p></div>
+        <div class="xh-step"><span class="xh-seal">◆</span><h3 class="xh-h3">{% if en %}Ongoing support{% else %}Acompañamiento continuo{% endif %}</h3><p>{% if en %}We don't leave you alone after the first order.{% else %}No te dejamos solo después de la primera compra.{% endif %}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ SER ALIADO -->
+  <section class="xh-band xh-band--crema2">
+    <div class="xh-wrap">
+      <p class="xh-eyebrow xh-eyebrow--dark">{% if en %}Why partner with us{% else %}Por qué ser aliado{% endif %}</p>
+      <h2 class="xh-h2">{% if en %}We don't sell frozen goods. We build partners.{% else %}No vendemos congelados. Construimos aliados.{% endif %}</h2>
+      <div class="xh-grid xh-grid--4txt">
+        <div class="xh-tile"><h3 class="xh-h3">{% if en %}Stand out{% else %}Diferénciate{% endif %}</h3><p>{% if en %}The only filled-product lineup in the category. What your competition can't copy.{% else %}El único portafolio con productos rellenos de la categoría. Lo que tu competencia no puede copiar.{% endif %}</p></div>
+        <div class="xh-tile"><h3 class="xh-h3">{% if en %}No kitchen hassle{% else %}Sin complicar tu cocina{% endif %}</h3><p>{% if en %}Zero specialized staff, zero waste, predictable food cost.{% else %}Cero personal especializado, cero merma, food-cost predecible.{% endif %}</p></div>
+        <div class="xh-tile"><h3 class="xh-h3">{% if en %}Get there first{% else %}Llega primero{% endif %}</h3><p>{% if en %}Territory exclusivity, based on performance, across FL, TX, NY and NJ.{% else %}Exclusividad por territorio, condicionada a resultados, en FL, TX, NY y NJ.{% endif %}</p></div>
+        <div class="xh-tile"><h3 class="xh-h3">{% if en %}Export-grade backing{% else %}Respaldo de exportación{% endif %}</h3><p>{% if en %}Corporate standard, FDA compliance, and a cold chain monitored end to end.{% else %}Estándar corporativo, cumplimiento FDA y cadena de frío monitoreada de punta a punta.{% endif %}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="xh-band xh-band--vino xh-final">
+    <div class="xh-wrap xh-narrow">
+      <p class="xh-word">Xocolata</p>
+      <h2 class="xh-h2 xh-h2--light">{% if en %}Ready to sell a piece of home?{% else %}¿Listo para vender un pedazo de casa?{% endif %}</h2>
+      <p class="xh-lead xh-lead--center">{% if en %}Miami picks territory first. Message us today, book a tasting before the show (Sept 14–16, Miami), and be among the first in your area.{% else %}Miami elige territorio primero. Escríbenos hoy, agenda una degustación antes de la feria (14–16 de septiembre, Miami) y sé de los primeros en tu zona.{% endif %}</p>
+      <div class="xh-cta-row xh-cta-row--center">
+        <a class="xh-btn xh-btn--gold" href="{{ cta }}">{% if en %}Let's talk{% else %}Hablemos{% endif %}</a>
+      </div>
+      <p class="xh-alt">comercial@xocolatafoodpremium.com · www.xocolatafoodpremium.com · Cali, Colombia</p>
+    </div>
+  </section>
+
+</div>
+
+{% stylesheet %}
+.xhome { --vino:#4A0E1E; --vino2:#5C1226; --vino3:#711A31; --oro:#C9A24B; --oro-c:#E3C87F; --crema:#F7F1E3; --crema2:#FDFAF2; --tinta:#2E2620; --gris:#6E6258; --borde:#E4D9C3;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-family:var(--sans); color:var(--tinta); line-height:1.65; }
+.xhome *{box-sizing:border-box;}
+.xhome .xh-wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+.xhome .xh-narrow{max-width:820px;}
+.xhome .xh-eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--oro-c);margin:0 0 14px;}
+.xhome .xh-eyebrow--dark{color:#a9843a;}
+.xhome .xh-h1{font-family:var(--serif);font-weight:700;font-size:clamp(36px,5.5vw,62px);line-height:1.06;margin:0 0 22px;color:#fff;text-wrap:balance;}
+.xhome .xh-h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,3.6vw,42px);line-height:1.12;margin:0 0 20px;color:var(--vino);text-wrap:balance;}
+.xhome .xh-h2--light{color:var(--crema2);}
+.xhome .xh-h3{font-family:var(--serif);font-weight:600;font-size:21px;margin:0 0 8px;color:var(--vino);}
+.xhome .xh-h3--light{color:var(--oro-c);}
+.xhome .xh-body{font-size:17px;max-width:64ch;margin:0;}
+.xhome .xh-body--light{color:#E8D5BE;font-size:15.5px;margin:0;}
+.xhome .xh-lead{font-size:clamp(17px,1.7vw,20px);color:#EAD9C2;max-width:60ch;margin:0;}
+.xhome .xh-lead--center{margin:0 auto;}
+.xhome .xh-hero{position:relative;background-size:cover;background-position:center;color:#fff;}
+.xhome .xh-hero__inner{padding:120px 32px 104px;max-width:1180px;}
+.xhome .xh-hero .xh-lead{color:#F2E4CE;}
+.xhome .xh-band{padding:84px 0;}
+.xhome .xh-band--crema{background:var(--crema);}
+.xhome .xh-band--crema2{background:var(--crema2);}
+.xhome .xh-band--vino{background:linear-gradient(165deg,var(--vino) 0%,var(--vino2) 55%,var(--vino3) 100%);color:var(--crema);}
+.xhome .xh-cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;}
+.xhome .xh-cta-row--center{justify-content:center;}
+.xhome .xh-btn{display:inline-block;padding:15px 30px;border-radius:6px;font-weight:700;font-size:15.5px;text-decoration:none;transition:transform .15s ease;}
+.xhome .xh-btn--gold{background:linear-gradient(180deg,var(--oro-c),var(--oro));color:var(--vino);box-shadow:0 6px 22px rgba(0,0,0,.25);}
+.xhome .xh-btn--ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55);}
+.xhome .xh-btn:hover{transform:translateY(-2px);}
+.xhome .xh-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:42px;}
+.xhome .xh-card{background:var(--crema2);border:1px solid var(--borde);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(74,14,30,.06);transition:transform .18s ease,box-shadow .18s ease;}
+.xhome .xh-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(74,14,30,.14);}
+.xhome .xh-card__img{aspect-ratio:4/3;background-size:cover;background-position:center;border-bottom:3px solid var(--oro);}
+.xhome .xh-card__body{padding:18px 20px 24px;}
+.xhome .xh-card__body p{font-size:14.5px;color:#4a4038;margin:0;}
+.xhome .xh-note{margin:30px 0 0;font-style:italic;color:var(--gris);font-size:15px;}
+.xhome .xh-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:42px;}
+.xhome .xh-step p{font-size:15px;color:var(--gris);margin:0;}
+.xhome .xh-band--vino .xh-step p{color:#E8D5BE;}
+.xhome .xh-num{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--oro);color:var(--oro-c);font-family:var(--serif);font-size:20px;font-weight:700;margin-bottom:12px;}
+.xhome .xh-seal{display:inline-block;font-size:26px;color:var(--oro);margin-bottom:8px;}
+.xhome .xh-grid--4txt{grid-template-columns:repeat(4,1fr);gap:30px;}
+.xhome .xh-tile p{font-size:15px;color:var(--gris);margin:0;}
+.xhome .xh-final{text-align:center;}
+.xhome .xh-word{font-family:var(--serif);font-style:italic;font-weight:700;font-size:40px;color:var(--oro-c);margin:0 0 6px;}
+.xhome .xh-alt{margin-top:22px;font-size:14px;color:#EAD9C2;}
+@media (max-width:900px){
+  .xhome .xh-grid,.xhome .xh-grid--4txt,.xhome .xh-steps{grid-template-columns:1fr 1fr;}
+  .xhome .xh-band{padding:60px 0;}
+  .xhome .xh-hero__inner{padding:88px 32px 72px;}
+}
+@media (max-width:560px){
+  .xhome .xh-grid,.xhome .xh-grid--4txt,.xhome .xh-steps{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){ .xhome .xh-btn,.xhome .xh-card{transition:none;} }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Xocolata Home",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cta_url",
+      "label": "Enlace del botón principal (WhatsApp o correo)",
+      "info": "Cuando tengas el número, pon https://wa.me/57XXXXXXXXXX. Por ahora usa el correo.",
+      "default": "mailto:comercial@xocolatafoodpremium.com"
+    }
+  ],
+  "presets": [
+    { "name": "Xocolata Home" }
+  ]
+}
+{% endschema %}
