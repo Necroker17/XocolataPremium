@@ -28,6 +28,14 @@
     </div>
   </section>
 
+  <!-- TICKER -->
+  <div class="xh-ticker" role="presentation">
+    <div class="xh-ticker__track">
+      <span class="xh-ticker__item">{% if en %}8-MINUTE BAKE-OFF&nbsp;&nbsp;·&nbsp;&nbsp;TRIPLE SEAL GUARANTEE&nbsp;&nbsp;·&nbsp;&nbsp;TERRITORY EXCLUSIVITY&nbsp;&nbsp;·&nbsp;&nbsp;COLOMBIAN TRADITION&nbsp;&nbsp;·&nbsp;&nbsp;GLOBAL STANDARD&nbsp;&nbsp;·&nbsp;&nbsp;{% else %}8 MINUTOS DE HORNO&nbsp;&nbsp;·&nbsp;&nbsp;GARANTÍA TRIPLE SELLO&nbsp;&nbsp;·&nbsp;&nbsp;EXCLUSIVIDAD POR TERRITORIO&nbsp;&nbsp;·&nbsp;&nbsp;TRADICIÓN COLOMBIANA&nbsp;&nbsp;·&nbsp;&nbsp;CALIDAD GLOBAL&nbsp;&nbsp;·&nbsp;&nbsp;{% endif %}</span>
+      <span class="xh-ticker__item" aria-hidden="true">{% if en %}8-MINUTE BAKE-OFF&nbsp;&nbsp;·&nbsp;&nbsp;TRIPLE SEAL GUARANTEE&nbsp;&nbsp;·&nbsp;&nbsp;TERRITORY EXCLUSIVITY&nbsp;&nbsp;·&nbsp;&nbsp;COLOMBIAN TRADITION&nbsp;&nbsp;·&nbsp;&nbsp;GLOBAL STANDARD&nbsp;&nbsp;·&nbsp;&nbsp;{% else %}8 MINUTOS DE HORNO&nbsp;&nbsp;·&nbsp;&nbsp;GARANTÍA TRIPLE SELLO&nbsp;&nbsp;·&nbsp;&nbsp;EXCLUSIVIDAD POR TERRITORIO&nbsp;&nbsp;·&nbsp;&nbsp;TRADICIÓN COLOMBIANA&nbsp;&nbsp;·&nbsp;&nbsp;CALIDAD GLOBAL&nbsp;&nbsp;·&nbsp;&nbsp;{% endif %}</span>
+    </div>
+  </div>
+
   <!-- NOSTALGIA -->
   <section class="xh-band xh-band--crema">
     <div class="xh-wrap xh-narrow">
@@ -48,6 +56,7 @@
         <article class="xh-card">
           <div class="xh-card__img" style="background-image:url({{ 'xoc-empanada.jpg' | asset_url }});"></div>
           <div class="xh-card__body">
+            <span class="xh-badge">{% if en %}Min. 1 case · Volume pricing{% else %}Mín. 1 caja · Precio por volumen{% endif %}</span>
             <h3 class="xh-h3">Empanada de Cambray</h3>
             <p>{% if en %}The sweet-and-savory contrast no one else has in the U.S. Flaky, crisp, impossible to mass-produce. The anchor of your counter.{% else %}El contraste dulce-salado que nadie más tiene en EE. UU. Hojaldrada, crujiente, imposible de replicar en masa. El ancla de tu vitrina.{% endif %}</p>
           </div>
@@ -55,6 +64,7 @@
         <article class="xh-card">
           <div class="xh-card__img" style="background-image:url({{ 'xoc-bunuelo.jpg' | asset_url }});"></div>
           <div class="xh-card__body">
+            <span class="xh-badge">{% if en %}Min. 1 case · Volume pricing{% else %}Mín. 1 caja · Precio por volumen{% endif %}</span>
             <h3 class="xh-h3">Buñuelo Relleno</h3>
             <p>{% if en %}The classic buñuelo with a molten heart of arequipe or guava. When it breaks open, phones come out. Your highest margin.{% else %}El buñuelo de siempre con corazón de arequipe o guayaba. Cuando se abre, sale el teléfono. Tu mayor margen.{% endif %}</p>
           </div>
@@ -62,6 +72,7 @@
         <article class="xh-card">
           <div class="xh-card__img" style="background-image:url({{ 'xoc-almojabana.jpg' | asset_url }});"></div>
           <div class="xh-card__body">
+            <span class="xh-badge">{% if en %}Min. 1 case · Volume pricing{% else %}Mín. 1 caja · Precio por volumen{% endif %}</span>
             <h3 class="xh-h3">Almojábana Especial</h3>
             <p>{% if en %}The perfect balance of corn and aged cheese. Moist and flavorful weeks after freezing. The Andean breakfast that completes your lineup.{% else %}El equilibrio perfecto de maíz y queso maduro. Húmeda y sabrosa semanas después de congelada. El desayuno andino que completa tu oferta.{% endif %}</p>
           </div>
@@ -69,6 +80,7 @@
         <article class="xh-card">
           <div class="xh-card__img" style="background-image:url({{ 'xoc-pandebono.jpg' | asset_url }});"></div>
           <div class="xh-card__body">
+            <span class="xh-badge">{% if en %}Min. 1 case · Volume pricing{% else %}Mín. 1 caja · Precio por volumen{% endif %}</span>
             <h3 class="xh-h3">Pandebono en Rosca</h3>
             <p>{% if en %}The icon of Colombian cheese bread, in a premium ring format. Airy inside, golden outside. The hook that drives repeat orders.{% else %}El ícono del queso colombiano, en formato premium en rosca. Esponjoso por dentro, dorado por fuera. El gancho que genera la recompra.{% endif %}</p>
           </div>
@@ -114,6 +126,25 @@
         <div class="xh-tile"><h3 class="xh-h3">{% if en %}No kitchen hassle{% else %}Sin complicar tu cocina{% endif %}</h3><p>{% if en %}Zero specialized staff, zero waste, predictable food cost.{% else %}Cero personal especializado, cero merma, food-cost predecible.{% endif %}</p></div>
         <div class="xh-tile"><h3 class="xh-h3">{% if en %}Get there first{% else %}Llega primero{% endif %}</h3><p>{% if en %}Territory exclusivity, based on performance, across FL, TX, NY and NJ.{% else %}Exclusividad por territorio, condicionada a resultados, en FL, TX, NY y NJ.{% endif %}</p></div>
         <div class="xh-tile"><h3 class="xh-h3">{% if en %}Export-grade backing{% else %}Respaldo de exportación{% endif %}</h3><p>{% if en %}Corporate standard, FDA compliance, and a cold chain monitored end to end.{% else %}Estándar corporativo, cumplimiento FDA y cadena de frío monitoreada de punta a punta.{% endif %}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN FERIA -->
+  <section class="xh-band xh-band--crema2">
+    <div class="xh-wrap xh-narrow" style="text-align:center;">
+      <p class="xh-eyebrow xh-eyebrow--dark">{% if en %}Americas Food &amp; Beverage Show · Miami{% else %}Americas Food &amp; Beverage Show · Miami{% endif %}</p>
+      <h2 class="xh-h2">{% if en %}Territories are assigned at the show.{% else %}Los territorios se asignan en la feria.{% endif %}</h2>
+      <p class="xh-body" style="margin:0 auto 8px;">{% if en %}Sept 14–16, 2026. Book your tasting before the countdown ends.{% else %}14–16 de septiembre de 2026. Agenda tu degustación antes de que termine la cuenta regresiva.{% endif %}</p>
+      <div class="xh-countdown" data-xh-countdown data-target="2026-09-14T00:00:00-04:00">
+        <div class="xh-cd-tile"><span class="xh-cd-num" data-cd="days">--</span><span class="xh-cd-label">{% if en %}Days{% else %}Días{% endif %}</span></div>
+        <div class="xh-cd-tile"><span class="xh-cd-num" data-cd="hours">--</span><span class="xh-cd-label">{% if en %}Hours{% else %}Horas{% endif %}</span></div>
+        <div class="xh-cd-tile"><span class="xh-cd-num" data-cd="minutes">--</span><span class="xh-cd-label">{% if en %}Min{% else %}Min{% endif %}</span></div>
+        <div class="xh-cd-tile"><span class="xh-cd-num" data-cd="seconds">--</span><span class="xh-cd-label">{% if en %}Sec{% else %}Seg{% endif %}</span></div>
+      </div>
+      <noscript><p class="xh-note">{% if en %}Sept 14–16, 2026 — Miami{% else %}14–16 de septiembre de 2026 — Miami{% endif %}</p></noscript>
+      <div class="xh-cta-row xh-cta-row--center">
+        <a class="xh-btn xh-btn--gold-outline" href="{{ cta }}">{% if en %}Book a tasting{% else %}Agendar degustación{% endif %}</a>
       </div>
     </div>
   </section>
@@ -189,8 +220,52 @@
 @media (max-width:560px){
   .xhome .xh-grid,.xhome .xh-grid--4txt,.xhome .xh-steps{grid-template-columns:1fr;}
 }
-@media (prefers-reduced-motion:reduce){ .xhome .xh-btn,.xhome .xh-card{transition:none;} }
+.xhome .xh-btn--gold-outline{background:transparent;color:var(--vino);border:1.5px solid var(--vino);}
+.xhome .xh-btn--gold-outline:hover{background:var(--vino);color:var(--crema2);}
+.xhome .xh-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--vino);background:var(--crema2);border:1px solid var(--oro);border-radius:100px;padding:4px 10px;margin-bottom:10px;}
+.xhome .xh-card .xh-badge{background:var(--crema);}
+.xhome .xh-ticker{background:var(--oro);overflow:hidden;white-space:nowrap;padding:13px 0;}
+.xhome .xh-ticker__track{display:inline-flex;animation:xh-scroll 26s linear infinite;}
+.xhome .xh-ticker__item{display:inline-block;font-family:var(--serif);font-weight:700;font-style:italic;font-size:15px;letter-spacing:.03em;color:var(--vino);padding-right:0;}
+@keyframes xh-scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+.xhome .xh-countdown{display:flex;justify-content:center;gap:16px;margin:34px 0 30px;flex-wrap:wrap;}
+.xhome .xh-cd-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;width:88px;height:88px;background:var(--vino);border-radius:12px;box-shadow:0 8px 20px rgba(74,14,30,.16);}
+.xhome .xh-cd-num{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--oro-c);font-variant-numeric:tabular-nums;line-height:1;}
+.xhome .xh-cd-label{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#D8B98A;margin-top:6px;}
+@media (max-width:560px){ .xhome .xh-cd-tile{width:72px;height:72px;} .xhome .xh-cd-num{font-size:24px;} }
+@media (prefers-reduced-motion:reduce){ .xhome .xh-btn,.xhome .xh-card{transition:none;} .xhome .xh-ticker__track{animation:none;} }
 {% endstylesheet %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-xh-countdown]').forEach(function (box) {
+    var target = new Date(box.getAttribute('data-target')).getTime();
+    var days = box.querySelector('[data-cd="days"]');
+    var hours = box.querySelector('[data-cd="hours"]');
+    var minutes = box.querySelector('[data-cd="minutes"]');
+    var seconds = box.querySelector('[data-cd="seconds"]');
+    function pad(n){ return String(n).padStart(2, '0'); }
+    function tick(){
+      var diff = target - Date.now();
+      if (diff <= 0) {
+        days.textContent = hours.textContent = minutes.textContent = seconds.textContent = '00';
+        clearInterval(timer);
+        return;
+      }
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000) / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+      days.textContent = pad(d);
+      hours.textContent = pad(h);
+      minutes.textContent = pad(m);
+      seconds.textContent = pad(s);
+    }
+    tick();
+    var timer = setInterval(tick, 1000);
+  });
+});
+</script>
 
 {% schema %}
 {

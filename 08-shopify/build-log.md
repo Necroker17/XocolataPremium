@@ -42,10 +42,16 @@ El tema activo es **Horizon** (el más nuevo de Shopify). En vez de dejar el hom
 - **Home** (`templates/index.json`): apunta solo a la sección `xoc-home`.
 - **Imágenes provisionales**: 5 fotos recortadas del deck (hero del grupo sobre mármol + los 4 productos en corte), optimizadas a JPG, en `assets/` del tema. Copia para el equipo en `Material grafico/productos-interinos-deck/`.
 
-**Tema de desarrollo (no publicado):** `Xocolata Premium (desarrollo)` — id **190111580448**.
-- Vista previa: `https://gjkkyq-ac.myshopify.com?preview_theme_id=190111580448` (ábrela con tu sesión de admin abierta).
+**⚠️ Tema "Xocolata Premium (desarrollo)" (id 190111580448) — ahora es el tema EN VIVO de la tienda.** Se publicó el 21 de julio (el equipo lo hizo directamente desde el Admin). El tema original **Horizon queda como respaldo, sin publicar** (id 189990895904) — si algo sale mal, se puede volver a publicar ese para restaurar el estado anterior.
+- Sitio en vivo: `https://gjkkyq-ac.myshopify.com`
 - Editor: `https://gjkkyq-ac.myshopify.com/admin/themes/190111580448/editor`
-- Verificado: renderiza sin errores de Liquid ni consola. **No está publicado** — se publica solo cuando lo apruebes.
+- Verificado en consola: sin errores de Liquid ni de JavaScript.
+
+### Iteración de diseño (21 jul, tras revisar el tema "Zeal" de la Theme Store)
+El usuario revisó un tema de pago ($270 USD, orientado a suplementos/wellness) buscando más energía visual. Se rescataron **el impacto y las funciones**, no la piel naranja/deportiva (que no encaja con el posicionamiento premium colombiano). Se agregó a `xoc-home.liquid`:
+- **Ticker animado** (franja dorada, texto vinotinto en movimiento) con las frases clave de marca — pausa automática si el usuario tiene `prefers-reduced-motion`.
+- **Countdown real a la feria de Miami** (14 sep 2026, con JavaScript vanilla, sin dependencias) — urgencia genuina, no una oferta falsa. Con fallback `<noscript>` si el visitante tiene JS desactivado.
+- **Badges de mayorista** ("Mín. 1 caja · Precio por volumen") en cada tarjeta de producto — inspirado en el patrón de precios por cantidad de Zeal, adaptado a que aún no publicamos precios.
 
 **El código a medida está versionado** en [theme-custom/](theme-custom/) (`xoc-home.liquid`, `index.json`). El tema completo vive local en `../Shopify/xocolata-theme/` y en Shopify como tema de desarrollo.
 
