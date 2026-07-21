@@ -2,7 +2,7 @@
 
 Base de conocimiento organizada del proyecto **Xocolata Food Premium**: negocio, producto, estrategia B2B, marketing, operación, feria de Miami e inversión. Construida a partir de notas de reuniones, decks y material de marca subidos por el equipo.
 
-**Empieza por [00-resumen-ejecutivo.md](00-resumen-ejecutivo.md)** — punto de entrada rápido con enlaces a cada sección.
+**Empieza por [00-resumen-ejecutivo.md](00-resumen-ejecutivo.md)** — punto de entrada rápido con enlaces a cada sección. Para seguimiento semana a semana con checklist, usa [roadmap.md](roadmap.md).
 
 ## Mapa del repo
 
@@ -19,6 +19,7 @@ Base de conocimiento organizada del proyecto **Xocolata Food Premium**: negocio,
 | [09-materiales-comerciales](09-materiales-comerciales/) | Brief y prompts de diseño para piezas de marketing (brochure, etc.) |
 | [personas-y-contactos.md](personas-y-contactos.md) | Quién es quién |
 | [decisiones-abiertas.md](decisiones-abiertas.md) | Vacíos, contradicciones y pendientes detectados — lista viva |
+| [roadmap.md](roadmap.md) | Checklist de seguimiento semana a semana por fase, con semáforo |
 
 ## Fuentes originales
 

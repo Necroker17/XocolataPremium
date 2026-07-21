@@ -44,12 +44,16 @@ Stand contratado con Bosanet ($4.000 USD/expositor, compartido con Cataleya y ot
 
 Existe una presentación corporativa mucho más ambiciosa (TAM $24B, ronda de $1.5M USD, proyección a $14.2M USD en ventas año 3) que convive con el plan táctico — ver [presentación a inversionistas](07-inversion/presentacion-inversionistas.md) y la nota sobre la brecha entre ambas narrativas en [decisiones abiertas](decisiones-abiertas.md).
 
+## Materiales comerciales en desarrollo
+
+Brief y prompts de diseño para dos versiones del brochure (B2B comercial e institucional), actualizados con el portafolio real de Fase 1 y la Garantía Triple Sello. Ver [brief del brochure](09-materiales-comerciales/brief-brochure.md).
+
 ## Lo que falta resolver ahora mismo
 
-1. Ficha de rentabilidad / tabla de márgenes para el colaborador B2B (Meta 1.1, venció 25 jul).
+1. Ficha de rentabilidad / tabla de márgenes para el colaborador B2B (Meta 1.1, **vence 25 jul**).
 2. Confirmar fecha real de publicación de la landing (31 jul vs. 5 ago).
 3. Validar costos finales de la Empanada de Cambray con la maquiladora.
 4. HACCP y FUCE en trámite — bloquean el canal hoteles/cruceros mientras tanto.
 5. Rediseño de empaque (quitar espigas de trigo, evaluar "gluten free") — atrasado frente al despacho confirmado del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 
-Detalle completo en [decisiones abiertas](decisiones-abiertas.md). Quién es quién: [personas y contactos](personas-y-contactos.md).
+Seguimiento semana a semana con checklist: [roadmap.md](roadmap.md). Detalle completo de pendientes: [decisiones abiertas](decisiones-abiertas.md). Quién es quién: [personas y contactos](personas-y-contactos.md).
