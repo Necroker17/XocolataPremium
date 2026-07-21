@@ -16,6 +16,7 @@ Base de conocimiento organizada del proyecto **Xocolata Food Premium**: negocio,
 | [06-feria-americas-fb-show](06-feria-americas-fb-show/) | Oferta y logística del stand con Bosanet |
 | [07-inversion](07-inversion/) | Presentación corporativa a inversionistas |
 | [08-shopify](08-shopify/) | Rol de Shopify en la estrategia y estado de la tienda conectada |
+| [09-materiales-comerciales](09-materiales-comerciales/) | Brief y prompts de diseño para piezas de marketing (brochure, etc.) |
 | [personas-y-contactos.md](personas-y-contactos.md) | Quién es quién |
 | [decisiones-abiertas.md](decisiones-abiertas.md) | Vacíos, contradicciones y pendientes detectados — lista viva |
 
