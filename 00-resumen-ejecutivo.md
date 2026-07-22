@@ -46,7 +46,7 @@ Existe una presentación corporativa mucho más ambiciosa (TAM $24B, ronda de $1
 
 ## Materiales comerciales en desarrollo
 
-Brief y prompts de diseño para dos versiones del brochure (B2B comercial e institucional), actualizados con el portafolio real de Fase 1 y la Garantía Triple Sello. Ver [brief del brochure](09-materiales-comerciales/brief-brochure.md).
+Brochure en dos versiones (B2B comercial e institucional): las 18 imágenes ya están generadas, actualizadas con el portafolio real de Fase 1 y la Garantía Triple Sello. Falta revisión de calidad y maquetación final. Ver [brief del brochure](09-materiales-comerciales/brief-brochure.md) e [imágenes generadas](09-materiales-comerciales/imagenes-generadas.md).
 
 ## Lo que falta resolver ahora mismo
 

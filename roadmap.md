@@ -66,7 +66,7 @@ _Detalle completo: [plan ejecutivo, OKRs e indicadores](04-estrategia-b2b/plan-e
 
 ## Workstreams paralelos (no forman parte del ciclo formal de metas, pero están activos)
 
-- [ ] **Brochure nuevo (2 versiones)** — brief y prompts de diseño listos, falta generar las piezas finales. Ver [brief](09-materiales-comerciales/brief-brochure.md).
+- [x] **Brochure nuevo (2 versiones)** — las 18 imágenes (9 B2B + 9 institucional) ya están generadas. Falta: revisar calidad, elegir versión(es) final(es) y maquetar. Ver [imágenes generadas](09-materiales-comerciales/imagenes-generadas.md).
 - [ ] **Certificación gluten free** — validar con Daka, coordinar rediseño con la diseñadora externa. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 - [ ] **Grabación de contenido 23 jul** — guiones listos, falta grabar y editar. Ver [guiones de grabación](05-contenido-y-marketing/guiones-grabacion-23-jul.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
 - [~] **Página Shopify wholesale B2B (bilingüe)** — construida: idioma EN habilitado, 4 productos (borrador), colección mayorista y landing bilingüe publicada en `/pages/mayorista`. Pendiente: nombre de tienda, número de WhatsApp, fotos, USD. Ver [build log](08-shopify/build-log.md).
