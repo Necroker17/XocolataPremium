@@ -81,7 +81,7 @@ Panel horizontal 1920x1080, dividido en dos mitades. Mitad izquierda, fondo vino
 ## Panel 09 — Contraportada
 
 **Prompt:**
-Panel horizontal 1920x1080, fondo vinotinto degradado (igual a portada, para simetría). Logo Xocolata centrado (wordmark script dorado en óvalo, "FOOD PREMIUM" debajo). Tagline en script dorado: "Tradición Colombiana. Calidad Global." Bloque de contacto centrado en Source Sans 3 crema/dorado: "comercial@xocolatafoodpremium.com · +57 301 165 1177 · www.xocolatafoodpremium.com · Cali, Colombia". Íconos de línea dorada de redes sociales (Instagram, Facebook, LinkedIn) alineados horizontalmente. Código QR simulado en la parte inferior con etiqueta "Conozca más sobre nosotros".
+Panel horizontal 1920x1080, fondo vinotinto degradado (igual a portada, para simetría). Logo Xocolata centrado (wordmark script dorado en óvalo, "FOOD PREMIUM" debajo). Tagline en script dorado: "Tradición Colombiana. Calidad Global." Bloque de contacto centrado en Source Sans 3 crema/dorado: "comercial@xocolatafoodpremium.com · www.xocolatafoodpremium.com · Cali, Colombia" (⚠️ sin número de WhatsApp — aún no está confirmado, no incluirlo). Íconos de línea dorada de redes sociales (Instagram, Facebook, LinkedIn) alineados horizontalmente. Código QR simulado en la parte inferior con etiqueta "Conozca más sobre nosotros".
 
 ---
 

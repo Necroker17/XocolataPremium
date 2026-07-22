@@ -96,7 +96,7 @@ Panel horizontal 1920x1080. Fondo: fotografía o ilustración estilizada del sky
 ## Panel 09 — Contraportada
 
 **Prompt:**
-Panel horizontal 1920x1080, fondo vinotinto degradado (igual a portada, para simetría). Centrado: logo Xocolata (wordmark script dorado en óvalo) con "FOOD PREMIUM" debajo. Tagline en script dorado: "Un sabor que une fronteras". Bloque de contacto centrado, en Source Sans 3 crema/dorado: "comercial@xocolatafoodpremium.com · +57 301 165 1177 · www.xocolatafoodpremium.com · Cali, Colombia". Código QR simulado en la parte inferior con la etiqueta "Escanee para ver el catálogo completo". Iconos de línea dorada pequeños de redes sociales (Instagram, Facebook, LinkedIn) alineados horizontalmente debajo del bloque de contacto.
+Panel horizontal 1920x1080, fondo vinotinto degradado (igual a portada, para simetría). Centrado: logo Xocolata (wordmark script dorado en óvalo) con "FOOD PREMIUM" debajo. Tagline en script dorado: "Un sabor que une fronteras". Bloque de contacto centrado, en Source Sans 3 crema/dorado: "comercial@xocolatafoodpremium.com · www.xocolatafoodpremium.com · Cali, Colombia" (⚠️ sin número de WhatsApp — aún no está confirmado, no incluirlo). Código QR simulado en la parte inferior con la etiqueta "Escanee para ver el catálogo completo". Iconos de línea dorada pequeños de redes sociales (Instagram, Facebook, LinkedIn) alineados horizontalmente debajo del bloque de contacto.
 
 ---
 
