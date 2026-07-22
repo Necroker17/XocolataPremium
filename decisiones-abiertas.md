@@ -8,6 +8,7 @@ Lista viva de cosas que quedaron sin resolver o contradictorias entre los docume
 - **Costos de la Empanada de Cambray inestables.** El documento de costos advierte que variaron durante la reunión ("producto nuevo, validar tabla final con la maquiladora"). Es el producto ancla de toda la campaña — un costo inestable ahí afecta la ficha de rentabilidad completa.
 - **HACCP y FUCE aún no están listos.** Sin HACCP no se puede entrar a hoteles/cruceros. Impacta directamente el canal Food Service premium.
 - **Empaque con espigas de trigo, sin certificación gluten free.** El diseño actual de bolsas asocia visualmente el producto con gluten (aunque 3 de los 4 productos no llevan trigo). Falta: (1) confirmar con Daka qué productos se pueden certificar gluten free, (2) rediseño con la diseñadora externa. A fecha 18 jul van atrasados frente al despacho del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
+- **Lista de ingredientes por producto sin validar con Daka.** El [brief de branding](01-marca/brief-branding-profesional.md) propone una lista de ingredientes de partida para los 4 productos (aplicando la regla de "Pasteurizado"), pero es un punto de partida razonable, no la fórmula real de la maquiladora — validar antes de imprimir cualquier empaque.
 
 ## Contradicción de fechas
 

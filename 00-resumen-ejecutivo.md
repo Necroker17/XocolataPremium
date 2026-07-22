@@ -4,7 +4,7 @@ Punto de entrada rápido al estado del proyecto. Para el detalle, seguir los enl
 
 ## Qué es Xocolata
 
-**Xocolata Food Premium S.A.S.** (Cali, Colombia) exporta panadería colombiana congelada premium a EE. UU., bajo un modelo asset-light: maquila en Colombia, marca y comercial propios. Tagline: "Tradición Colombiana. Calidad Global." Ver [identidad y posicionamiento](01-marca/identidad-y-posicionamiento.md).
+**Xocolata Food Premium S.A.S.** (Cali, Colombia) exporta panadería colombiana congelada premium a EE. UU., bajo un modelo asset-light: maquila en Colombia, marca y comercial propios. Tagline: "Tradición Colombiana. Calidad Global." Ver [identidad y posicionamiento](01-marca/identidad-y-posicionamiento.md) y el [brief de branding profesional](01-marca/brief-branding-profesional.md) (sistema de marca + rediseño de empaque, en desarrollo).
 
 **Portafolio Fase 1** (4 productos, foco alta rotación): **Empanada de Cambray** (producto estrella/ancla), Pandebono en Rosca, Buñuelo Relleno, Almojábana Especial. Ver [portafolio](02-producto/portafolio.md). A largo plazo, Marlen confirmó una segunda línea de **insumos y materias primas B2B** (harinas, lácteos, rellenos, aditivos, empaques) para la industria — ver [línea de insumos y materias primas](02-producto/linea-insumos-materias-primas.md).
 

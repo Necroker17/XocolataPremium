@@ -68,6 +68,7 @@ _Detalle completo: [plan ejecutivo, OKRs e indicadores](04-estrategia-b2b/plan-e
 
 - [x] **Brochure nuevo (2 versiones)** — las 18 imágenes (9 B2B + 9 institucional) ya están generadas. Falta: revisar calidad, elegir versión(es) final(es) y maquetar. Ver [imágenes generadas](09-materiales-comerciales/imagenes-generadas.md).
 - [ ] **Certificación gluten free** — validar con Daka, coordinar rediseño con la diseñadora externa. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
+- [ ] **Branding profesional (sistema de marca + empaque)** — brief listo: unifica naming en "Food Premium", diseña empaque para los 4 de Fase 1 (incluida Empanada de Cambray, que no existía), reemplaza las espigas de trigo, corrige ingredientes a "Pasteurizado". Falta generar las piezas. Ver [brief de branding](01-marca/brief-branding-profesional.md).
 - [ ] **Grabación de contenido 23 jul** — guiones listos, falta grabar y editar. Ver [guiones de grabación](05-contenido-y-marketing/guiones-grabacion-23-jul.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
 - [~] **Página Shopify wholesale B2B (bilingüe)** — construida: idioma EN habilitado, 4 productos (borrador), colección mayorista y landing bilingüe publicada en `/pages/mayorista`. Pendiente: nombre de tienda, número de WhatsApp, fotos, USD. Ver [build log](08-shopify/build-log.md).
 
