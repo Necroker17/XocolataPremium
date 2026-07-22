@@ -46,6 +46,8 @@ Se revisaron 3 piezas de marca ya construidas:
 
 Ya validado en sitio y brochure — se traslada tal cual al sistema de empaque.
 
+**Ajuste de color para el cuerpo de la bolsa del empaque (22 jul v3):** al medir el color real de la foto de referencia (`Datos Xocolata/WhatsApp Image 2026-07-03 at 1.24.37 PM.jpeg`) salió un burdeos muy oscuro, casi negro (`#511317` base, sombras `#430D13`, luces `#6A2428`) — fiel a la referencia pero con poca presencia en góndola. Se valida un tono intermedio para el cuerpo de la bolsa: **`#7A1833`** (sombras `#5C1226`, luces `#A82B4A`) — más vivo que la referencia literal, sin llegar a un rojo cereza. Es el hex a usar en los prompts de empaque de aquí en adelante.
+
 ### Tipografía
 - **Display/títulos:** Playfair Display (serif elegante).
 - **Cuerpo:** Source Sans 3.
@@ -63,14 +65,26 @@ Pilar de diseño reformulado: ~~"Diseño que conecta con lo natural: detalles de
 
 Mismo formato doypack, misma estructura de frente/reverso ya validada. Cambia: naming, motivo decorativo, portafolio, ingredientes.
 
-### Frente (igual estructura en los 4, cambia foto de producto y nombre)
+### Frente (igual estructura en los 4, cambia foto de producto, nombre y cantidad)
 1. Franja superior: "ABRE FÁCIL · CIERRE RESELLABLE"
 2. Logo Xocolata Food Premium centrado
 3. Tagline: "Un sabor que une fronteras"
 4. Motivo de vapor dorado (reemplaza espigas) a los lados de la ventana
-5. Ventana transparente ovalada mostrando el producto
-6. Nombre del producto (Playfair Display, sobre banda inferior)
-7. Badges: FROZEN/KEEP FROZEN · PRODUCTO COLOMBIANO PREMIUM (con silueta de Colombia) · READY TO BAKE
+5. **Ventana ovalada con efecto de plástico transparente real** (reflejo/brillo diagonal, borde con costura, sombra interior de profundidad) — no una foto pegada plana, debe verse como si el producto estuviera físicamente dentro de la bolsa. *Este efecto ya quedó bien desde la v2 y se mantiene.*
+6. **Perspectiva del producto: "producto real" abundante, no corte artístico** — dentro de la ventana se muestran varias piezas completas apiladas (no una sola pieza en corte transversal sobre mármol oscuro con humo), con luz clara y natural, como una foto de empaque retail — *(corregido 22 jul v3: la versión anterior con corte transversal y mármol oscuro no gustó; se prefiere la perspectiva de la foto de referencia original — `Datos Xocolata/WhatsApp Image 2026-07-03 at 1.24.37 PM.jpeg` — que muestra el producto real apilado y abundante)*
+7. **Cantidad visible y tamaño de bolsa proporcional al contenido real de cada presentación** — ver tabla abajo. Formato de bolsa generoso tipo "family pack", no un paquete pequeño de snack — *(agregado 22 jul v3)*
+8. **Color vinotinto exacto de la imagen de referencia original** (profundo y saturado, no un tono más claro/rosado) — *(corregido 22 jul v3: el tono había derivado un poco en las regeneraciones sucesivas)*
+9. **Nombre del producto en dorado, tamaño moderado y discreto, debajo de la ventana, sin banda ni bloque de color de fondo** — *(corregido 22 jul v3: ya se probaron banda dorada de fondo y texto dorado grande directo sobre el vinotinto, ninguna de las dos gustó; ahora se reduce el tamaño mantenimiento el texto directo sobre el vinotinto)*
+10. Badges: FROZEN/KEEP FROZEN · PRODUCTO COLOMBIANO PREMIUM (con silueta de Colombia) · READY TO BAKE
+
+**Cantidad real por presentación (define cuántas piezas se ven en la ventana — fuente: [costos, precios y logística](../03-operacion/costos-precios-logistica.md)):**
+
+| Producto | Contenido de la bolsa retail |
+|---|---|
+| Empanada de Cambray | 20 unidades (60 g c/u) |
+| Pandebono en Rosca | 6 unidades |
+| Buñuelo Relleno | 6 unidades |
+| Almojábana Especial | 10 unidades |
 
 ### Reverso (igual estructura en los 4, cambia ingredientes y datos nutricionales)
 1. Logo pequeño centrado

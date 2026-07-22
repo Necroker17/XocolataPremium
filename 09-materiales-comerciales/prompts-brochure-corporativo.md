@@ -85,4 +85,16 @@ Panel horizontal 1920x1080, fondo vinotinto degradado (igual a portada, para sim
 
 ---
 
+## Panel 10 — Visión a futuro: insumos y materias primas *(agregado 22 jul, se inserta después del panel 05 al maquetar)*
+
+**Prompt:**
+Panel horizontal 1920x1080, fondo crema (#F7F1E3). Pequeña cinta/etiqueta dorada en la esquina superior derecha con texto en mayúsculas pequeñas: "VISIÓN A FUTURO" (para dejar claro que no es oferta activa hoy, es hacia dónde va la empresa). Título "Nuestra próxima etapa" en Playfair Display vinotinto, grande, con subtítulo narrativo en script dorado: "Todo lo que la industria necesita para producir con excelencia." Grid de 4 columnas iguales, cada una con ícono de línea dorada grande y texto corto en Source Sans 3 vinotinto oscuro:
+1. Ícono de trigo/costal — "Harinas y mezclas especializadas."
+2. Ícono de gota de leche/queso — "Quesos, lácteos y grasas industriales."
+3. Ícono de jarra/cuchara — "Rellenos, coberturas y aditivos para panificación."
+4. Ícono de caja — "Empaques y asesoría técnica y comercial."
+Frase de cierre centrada al pie, en vinotinto sobre crema, cursiva/script dorado sutil: "Hoy exportamos tradición horneada. Mañana, seremos también el proveedor de confianza de la industria." Fondo con textura sutil de mármol muy tenue, igual que el panel 07, para mantener consistencia visual con el resto de la pieza.
+
+---
+
 Ver también [brief-brochure.md](brief-brochure.md) y [prompts-brochure-b2b.md](prompts-brochure-b2b.md).

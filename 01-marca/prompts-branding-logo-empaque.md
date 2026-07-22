@@ -42,28 +42,52 @@ Mismo formato que la pieza anterior (cuadrado 1080x1080, fondo crema #F7F1E3). U
 ## 5 — Empaque frente: Empanada de Cambray
 
 **Prompt:**
-Empaque doypack (bolsa stand-up con fuelle inferior) fotorrealista, vista frontal, sobre fondo neutro de estudio con sombra suave proyectada. Bolsa de color vinotinto sólido (#4A0E1E), acabado mate premium. Franja superior delgada con texto dorado pequeño: "ABRE FÁCIL · CIERRE RESELLABLE". Centrado en el tercio superior: logo Xocolata — wordmark script dorado dentro de óvalo de línea dorada, "FOOD PREMIUM" debajo en mayúsculas doradas espaciadas. Debajo del logo, en script dorado más pequeño: "Un sabor que une fronteras". A ambos lados de una ventana ovalada transparente central, un motivo decorativo de líneas doradas finas evocando vapor ascendente (no espigas de trigo). Dentro de la ventana ovalada: la Empanada de Cambray en corte transversal, mostrando la masa hojaldrada dorada y crujiente con el relleno dulce-salado visible, sobre mármol oscuro veteado, vapor sutil. Debajo de la ventana, banda dorada con el nombre "EMPANADA DE CAMBRAY" en Playfair Display vinotinto sobre fondo crema. En la franja inferior de la bolsa, tres elementos alineados: a la izquierda un ícono de copo de nieve con texto pequeño "FROZEN · KEEP FROZEN -18°C/0°F"; al centro un sello circular dorado "PRODUCTO COLOMBIANO PREMIUM" con una pequeña silueta del mapa de Colombia; a la derecha un ícono de horno con texto "READY TO BAKE · FÁCIL Y RÁPIDO". Banda dorada fina en el borde inferior de la bolsa. Iluminación de estudio profesional tipo packshot de producto premium, textura de material flexible visible.
+Empaque doypack (bolsa stand-up con fuelle inferior) fotorrealista, vista frontal, sobre fondo neutro de estudio con sombra suave proyectada. Bolsa de color vinotinto sólido (#4A0E1E), acabado mate premium. Franja superior delgada con texto dorado pequeño: "ABRE FÁCIL · CIERRE RESELLABLE". Centrado en el tercio superior: logo Xocolata — wordmark script dorado dentro de óvalo de línea dorada, "FOOD PREMIUM" debajo en mayúsculas doradas espaciadas. Debajo del logo, en script dorado más pequeño: "Un sabor que une fronteras". A ambos lados de una ventana ovalada central, un motivo decorativo de líneas doradas finas evocando vapor ascendente (no espigas de trigo). **La ventana ovalada debe verse como una lámina de plástico transparente real, no como una foto pegada plana**: con un sutil reflejo/brillo diagonal de luz cruzando la superficie de la ventana, un borde con leve relieve/costura visible donde el plástico se sella a la bolsa, y una ligera sombra interior que dé sensación de profundidad — como si el producto estuviera físicamente dentro de la bolsa, visible a través del plástico. Dentro de la ventana: la Empanada de Cambray en corte transversal, mostrando la masa hojaldrada dorada y crujiente con el relleno dulce-salado visible, sobre mármol oscuro veteado, vapor sutil. Debajo de la ventana, una banda del mismo vinotinto de la bolsa (**sin fondo dorado, sin rectángulo de color distinto**) con el nombre "EMPANADA DE CAMBRAY" en letras doradas grandes y muy legibles, Playfair Display, con suficiente espacio y tamaño generoso — el nombre del producto debe ser uno de los elementos más prominentes del empaque. En la franja inferior de la bolsa, tres elementos alineados: a la izquierda un ícono de copo de nieve con texto pequeño "FROZEN · KEEP FROZEN -18°C/0°F"; al centro un sello circular dorado "PRODUCTO COLOMBIANO PREMIUM" con una pequeña silueta del mapa de Colombia; a la derecha un ícono de horno con texto "READY TO BAKE · FÁCIL Y RÁPIDO". Banda dorada fina en el borde inferior de la bolsa. Iluminación de estudio profesional tipo packshot de producto premium, textura de material flexible visible.
 
 ---
 
 ## 6 — Empaque frente: Pandebono en Rosca
 
 **Prompt:**
-Mismo empaque doypack, misma estructura exacta que la pieza anterior (franja superior, logo, tagline, motivo de vapor dorado a los lados de la ventana, badges inferiores FROZEN/PRODUCTO COLOMBIANO PREMIUM/READY TO BAKE, banda dorada inferior). Dentro de la ventana ovalada: el Pandebono en Rosca, entero, mostrando su forma de rosca dorada, textura esponjosa y corteza perfecta de queso, sobre mármol oscuro veteado, vapor sutil. Banda con el nombre "PANDEBONO EN ROSCA" en Playfair Display vinotinto sobre fondo crema.
+Mismo empaque doypack, misma estructura exacta que la pieza anterior (franja superior, logo, tagline, motivo de vapor dorado a los lados de la ventana, ventana con efecto de plástico transparente real —reflejo diagonal, borde con costura, sombra interior de profundidad—, badges inferiores FROZEN/PRODUCTO COLOMBIANO PREMIUM/READY TO BAKE, banda dorada fina en el borde inferior). Dentro de la ventana ovalada: el Pandebono en Rosca, entero, mostrando su forma de rosca dorada, textura esponjosa y corteza perfecta de queso, sobre mármol oscuro veteado, vapor sutil. Debajo de la ventana, banda del mismo vinotinto de la bolsa (sin fondo dorado) con el nombre "PANDEBONO EN ROSCA" en letras doradas grandes y muy legibles, Playfair Display.
 
 ---
 
 ## 7 — Empaque frente: Buñuelo Relleno
 
 **Prompt:**
-Mismo empaque doypack, misma estructura exacta que las piezas anteriores. Dentro de la ventana ovalada: el Buñuelo Relleno, en corte, mostrando el relleno de arequipe (dulce de leche) o queso derritiéndose y asomando por el corte, textura dorada crujiente por fuera, sobre mármol oscuro veteado, vapor sutil. Banda con el nombre "BUÑUELO RELLENO" en Playfair Display vinotinto sobre fondo crema.
+Mismo empaque doypack, misma estructura exacta que las piezas anteriores (incluyendo la ventana con efecto de plástico transparente real —reflejo diagonal, borde con costura, sombra interior de profundidad— y la banda del nombre en el mismo vinotinto de la bolsa, sin fondo dorado). Dentro de la ventana ovalada: el Buñuelo Relleno, en corte, mostrando el relleno de arequipe (dulce de leche) o queso derritiéndose y asomando por el corte, textura dorada crujiente por fuera, sobre mármol oscuro veteado, vapor sutil. Nombre "BUÑUELO RELLENO" en letras doradas grandes y muy legibles, Playfair Display.
 
 ---
 
 ## 8 — Empaque frente: Almojábana Especial
 
 **Prompt:**
-Mismo empaque doypack, misma estructura exacta que las piezas anteriores. Dentro de la ventana ovalada: la Almojábana Especial, en corte, mostrando su textura húmeda y esponjosa de maíz y queso maduro, corteza dorada tostada por fuera, sobre mármol oscuro veteado, vapor sutil. Banda con el nombre "ALMOJÁBANA ESPECIAL" en Playfair Display vinotinto sobre fondo crema.
+Mismo empaque doypack, misma estructura exacta que las piezas anteriores (incluyendo la ventana con efecto de plástico transparente real —reflejo diagonal, borde con costura, sombra interior de profundidad— y la banda del nombre en el mismo vinotinto de la bolsa, sin fondo dorado). Dentro de la ventana ovalada: la Almojábana Especial, en corte, mostrando su textura húmeda y esponjosa de maíz y queso maduro, corteza dorada tostada por fuera, sobre mármol oscuro veteado, vapor sutil. Nombre "ALMOJÁBANA ESPECIAL" en letras doradas grandes y muy legibles, Playfair Display.
+
+---
+
+---
+
+## Corrección v3 (22 jul) — color, perspectiva "producto real", cantidad y nombre discreto
+
+> Aplicada sobre las versiones v2 (que ya tenían el efecto de ventana transparente correcto). Se mantiene el efecto de plástico de la ventana; cambia el color, qué se ve dentro de la ventana, el tamaño de bolsa según cantidad real, y el tratamiento del nombre.
+
+### 5v3 — Empanada de Cambray
+
+**Prompt:** Vamos a hacer más ajustes a este mismo empaque de Empanada de Cambray (se mantiene el efecto de ventana con plástico transparente real que ya quedó bien). 1) Color: el vinotinto de la bolsa debe verse igual de profundo y saturado que en las primeras versiones (no un tono más claro o rosado) — un vinotinto oscuro intenso. 2) Perspectiva del producto en la ventana: en vez de una sola empanada en corte transversal sobre mármol oscuro con humo, muéstrala como en una foto real de empaque retail: varias Empanadas de Cambray completas (no en corte), doradas y hojaldradas, apiladas de forma abundante llenando la ventana, con luz clara y natural — un look de "producto real" más que una foto artística de restaurante. 3) Cantidad y tamaño: esta presentación trae 20 empanadas por bolsa, así que la bolsa debe verse de formato generoso tipo family-pack (más grande que un paquete pequeño de snack), y la cantidad de empanadas visibles en la ventana debe transmitir esa abundancia. 4) El nombre "EMPANADA DE CAMBRAY" debe verse más discreto que en la versión anterior: tamaño moderado (no protagonista), debajo de la ventana, sin ningún fondo ni bloque de color detrás del texto — solo texto dorado directo sobre el vinotinto, más pequeño que la versión anterior. Todo lo demás igual: logo, tagline, motivo de vapor dorado, badges inferiores, banda dorada del borde.
+
+### 6v3 — Pandebono en Rosca
+
+**Prompt:** Aplica exactamente los mismos 4 ajustes al empaque del Pandebono en Rosca: 1) vinotinto profundo y saturado igual que las primeras versiones. 2) en la ventana, varios Pandebonos en Rosca completos (forma de rosca dorada, corteza de queso) apilados de forma abundante, con luz clara y natural, look de producto real de empaque retail — no una sola pieza artística. 3) esta presentación trae 6 unidades por bolsa — bolsa de formato generoso, cantidad visible en la ventana acorde a esas 6 unidades. 4) nombre "PANDEBONO EN ROSCA" discreto, tamaño moderado, debajo de la ventana, sin fondo de color, texto dorado directo sobre el vinotinto. Todo lo demás igual.
+
+### 7v3 — Buñuelo Relleno
+
+**Prompt:** Aplica exactamente los mismos 4 ajustes al empaque del Buñuelo Relleno: 1) vinotinto profundo y saturado igual que las primeras versiones. 2) en la ventana, varios Buñuelos Rellenos completos (dorados, crujientes por fuera) apilados de forma abundante, look de producto real de empaque retail, con luz clara y natural — no una sola pieza en corte con el relleno derritiéndose sobre mármol oscuro. 3) esta presentación trae 6 unidades por bolsa — bolsa de formato generoso, cantidad visible en la ventana acorde a esas 6 unidades. 4) nombre "BUÑUELO RELLENO" discreto, tamaño moderado, debajo de la ventana, sin fondo de color, texto dorado directo sobre el vinotinto. Todo lo demás igual.
+
+### 8v3 — Almojábana Especial
+
+**Prompt:** Aplica exactamente los mismos 4 ajustes al empaque de la Almojábana Especial: 1) vinotinto profundo y saturado igual que las primeras versiones. 2) en la ventana, varias Almojábanas Especiales completas (doradas, corteza tostada) apiladas de forma abundante, look de producto real de empaque retail, con luz clara y natural — no una sola pieza en corte sobre mármol oscuro. 3) esta presentación trae 10 unidades por bolsa — bolsa de formato generoso, cantidad visible en la ventana acorde a esas 10 unidades (la más llena de las 4). 4) nombre "ALMOJÁBANA ESPECIAL" discreto, tamaño moderado, debajo de la ventana, sin fondo de color, texto dorado directo sobre el vinotinto. Todo lo demás igual.
 
 ---
 

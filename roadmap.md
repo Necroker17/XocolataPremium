@@ -66,9 +66,9 @@ _Detalle completo: [plan ejecutivo, OKRs e indicadores](04-estrategia-b2b/plan-e
 
 ## Workstreams paralelos (no forman parte del ciclo formal de metas, pero están activos)
 
-- [x] **Brochure nuevo (2 versiones)** — las 18 imágenes (9 B2B + 9 institucional) ya están generadas. Falta: revisar calidad, elegir versión(es) final(es) y maquetar. Ver [imágenes generadas](09-materiales-comerciales/imagenes-generadas.md).
+- [x] **Brochure nuevo (2 versiones)** — 20 imágenes generadas (10 B2B + 10 institucional, incluye el panel 10 "visión a futuro: insumos" agregado el 22 jul). Falta: revisar calidad, elegir versión(es) final(es) y maquetar. Ver [imágenes generadas](09-materiales-comerciales/imagenes-generadas.md).
 - [ ] **Certificación gluten free** — validar con Daka, coordinar rediseño con la diseñadora externa. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
-- [x] **Branding profesional (sistema de marca + empaque)** — las 8 piezas (2 de logo, 2 de motivo, 4 de empaque frente) ya están generadas. Falta: elegir el motivo final (vapor vs. laurel) y diseñar el reverso en vectorial real. Ver [imágenes generadas](01-marca/imagenes-branding-generadas.md).
+- [~] **Branding profesional (sistema de marca + empaque)** — las 8 piezas originales (2 de logo, 2 de motivo, 4 de empaque frente) están generadas. Ronda de correcciones (ventana transparente, perspectiva de producto real, cantidad/tamaño, nombre discreto, color `#7A1833`) quedó **incompleta** — cada uno de los 4 empaques quedó en una etapa distinta. Falta: terminar la ronda de correcciones, elegir el motivo final (vapor vs. laurel) y diseñar el reverso en vectorial real. Ver [imágenes generadas](01-marca/imagenes-branding-generadas.md).
 - [ ] **Grabación de contenido 23 jul** — guiones listos, falta grabar y editar. Ver [guiones de grabación](05-contenido-y-marketing/guiones-grabacion-23-jul.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
 - [~] **Página Shopify wholesale B2B (bilingüe)** — construida: idioma EN habilitado, 4 productos (borrador), colección mayorista y landing bilingüe publicada en `/pages/mayorista`. Pendiente: nombre de tienda, número de WhatsApp, fotos, USD. Ver [build log](08-shopify/build-log.md).
 

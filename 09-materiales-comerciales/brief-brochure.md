@@ -23,7 +23,7 @@ Actualizar el brochure corporativo con el contenido real del plan B2B vigente (v
 ## Qué cambia respecto al brochure actual
 
 1. **Portafolio: solo los 4 productos de Fase 1.** Empanada de Cambray, Pandebono en Rosca, Buñuelo Relleno, Almojábana Especial — no los 6 del empaque ("Pan de Yuca", "Hojaldres", "Croissants" salen). Ver [portafolio](../02-producto/portafolio.md).
-2. **Se elimina la línea de insumos y materias primas** como panel propio de este brochure — no porque esté descartada (Marlen la confirmó como parte real del plan a largo plazo, ver [línea de insumos](../02-producto/linea-insumos-materias-primas.md)), sino porque este material se enfoca 100% en la Fase 1 actual (los 4 productos, camino a la feria de Miami). Ese panel se libera para contenido más útil (ver estructura abajo). *Revisar si vale la pena una pieza institucional aparte que sí incluya la visión de insumos a futuro.*
+2. ~~Se elimina la línea de insumos y materias primas como panel propio de este brochure~~ — **corregido 22 jul: se agrega como panel 10 en ambas versiones**, tras revisión del equipo. Marlen la confirmó como parte real del plan a largo plazo (ver [línea de insumos](../02-producto/linea-insumos-materias-primas.md)) y el equipo consideró importante que quede visible incluso en el material enfocado en Fase 1. Se enmarca explícitamente como **"visión a futuro"** (no oferta activa hoy) en las dos versiones, con tono adaptado: en la corporativa como parte de la narrativa institucional de hacia dónde va la empresa; en la B2B comercial como un argumento de credibilidad/escala ("un aliado que crece con usted"), sin restarle foco al llamado a la acción de los 4 productos de Fase 1.
 3. **Entra la garantía Triple Sello** y el mensaje de "sin necesidad de panadero especializado / bake-off en 8 minutos" — son los argumentos de venta reales que ya se están usando en las plantillas de correo. Ver [identidad y posicionamiento](../01-marca/identidad-y-posicionamiento.md) y [guía comercial y plantillas](../04-estrategia-b2b/guia-comercial-y-plantillas.md).
 4. **Entra la feria como urgencia real** (Americas Food & Beverage Show, Miami, 14-16 sep 2026) — solo en la versión B2B comercial, como llamado a la acción con fecha límite.
 5. **Cobertura geográfica realista:** Florida, Texas, Nueva York, Nueva Jersey (Fase 1) — se quita el "Próximamente: expansión a más estados" como promesa vaga; si se menciona expansión, se enmarca como plan, no como hecho.
@@ -45,6 +45,7 @@ Actualizar el brochure corporativo con el contenido real del plan B2B vigente (v
 | 07 | Cobertura y clientes | Mapa FL/TX/NY/NJ + tipos de cliente (distribuidores, supermercados, food service, panaderías/restaurantes/cafeterías) |
 | 08 | La feria / urgencia | Americas Food & Beverage Show, Miami, 14-16 sep 2026 — "agende su degustación antes de la feria" |
 | 09 | Contraportada | Logo, contacto, QR a la landing, CTA a WhatsApp |
+| 10 *(agregado 22 jul)* | Visión a futuro: insumos y materias primas | Teaser de la próxima etapa (harinas, lácteos, rellenos, aditivos, empaques) — marcado como "visión a futuro", no oferta activa. Se inserta después del panel 03 al maquetar. |
 
 ### Versión corporativa (9 paneles)
 
@@ -59,6 +60,7 @@ Actualizar el brochure corporativo con el contenido real del plan B2B vigente (v
 | 07 | Nuestros clientes | Igual al actual (distribuidores, importadores, retail, food service / hoteles, restaurantes, cafeterías, panaderías) — se quita "franquicias de alimentos" si no aplica todavía |
 | 08 | ¿Por qué hacer negocios con Xocolata? + Cobertura | Igual al actual pero con cobertura realista (FL/TX/NY/NJ, sin promesa vaga de expansión) |
 | 09 | Contraportada | Igual al actual |
+| 10 *(agregado 22 jul)* | Visión a futuro: insumos y materias primas | Categorías de insumos (harinas, lácteos, rellenos/aditivos, empaques), tono narrativo institucional, marcado como "visión a futuro". Se inserta después del panel 05 al maquetar. |
 
 ## Siguiente paso
 

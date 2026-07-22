@@ -1,12 +1,20 @@
-# Imágenes generadas del brochure (21 jul 2026)
+# Imágenes generadas del brochure (21-22 jul 2026)
 
-> Las 18 imágenes (9 por versión) ya están generadas con los prompts de [prompts-brochure-b2b.md](prompts-brochure-b2b.md) y [prompts-brochure-corporativo.md](prompts-brochure-corporativo.md). Archivos binarios — **no versionados en git**, siguiendo la convención del repo (ver [CLAUDE.md](../CLAUDE.md)).
+> Las 20 imágenes (10 por versión) ya están generadas con los prompts de [prompts-brochure-b2b.md](prompts-brochure-b2b.md) y [prompts-brochure-corporativo.md](prompts-brochure-corporativo.md). Archivos binarios — **no versionados en git**, siguiendo la convención del repo (ver [CLAUDE.md](../CLAUDE.md)).
 
 ## Dónde están
 
 `Material grafico/brochure-generado/`
-- `b2b/` — 9 paneles, prefijo `xoc-b2b-panel-01` a `xoc-b2b-panel-09`.
-- `corporativo/` — 9 paneles, prefijo `xoc-corp-panel-01` a `xoc-corp-panel-09`.
+- `b2b/` — 10 paneles, prefijo `xoc-b2b-panel-01` a `xoc-b2b-panel-10`.
+- `corporativo/` — 10 paneles, prefijo `xoc-corp-panel-01` a `xoc-corp-panel-10`.
+
+## Panel 10 — "Visión a futuro: insumos y materias primas" (agregado 22 jul)
+
+Tras revisión del equipo se detectó que la línea de insumos ([ver línea de insumos y materias primas](../02-producto/linea-insumos-materias-primas.md)) había quedado fuera de ambas versiones del brochure. Se agregó un panel 10 a cada una, generado en la misma conversación de ChatGPT que el resto de paneles de su versión (para mantener consistencia visual):
+- `xoc-b2b-panel-10-insumos.png` — tono directo/comercial, con cinta "VISIÓN A FUTURO" para no vender algo que no es oferta activa hoy. Se inserta después del panel 03 al maquetar.
+- `xoc-corp-panel-10-insumos.png` — tono narrativo/institucional, mismo grid de 4 categorías. Se inserta después del panel 05 al maquetar.
+
+Ambos salieron bien a la primera generación.
 
 También quedó una copia en `Descargas\Brushure\` (carpeta de descargas de Chrome) — la copia de trabajo en `Material grafico` es la canónica para el proyecto.
 
