@@ -42,6 +42,6 @@ Los .md originales subidos empiezan en "01" (empaques/gluten free, agregado 18 j
 ## Otros
 
 - El brochure/pitch deck menciona una **línea de insumos y materias primas** (B2B para panaderías/restaurantes/industria) como parte de "Nuestra Colección Premium" — esto no aparece mencionado en ningún documento operativo. Confirmar si es una línea real en desarrollo o solo un elemento de la presentación corporativa.
-- El brochure muestra 6 productos empacados con marca "Xocolata Pan y Café" (Pandebonos, Pan de Yuca, Almojábanas, Buñuelos, Hojaldres, Croissants) que no coinciden 1:1 con los 4 productos de la Fase 1 ("Empanada de Cambray, Pandebono en Rosca, Buñuelo Relleno, Almojábana Especial"). Confirmar cuál es el naming/portafolio vigente para materiales de cara al cliente.
+- ~~El brochure muestra 6 productos empacados con marca "Xocolata Pan y Café"... que no coinciden 1:1 con los 4 productos de la Fase 1.~~ **✅ Resuelto (21 jul):** el equipo confirmó que el empaque de marca "Xocolata Food Premium" sí coincide exactamente con los 4 productos de Fase 1 (Empanada de Cambray, Pandebono en Rosca, Almojábana Especial, Buñuelo Relleno de arequipe y queso). Ver [portafolio](02-producto/portafolio.md). También se confirmó que el relleno del Buñuelo es **arequipe y queso** (no guayaba, como se había registrado antes) — corregido en todos los documentos y en el sitio.
 
 Ver también [resumen ejecutivo](00-resumen-ejecutivo.md) y [personas y contactos](personas-y-contactos.md).

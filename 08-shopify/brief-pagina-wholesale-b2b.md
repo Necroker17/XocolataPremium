@@ -62,7 +62,7 @@ La ficha de rentabilidad sigue pendiente (ver [decisiones abiertas](../decisione
 ### Productos (los 4 de Fase 1)
 Para cada uno: nombre, descripción emotiva bilingüe, fotos (corte transversal como firma), presentaciones/formatos (retail y food service), tags, y **precio oculto o "cotizar"** en vez de precio público.
 - [ ] Empanada de Cambray (producto ancla)
-- [ ] Buñuelo Relleno (arequipe / guayaba)
+- [ ] Buñuelo Relleno (arequipe / queso)
 - [ ] Almojábana Especial
 - [ ] Pandebono en Rosca — **revisar el existente**: hoy está como "Pandebonos", 0 inventario, precio en COP retail y con tag "sin gluten" (⚠️ la certificación gluten free aún no está confirmada — ver [empaques y alérgenos](../02-producto/empaques-y-alergenos.md); quitar ese tag hasta validarlo).
 

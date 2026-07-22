@@ -17,7 +17,7 @@ Portafolio hiper-focalizado: 4 productos clave con alto margen, en lugar de dilu
 - **Canal objetivo:** panaderías, restaurantes colombianos, canales HORECA.
 
 ### Buñuelo Relleno
-- **Descripción:** innovación contemporánea sobre el clásico buñuelo tradicional colombiano. Rellenos premium: arequipe y guayaba.
+- **Descripción:** innovación contemporánea sobre el clásico buñuelo tradicional colombiano. Rellenos premium: arequipe y queso.
 - **Potencial comercial:** línea de mayor margen unitario (premium pricing).
 - **Canal objetivo:** Food Service premium, catering de eventos, distribuidores latinos.
 
@@ -32,7 +32,7 @@ El brochure/pitch a inversionistas menciona una segunda línea de **insumos y ma
 
 > Esta línea aún no aparece en ningún documento operativo/táctico (feria, costos, contactos). Ver [decisiones abiertas](../decisiones-abiertas.md) — confirmar si está realmente en desarrollo antes de comunicarla a clientes o inversionistas como oferta activa.
 
-El brochure de marca también muestra un empaque de 6 productos bajo "Xocolata Pan y Café" (Pandebonos, Pan de Yuca, Almojábanas, Buñuelos, Hojaldres, Croissants) — naming que no coincide exactamente con los 4 de la Fase 1. Ver nota en [decisiones abiertas](../decisiones-abiertas.md).
+El brochure de marca también muestra el empaque de producto bajo "Xocolata Food Premium" (Empanada de Cambray, Pandebono en Rosca, Almojábana Especial, Buñuelo Relleno de arequipe y queso) — el naming coincide exactamente con los 4 productos de la Fase 1. *(Nota resuelta — antes se había registrado como discrepancia; ver [decisiones abiertas](../decisiones-abiertas.md).)*
 
 ## Experiencia de producto (pilares transversales, los 4 productos)
 

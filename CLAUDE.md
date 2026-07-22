@@ -23,6 +23,7 @@ Empieza siempre por [00-resumen-ejecutivo.md](00-resumen-ejecutivo.md) para orie
 - **Fechas relativas → fechas absolutas.** Si una nota de reunión dice "el jueves" o "en 8 días", conviértelo a fecha absoluta antes de guardarlo, y anota la fecha de la reunión/fuente si es relevante para entender por qué esa fecha tiene sentido.
 - **No borres historial sin razón.** Si un plan cambia, actualiza el archivo pero considera si vale la pena dejar una nota breve de "esto reemplaza X decisión anterior" cuando el cambio sea significativo — el historial de git ya guarda las versiones previas, así que no hace falta duplicar texto tachado dentro del archivo.
 - **Español, tono directo.** Los documentos fuente están en español y así se mantiene este repo.
+- **Etiquetado de huevo y lácteos:** en cualquier lista de ingredientes, ficha técnica o empaque, siempre "Huevo Pasteurizado" / "Mantequilla Pasteurizada" / "Queso Pasteurizado" — nunca el ingrediente solo. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 
 ## Cuando llegue información nueva
 

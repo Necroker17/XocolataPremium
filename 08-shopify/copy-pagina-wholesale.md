@@ -50,8 +50,8 @@ Descripciones individuales (también se usan como descripción de producto en el
 - **EN:** The sweet-and-savory contrast no one else has in the U.S. right now. Flaky, crisp pastry that mass production simply can't copy. The anchor product that makes your counter unforgettable. Ready in 8 minutes.
 
 ### Buñuelo Relleno
-- **ES:** El buñuelo colombiano de siempre, reinventado con un corazón de arequipe o guayaba. Cuando se abre y el relleno se asoma, tus clientes sacan el teléfono. Tu línea de mayor margen y la que más se comparte.
-- **EN:** The classic Colombian buñuelo, reinvented with a molten heart of arequipe (dulce de leche) or guava. When it breaks open, your customers reach for their phones. Your highest-margin item — and the most shareable.
+- **ES:** El buñuelo colombiano de siempre, reinventado con un corazón de arequipe o queso. Cuando se abre y el relleno se asoma, tus clientes sacan el teléfono. Tu línea de mayor margen y la que más se comparte.
+- **EN:** The classic Colombian buñuelo, reinvented with a molten heart of arequipe (dulce de leche) or cheese. When it breaks open, your customers reach for their phones. Your highest-margin item — and the most shareable.
 
 ### Almojábana Especial
 - **ES:** El equilibrio perfecto entre maíz y queso maduro. Mantiene su humedad y su sabor incluso semanas después de congelada. El desayuno andino que completa tu oferta y hace que vuelvan cada mañana.

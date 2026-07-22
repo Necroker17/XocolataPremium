@@ -23,7 +23,7 @@ Esto no depende de nadie más — grábalo con calma. Además de servir para los
 **Shot list (repetir por cada uno de los 4 productos cuando aplique):**
 1. Manos sacando el producto del empaque Xocolata (packaging visible en cuadro).
 2. Si hay forma de calentarlo ahí mismo (horno/tostador): el momento de meterlo, y un timer acelerado o timelapse corto del horneado.
-3. Corte transversal — partir el producto a la mitad mostrando el relleno (clave en Buñuelo Relleno y Empanada de Cambray: que se vea el arequipe/guayaba/carne saliendo).
+3. Corte transversal — partir el producto a la mitad mostrando el relleno (clave en Buñuelo Relleno y Empanada de Cambray: que se vea el arequipe/queso/carne saliendo).
 4. Vapor/humo saliendo del producto recién horneado, luz cálida, fondo oscuro o neutro si es posible (mármol, madera — lo que haya a mano que se acerque al sistema visual de marca).
 5. Los 4 productos juntos en una sola toma, ordenados, como para una foto de portada.
 
@@ -82,7 +82,7 @@ Formato "mini-serie", uno por producto. Usar con 1-2 personas dispuestas a queda
 > "Does this remind you of anything from your own country?"
 > "Would you buy this at a supermarket if you saw it in the U.S.?"
 
-**Texto en pantalla sugerido:** "Capítulo 2: ¿arequipe o guayaba? — la sorpresa del Buñuelo Relleno."
+**Texto en pantalla sugerido:** "Capítulo 2: ¿arequipe o queso? — la sorpresa del Buñuelo Relleno."
 
 ### Capítulo 3 — Pan de Bono en Rosquilla
 

@@ -37,7 +37,7 @@ A la derecha o al pie, una tarjeta destacada en fondo vinotinto sólido con text
 Panel horizontal 1920x1080, fondo crema. Título "Colección Xocolata — Fase 1" en Playfair Display vinotinto. Grid de 4 tarjetas iguales, cada una con: fotografía de producto individual en corte transversal sobre mármol oscuro (marco dorado fino), nombre del producto en Playfair Display vinotinto, y una línea de diferenciador en Source Sans 3:
 1. **Empanada de Cambray** — "Contraste dulce-salado auténtico. El producto que su competencia no puede copiar."
 2. **Pandebono en Rosca** — "El ícono del queso colombiano, formato premium. Mayor frecuencia de recompra."
-3. **Buñuelo Relleno** — "Relleno de arequipe o guayaba. Línea de mayor margen."
+3. **Buñuelo Relleno** — "Relleno de arequipe o queso. Línea de mayor margen."
 4. **Almojábana Especial** — "Balance perfecto de maíz y queso maduro. Complemento indispensable."
 Pie de página centrado en Source Sans 3, vinotinto: "Un portafolio hiper-focalizado en alta rotación — no diluimos la calidad en catálogos extensos."
 

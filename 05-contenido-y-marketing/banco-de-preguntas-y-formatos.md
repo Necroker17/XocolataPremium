@@ -80,7 +80,7 @@ Estas son las que realmente sirven para el material de venta B2B, porque validan
 Formato "Capítulo X" para dar continuidad entre publicaciones y generar hábito de seguimiento:
 
 - **Capítulo 1** — Empanada de Cambray: "Hoy les queremos mostrar la reacción probando la Empanada de Cambray." Misión: internacionalizarla. Pregunta ancla: calificación 1-10.
-- **Capítulo 2** — Buñuelo Relleno: sorpresa del relleno (arequipe/guayaba) — usar la pregunta "guess what's inside before you bite it".
+- **Capítulo 2** — Buñuelo Relleno: sorpresa del relleno (arequipe/queso) — usar la pregunta "guess what's inside before you bite it".
 - **Capítulo 3** — Pan de Bono en Rosquilla: comparación con quesos/panes de su país de origen.
 - **Capítulo 4** — Almojábana Especial: cierre de la serie con el reto de ranking de los 4 productos juntos.
 
