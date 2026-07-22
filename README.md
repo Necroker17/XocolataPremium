@@ -9,7 +9,7 @@ Base de conocimiento organizada del proyecto **Xocolata Food Premium**: negocio,
 | Carpeta | Contenido |
 |---|---|
 | [01-marca](01-marca/) | Identidad, misión/visión/valores, posicionamiento, tono y sistema visual |
-| [02-producto](02-producto/) | Portafolio de productos (Fase 1 + línea futura) |
+| [02-producto](02-producto/) | Portafolio de productos (Fase 1) + línea de insumos y materias primas a largo plazo |
 | [03-operacion](03-operacion/) | Modelo asset-light, maquila, permisos, costos, precios, logística |
 | [04-estrategia-b2b](04-estrategia-b2b/) | Plan B2B y feria de Miami, OKRs/indicadores, guía comercial y plantillas |
 | [05-contenido-y-marketing](05-contenido-y-marketing/) | Estrategia de contenido/ads, degustaciones y producción |

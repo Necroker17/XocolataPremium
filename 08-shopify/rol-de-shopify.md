@@ -44,6 +44,6 @@ La tienda al consumidor final pasa a segundo plano; la landing B2B será la port
 
 ## A futuro
 
-Una segunda línea de materia prima/insumos, cuando se valide cómo sacar su FDA — y a futuro una página de ventas propia gestionada por Gustavo/Valentina por comisión (fase post-Bosanet). Ver nota sobre esta línea en [decisiones abiertas](../decisiones-abiertas.md).
+La [línea de insumos y materias primas](../02-producto/linea-insumos-materias-primas.md) (confirmada por Marlen como plan a largo plazo), cuando se valide cómo sacar su FDA específico — y a futuro una página de ventas propia gestionada por Gustavo/Valentina por comisión (fase post-Bosanet).
 
 Ver también [plan B2B y feria de Miami](../04-estrategia-b2b/plan-b2b-feria-miami.md) y [estrategia de contenido y ads](../05-contenido-y-marketing/estrategia-contenido-ads.md).

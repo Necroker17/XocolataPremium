@@ -24,7 +24,7 @@ Decisión del [brief](brief-pagina-wholesale-b2b.md): mientras la LLC esté en t
 - [ ] **Número de WhatsApp:** los CTA de la landing hoy apuntan a `mailto:comercial@xocolatafoodpremium.com`. Cuando se confirme el número, reemplazar por `https://wa.me/{{WHATSAPP}}` (hay un comentario `TODO` en el HTML marcando los dos puntos). Ver [decisiones abiertas](../decisiones-abiertas.md).
 - [ ] **Fotos de producto:** los productos y las tarjetas de la landing no tienen foto real todavía (placeholders con el nombre). Falta la sesión de fotos / usar el b-roll de la [grabación del 23 jul](../05-contenido-y-marketing/guiones-grabacion-23-jul.md).
 - [ ] **Traducción EN a nivel de producto:** las descripciones de producto están en español (la landing sí es bilingüe). Registrar traducciones EN de los 4 productos vía *Translate & Adapt* cuando se activen (Fase B).
-- [ ] **Verificar render en el tema:** la página `/pages/mayorista` usa `<style>` propio scopeado en `.xoc` y un toggle con `:has()`. Conviene abrirla en el navegador para confirmar que el tema no recorta el `<style>`; si lo recorta, se monta como sección de tema (Fase B) o se deja el Artifact como referencia de diseño.
+- [x] **Verificar render en el tema:** confirmado en navegador — `/pages/mayorista` renderiza bien, el `<style>` no se recorta, sin errores de consola.
 - [ ] **Moneda/mercado USD:** hoy la tienda muestra COP. Para el visitante de EE. UU. conviene activar visualización en USD (mercado "Estados Unidos") — sin activar checkout con tarjeta mientras no exista la LLC.
 - [ ] **Selector de idioma del tema:** la landing trae su propio toggle interno, pero el resto de la tienda necesita el selector ES/EN del tema activado en la configuración del tema.
 
@@ -54,6 +54,17 @@ El usuario revisó un tema de pago ($270 USD, orientado a suplementos/wellness) 
 - **Badges de mayorista** ("Mín. 1 caja · Precio por volumen") en cada tarjeta de producto — inspirado en el patrón de precios por cantidad de Zeal, adaptado a que aún no publicamos precios.
 
 **El código a medida está versionado** en [theme-custom/](theme-custom/) (`xoc-home.liquid`, `index.json`). El tema completo vive local en `../Shopify/xocolata-theme/` y en Shopify como tema de desarrollo.
+
+### Correcciones y contenido de caja (21 jul, misma sesión)
+
+- **Relleno del Buñuelo corregido en todo el sitio:** "arequipe o queso" (no guayaba) — actualizado en el tema en vivo (`xoc-home.liquid`), la descripción del producto en Shopify, y la página `/pages/mayorista`.
+- **Contenido de la caja agregado a los 4 productos**, en la home, en `/pages/mayorista` y en la descripción de cada producto en Shopify (presentación **retail**, la food service difiere y se ofrece al cotizar):
+  - Empanada de Cambray: 4 paquetes de 20 (80 empanadas, 60 g c/u).
+  - Buñuelo Relleno: 20 bolsas de 6 (120 buñuelos).
+  - Almojábana Especial: 20 bolsas de 10 (200 almojábanas).
+  - Pandebono en Rosca: 20 bolsas de 6 (120 pandebonos).
+  - Fuente de los datos: [costos, precios y logística](../03-operacion/costos-precios-logistica.md).
+- La página `/pages/mayorista` (versión previa al home a medida) seguía con contenido desactualizado — se corrigió también para que no quede una versión vieja del sitio dando vueltas.
 
 ### Pendiente del tema
 - [ ] **Publicarlo** (tu decisión) — desde Shopify Admin › Temas › "Xocolata Premium (desarrollo)" › Publicar.

@@ -26,11 +26,11 @@ Portafolio hiper-focalizado: 4 productos clave con alto margen, en lugar de dilu
 - **Potencial comercial:** complemento estratégico indispensable para distribuidores que quieren ofrecer la "línea completa" de desayunos andinos.
 - **Canal objetivo:** supermercados latinos, canal Food Service general.
 
-## Línea futura (visión, no confirmada en el plan operativo)
+## Línea futura — insumos y materias primas (confirmada como plan a largo plazo)
 
-El brochure/pitch a inversionistas menciona una segunda línea de **insumos y materias primas** para la industria (panaderías, pastelerías, restaurantes, distribuidores): harinas especializadas, mezclas para panadería, quesos e ingredientes lácteos, grasas y margarinas industriales, azúcares y endulzantes, chocolates/coberturas/cacao, arequipes/mermeladas/rellenos premium, levaduras y mejoradores, conservantes y aditivos, empaques y suministros de producción.
+Segunda línea de negocio, complementaria a los 4 productos terminados: **insumos y materias primas B2B** para la industria (panaderías, pastelerías, industrias de alimentos, hoteles, restaurantes, distribuidores). **Confirmada por Marlen (21 jul 2026)** como parte real del plan a largo plazo — no es solo un elemento del material a inversionistas, lo ha mencionado repetidamente en las conversaciones del proyecto.
 
-> Esta línea aún no aparece en ningún documento operativo/táctico (feria, costos, contactos). Ver [decisiones abiertas](../decisiones-abiertas.md) — confirmar si está realmente en desarrollo antes de comunicarla a clientes o inversionistas como oferta activa.
+Detalle completo (categorías de insumos, promesa de marca, dependencias como el registro FDA) en [línea de insumos y materias primas](linea-insumos-materias-primas.md).
 
 El brochure de marca también muestra el empaque de producto bajo "Xocolata Food Premium" (Empanada de Cambray, Pandebono en Rosca, Almojábana Especial, Buñuelo Relleno de arequipe y queso) — el naming coincide exactamente con los 4 productos de la Fase 1. *(Nota resuelta — antes se había registrado como discrepancia; ver [decisiones abiertas](../decisiones-abiertas.md).)*
 

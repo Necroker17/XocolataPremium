@@ -48,18 +48,28 @@ Descripciones individuales (también se usan como descripción de producto en el
 ### Empanada de Cambray
 - **ES:** El contraste dulce-salado que hoy nadie más tiene en Estados Unidos. Masa hojaldrada, crujiente, imposible de replicar en producción industrial. El producto ancla que hace que tu vitrina sea inolvidable. Lista en 8 minutos de horno.
 - **EN:** The sweet-and-savory contrast no one else has in the U.S. right now. Flaky, crisp pastry that mass production simply can't copy. The anchor product that makes your counter unforgettable. Ready in 8 minutes.
+- **Presentación (ES):** 📦 1 caja = 4 paquetes de 20 (80 empanadas), 60 g c/u.
+- **Case size (EN):** 📦 1 case = 4 packs of 20 (80 empanadas), 60 g each.
 
 ### Buñuelo Relleno
 - **ES:** El buñuelo colombiano de siempre, reinventado con un corazón de arequipe o queso. Cuando se abre y el relleno se asoma, tus clientes sacan el teléfono. Tu línea de mayor margen y la que más se comparte.
 - **EN:** The classic Colombian buñuelo, reinvented with a molten heart of arequipe (dulce de leche) or cheese. When it breaks open, your customers reach for their phones. Your highest-margin item — and the most shareable.
+- **Presentación (ES):** 📦 1 caja = 20 bolsas de 6 unidades (120 buñuelos).
+- **Case size (EN):** 📦 1 case = 20 bags of 6 units (120 buñuelos).
 
 ### Almojábana Especial
 - **ES:** El equilibrio perfecto entre maíz y queso maduro. Mantiene su humedad y su sabor incluso semanas después de congelada. El desayuno andino que completa tu oferta y hace que vuelvan cada mañana.
 - **EN:** The perfect balance of corn and aged cheese. It keeps its moisture and flavor weeks after freezing. The Andean breakfast staple that rounds out your lineup and brings them back every morning.
+- **Presentación (ES):** 📦 1 caja = 20 bolsas de 10 unidades (200 almojábanas).
+- **Case size (EN):** 📦 1 case = 20 bags of 10 units (200 almojábanas).
 
 ### Pandebono en Rosca
 - **ES:** El ícono del queso colombiano, en un formato premium que eleva su valor a la vista. Esponjoso por dentro, dorado por fuera, garantizado en cada horneada. El producto gancho que genera la mayor recompra de todo el portafolio.
 - **EN:** The icon of Colombian cheese bread, in a premium ring format that lifts its perceived value at a glance. Airy inside, golden outside, consistent in every bake. The hook product that drives the highest repeat orders of the whole lineup.
+- **Presentación (ES):** 📦 1 caja = 20 bolsas de 6 unidades (120 pandebonos).
+- **Case size (EN):** 📦 1 case = 20 bags of 6 units (120 pandebonos).
+
+> Todas las cantidades son presentación **retail**. La presentación food service (mayor volumen por caja) tiene otra configuración — ver [costos, precios y logística](../03-operacion/costos-precios-logistica.md) — y se ofrece al cotizar.
 
 - Nota de sección (ES): *Precio mayorista bajo cotización — escríbenos y armamos una propuesta para tu negocio.*
 - Section note (EN): *Wholesale pricing on request — message us and we'll build a proposal for your business.*

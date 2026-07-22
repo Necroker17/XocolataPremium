@@ -22,7 +22,7 @@ La presentación corporativa a inversionistas describe una visión mucho más am
 | | Deck de inversionistas | Plan operativo (docs 05-07 + HTML) |
 |---|---|---|
 | Alcance de mercado | TAM $24B, SAM $850M, SOM $15M (año 3) | 40 negocios objetivo en Miami-Dade/Broward/Doral |
-| Portafolio | 4 productos + línea futura de insumos/materias primas (harinas, quesos, chocolates) + 6 productos de panadería en el brochure (pandebonos, pan de yuca, buñuelos, hojaldres, croissants) | 4 productos (empanada, pandebono, buñuelo, almojábana), foco total en la Cambray |
+| Portafolio | 4 productos de Fase 1 + línea de insumos/materias primas a largo plazo (confirmada por Marlen — ver [línea de insumos](02-producto/linea-insumos-materias-primas.md)) | 4 productos (empanada, pandebono, buñuelo, almojábana), foco total en la Cambray para el ciclo actual |
 | Capital | Ronda de $1.5M USD (40% apertura comercial, 30% capital de trabajo, 20% marketing B2B, 10% legal) | No se menciona ronda de inversión; el envío inicial (~$400M COP) se paga con recursos propios/Marlen |
 | Proyección financiera | $2.5M → $6.8M → $14.2M USD en 3 años, margen 42%→63% | Sin proyección financiera formal en los documentos tácticos |
 
@@ -41,7 +41,7 @@ Los .md originales subidos empiezan en "01" (empaques/gluten free, agregado 18 j
 
 ## Otros
 
-- El brochure/pitch deck menciona una **línea de insumos y materias primas** (B2B para panaderías/restaurantes/industria) como parte de "Nuestra Colección Premium" — esto no aparece mencionado en ningún documento operativo. Confirmar si es una línea real en desarrollo o solo un elemento de la presentación corporativa.
+- ~~El brochure/pitch deck menciona una línea de insumos y materias primas... esto no aparece mencionado en ningún documento operativo. Confirmar si es una línea real en desarrollo o solo un elemento de la presentación corporativa.~~ **✅ Resuelto (21 jul):** Marlen confirmó directamente que **sí es una línea real, parte del plan a largo plazo** de Xocolata — la ha mencionado repetidamente en las conversaciones del proyecto, no es solo narrativa de inversionistas. No tiene fecha de lanzamiento ni plan táctico propio todavía (depende de validar el registro FDA específico para insumos). Detalle completo en [línea de insumos y materias primas](02-producto/linea-insumos-materias-primas.md).
 - ~~El brochure muestra 6 productos empacados con marca "Xocolata Pan y Café"... que no coinciden 1:1 con los 4 productos de la Fase 1.~~ **✅ Resuelto (21 jul):** el equipo confirmó que el empaque de marca "Xocolata Food Premium" sí coincide exactamente con los 4 productos de Fase 1 (Empanada de Cambray, Pandebono en Rosca, Almojábana Especial, Buñuelo Relleno de arequipe y queso). Ver [portafolio](02-producto/portafolio.md). También se confirmó que el relleno del Buñuelo es **arequipe y queso** (no guayaba, como se había registrado antes) — corregido en todos los documentos y en el sitio.
 
 Ver también [resumen ejecutivo](00-resumen-ejecutivo.md) y [personas y contactos](personas-y-contactos.md).
