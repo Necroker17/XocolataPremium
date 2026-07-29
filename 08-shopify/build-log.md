@@ -140,6 +140,15 @@ Reportado como "sí funciona pero se devuelve solo" — apenas soltaba el gesto 
 
 **Corregido:** se cambió a `scroll-snap-type: x proximity`, que solo alinea a la tarjeta más cercana cuando el scroll ya está naturalmente cerca de un punto de snap, sin "pelear" contra el gesto ni forzar un regreso. La navegación por flechas (que usa `scrollIntoView`, no depende del snap-type) no se vio afectada.
 
+### Sexto bug real confirmado y corregido (22 jul): clics rápidos en las flechas terminaban de vuelta en Empanada
+El fix del snap-type resolvió el trackpad, pero el usuario reportó que con **clics rápidos** en las flechas sí llegaba hasta Pandebono, pero terminaba devolviéndose a Empanada. Causa: cada clic interrumpía la animación de scroll del clic anterior y la redirigía a una nueva tarjeta; para saber cuándo esa animación "terminaba" se usaba un temporizador fijo de 500ms — con varios clics seguidos redirigiendo la animación una y otra vez, el temporizador del último clic podía disparar *antes* de que el scroll realmente hubiera llegado a su destino final, leyendo una posición intermedia y descuadrando todo.
+
+**Corregido con dos cambios:**
+1. Mientras una navegación está en curso, un clic nuevo en las flechas **se ignora** (en vez de redirigir la animación a mitad de camino) — evita que se acumulen animaciones superpuestas.
+2. Se reemplazó el temporizador fijo por el evento nativo `scrollend`, que el navegador dispara exactamente cuando el scroll termina de verdad (con respaldo por temporizador solo para navegadores que no lo soporten).
+
+Probado con 4 clics rápidos seguidos en "siguiente": llegó a Pandebono y se quedó ahí sin moverse tras 3 segundos de espera.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
