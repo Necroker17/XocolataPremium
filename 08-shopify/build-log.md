@@ -113,6 +113,16 @@ El usuario reportó "el horizontal no está funcionando" — el carrusel de la c
 
 Nota aparte: las flechas inicialmente se escondían por debajo de 700px de ancho — ese umbral resultó demasiado agresivo (ventanas de escritorio normales, sin maximizar, caen ahí) y las dejaba invisibles justo cuando más se necesitaban. Se quitó ese límite; ahora las flechas se ven en cualquier tamaño de ventana, solo se reducen un poco en pantallas muy angostas (<480px).
 
+### Se retiró la landing duplicada `/pages/mayorista` (22 jul)
+El usuario reportó que el carrusel "no funcionaba" — la causa real era que estaba viendo **`/pages/mayorista`**, la landing estática original (`landing-wholesale.html`), completamente separada de `xoc-home.liquid` y sin nada del trabajo de hoy (carrusel, ticker sticky, FAQ, animaciones). Esa página además tenía su propio bug visual (texto del hero superpuesto/fantasma). Confirmado con el usuario: **la página de inicio (`/`, `xoc-home.liquid`) queda como la landing oficial.**
+
+Se retiró `/pages/mayorista`:
+- Se creó un URL redirect (`/pages/mayorista` → `/`) vía `urlRedirectCreate`.
+- Como Shopify no aplica redirects sobre páginas que todavía existen, se eliminó la página (`pageDelete`, id `gid://shopify/Page/163783278880`) para que el redirect tomara efecto. Verificado: `/pages/mayorista` ahora carga la portada.
+- `landing-wholesale.html` (el archivo fuente) queda en el repo como referencia histórica de la primera versión de copy, pero ya no está publicado en la tienda.
+
+**Lección para futuras sesiones:** de ahora en adelante, cualquier verificación en Shopify debe hacerse contra `/` (la portada), no contra `/pages/mayorista` — esa ruta ya no existe como página independiente.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
