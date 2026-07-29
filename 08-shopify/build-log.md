@@ -92,12 +92,18 @@ Se usó `shopify theme dev --theme 190111580448` para iterar en vivo (el tema li
 
 Ver la auditoría completa de patrones de Ryze Superfoods y el plan de adaptación en [propuesta de arquitectura inspirada en Ryze](propuesta-arquitectura-inspirada-ryze.md).
 
-### Pendiente de esta ronda
-- [ ] Ticker sticky (hoy solo vive en el hero).
-- [ ] Botón flotante "Hablemos" persistente.
-- [ ] Fila de atributos con ícono en "Cómo funciona".
-- [ ] Badge de garantía (Triple Sello) repetible cerca del CTA final.
-- [ ] FAQ (contenido disperso en otros documentos, falta consolidar).
-- [ ] Verificar en el navegador real del usuario (Chrome) que el fix del footer/anuncio se ve bien — la sesión anterior reportó partes "que no se veían bien" sin especificar cuáles; el footer y la barra de anuncio eran candidatos fuertes y ya se corrigieron, pero vale la pena una segunda confirmación.
+### Primera tanda de "quick wins" de la propuesta Ryze (22 jul) — completa
+Los 5 quick wins de la [propuesta de arquitectura](propuesta-arquitectura-inspirada-ryze.md) ya están construidos y probados en el navegador:
+- [x] **Ticker sticky** — queda fijo justo debajo del header al hacer scroll (altura del header medida en tiempo real por JS, vía `--xh-header-h`, para no depender de un valor fijo que se desactualice).
+- [x] **Botón flotante "Hablemos"** — aparece con `IntersectionObserver` en cuanto el visitante sale del hero, sigue el scroll el resto de la página.
+- [x] **Fila de atributos con ícono** en "Cómo funciona" — -18°C · 8 MIN HORNO · HUEVO PASTEURIZADO · PRODUCTO COLOMBIANO, íconos de línea dorada.
+- [x] **Badge de Garantía Triple Sello** repetible — versión compacta (ícono de escudo + una línea) agregada junto al CTA final.
+- [x] **Sección FAQ** con acordeón nativo (`<details>/<summary>`, sin JS extra) — 6 preguntas reales de comprador B2B (mínimos, cobertura, personal, garantía, precio, cumplimiento FDA). Contenido grounded en lo que ya existe en otros documentos — sin inventar datos como plazos de vencimiento o certificaciones no confirmadas (HACCP sigue pendiente, no se reclama como lista).
+
+### Pendiente (siguiente tanda de la propuesta Ryze)
+- [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
+- [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
+- [ ] Founder story con foto real de Marlen (espera b-roll).
+- [ ] Prueba social / testimonios (espera clientes del piloto post-feria).
 
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
