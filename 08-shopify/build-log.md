@@ -149,6 +149,13 @@ El fix del snap-type resolvió el trackpad, pero el usuario reportó que con **c
 
 Probado con 4 clics rápidos seguidos en "siguiente": llegó a Pandebono y se quedó ahí sin moverse tras 3 segundos de espera.
 
+### Simplificación radical del carrusel (22 jul, tarde) — se acabaron los parches
+Después de varias rondas de arreglos cada vez más elaborados (índice guardado, bandera de "animando", `scrollend`, debounce de clics) que seguían fallando de formas distintas, se rehízo la lógica desde cero de forma mucho más simple: **se eliminó por completo la variable que guardaba "en qué tarjeta estamos".** Ese valor guardado en memoria era la raíz de todos los bugs anteriores — se desincronizaba del scroll real de mil formas distintas según el navegador y la velocidad de los clics.
+
+Ahora cada clic pregunta directo al DOM "¿cuál tarjeta está más cerca del scroll actual?" (comparando posiciones reales, sin memoria) y navega a la vecina desde ahí. No hay bandera de "está animando", no hay temporizador, no hay estado que se pueda desincronizar — porque no hay estado. También se quitó la deshabilitación de las flechas en los extremos (ya no hacía falta): un clic de más en el límite simplemente no mueve nada, sin necesidad de calcular cuándo deshabilitar.
+
+Probado: 3 clics con pausas hasta Pandebono (se queda quieto 3+ segundos sin tocar nada), y un clic extra ya en el límite (no rompe nada, se queda igual).
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
