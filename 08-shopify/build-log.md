@@ -163,6 +163,11 @@ Después de la simplificación, el usuario reportó que el carrusel **dejó de m
 
 **Nota para diagnósticos futuros:** si algo vuelve a "no moverse del todo" (a diferencia de "se mueve pero mal"), revisar primero si algún script externo (GSAP u otro) está fallando en cargar y cortando el resto del archivo silenciosamente.
 
+### Bug real de fondo encontrado y corregido (22 jul, noche): las flechas apenas movían un poco en escritorio
+Con la caché ya descartada, el usuario precisó el síntoma: en escritorio, cada clic en una flecha solo corría el carrusel "un poquito" en vez de una tarjeta completa — en celular sí funcionaba bien. Causa raíz: la función que calcula "cuál tarjeta está más cerca" medía la posición con `card.offsetLeft`, que en JavaScript es relativo al ancestro más cercano con `position` distinto de `static` (en este caso `.xh-carousel-wrap`, que lo tiene por los botones de flecha) — **no** relativo al contenido con scroll del carrusel mismo. Como `.xh-carousel-wrap` tiene un margen negativo que depende del ancho de la ventana (el truco de pantalla completa), ese desfase crecía con el ancho de pantalla: pequeño e imperceptible en celular, grande en escritorio — de ahí que solo se notara ahí.
+
+**Corregido:** se reemplazó `card.offsetLeft` por un cálculo con `getBoundingClientRect()` (posición del borde de la tarjeta menos la posición del borde del carrusel, más el scroll actual) — mide la posición real dentro del contenido con scroll, sin depender de qué elemento ancestro tenga `position: relative`. Probado en 1280px de ancho: cada clic ahora mueve una tarjeta completa, ida y vuelta.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
