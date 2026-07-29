@@ -63,7 +63,7 @@ Mantiene el orden narrativo ya validado en el [brief de la página](brief-pagina
 | 4 | **Cómo funciona** | 3 pasos con número | Agregar fila de atributos con ícono (estilo Ryze: 48mg cafeína, sin gluten...) → nuestra versión: **-18°C · 8 MIN · HUEVO PASTEURIZADO · PRODUCTO COLOMBIANO** | 🔧 Quick win |
 | 5 | **Triple Sello** | 3 bloques de texto | Convertir en badge visual repetible (como el "30-Day Guarantee" de Ryze), que se pueda reusar cerca del CTA final también | 🔧 Quick win |
 | 6 | **Por qué ser aliado** | Grid de 4 textos | Ya tiene la forma correcta (grid de atributos) | ✅ Sin cambios grandes |
-| 7 | **Insumos y materias primas** *(nueva, ya existe en brochure)* | Panel con íconos de línea | Rehacer como **grid de ingredientes con foto real** (harina, queso, relleno) — mismo patrón que el "6-Mushroom Blend" de Ryze | 🖼️ Requiere fotos de insumos reales |
+| 7 | **Insumos y materias primas** *(nueva, ya existe en brochure)* | Panel con íconos de línea | Rehacer como **grid de ingredientes con foto real** (harina, queso, relleno) — mismo patrón que el "6-Mushroom Blend" de Ryze | ✅ Construido (29 jul) |
 | 8 | **Quiénes somos / founder story** | No existe todavía en el home | Bloque con foto real de Marlen + texto personal de "por qué lo hicimos" | 🖼️ Requiere foto (pendiente del b-roll) |
 | 9 | **Prueba social** | No existe todavía (sin clientes) | Carrusel de testimonios con foto + "Aliado verificado" — dejar la sección **construida pero vacía/oculta** hasta tener el primer testimonio real post-feria | ⏳ Espera datos reales |
 | 10 | **Countdown a la feria** | Ya construido, con JS vanilla | Ya tiene la ejecución correcta | ✅ Sin cambios |
@@ -107,8 +107,8 @@ Vale la pena construir la arquitectura de la sección 4 pensando en que, si alg�
 5. FAQ (contenido ya existe disperso, solo falta consolidar y maquetar)
 
 **Con las fotos que ya tenemos de branding:**
-6. Foto anotada en la sección de nostalgia
-7. Grid de insumos con foto real de ingredientes
+6. Foto anotada en la sección de nostalgia — ✅ hecho
+7. Grid de insumos con foto real de ingredientes — ✅ hecho (29 jul)
 
 **Esperando datos/assets pendientes:**
 8. Founder story (foto real de Marlen — b-roll)

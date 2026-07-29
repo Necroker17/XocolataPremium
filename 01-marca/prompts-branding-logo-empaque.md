@@ -91,4 +91,28 @@ Mismo empaque doypack, misma estructura exacta que las piezas anteriores (incluy
 
 ---
 
+---
+
+## Fotos de ingredientes — grid de insumos (patrón Ryze, agregado 22 jul)
+
+> Para el panel "Nuestra próxima etapa: insumos y materias primas" en el sitio y el brochure — mismo patrón que el "6-Mushroom Blend" de Ryze: foto real del ingrediente + beneficio corto. Mismo sistema visual que el resto de fotografía de marca (mármol oscuro veteado, luz cálida direccional, vapor sutil donde aplique).
+
+### 9 — Harinas y mezclas especializadas
+
+**Prompt:** Fotografía de producto premium, formato cuadrado. Un montón de harina de trigo blanca fina con textura visible, parcialmente en un saco de tela cruda/arpillera abierto, sobre mármol oscuro veteado. Luz cálida direccional lateral, poca profundidad de campo, algunas partículas de harina suspendidas en el aire. Fondo oscuro desenfocado. Sin texto, sin logo — solo el ingrediente.
+
+### 10 — Quesos, lácteos y grasas industriales
+
+**Prompt:** Fotografía de producto premium, formato cuadrado. Una cuña de queso costeño colombiano blanco, textura firme y ligeramente húmeda, junto a un bloque de mantequilla dorada, sobre mármol oscuro veteado. Luz cálida direccional, gotas de humedad sutiles en el queso. Fondo oscuro desenfocado. Sin texto, sin logo.
+
+### 11 — Rellenos, coberturas y aditivos
+
+**Prompt:** Fotografía de producto premium, formato cuadrado. Arequipe (dulce de leche colombiano) dorado y brillante, cayendo en un hilo espeso desde una cuchara de madera hacia un cuenco oscuro, sobre mármol oscuro veteado. Luz cálida direccional que resalta el brillo del arequipe. Fondo oscuro desenfocado. Sin texto, sin logo.
+
+### 12 — Empaques y soporte de producción
+
+**Prompt:** Fotografía de producto premium, formato cuadrado. Rollos de empaque flexible de grado alimenticio (film transparente y kraft) apilados en ángulo, junto a una bolsa doypack vacía sin imprimir, sobre mármol oscuro veteado. Luz cálida direccional, acabados mate y brillante contrastando. Fondo oscuro desenfocado. Sin texto, sin logo.
+
+---
+
 Ver también [brief-branding-profesional.md](brief-branding-profesional.md) e [identidad y posicionamiento](identidad-y-posicionamiento.md).

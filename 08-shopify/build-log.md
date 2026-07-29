@@ -199,9 +199,10 @@ Probado ida y vuelta con clics programáticos + medición directa: 0→1→2→3
 ### Segunda tanda de la propuesta Ryze: foto anotada con callouts (22 jul, madrugada)
 Construida la sección "La nostalgia como oportunidad" con el patrón de Ryze — layout de dos columnas (texto + foto), con la foto del Pandebono en Rosca ya existente en el tema y 3 callouts anotados (punto dorado + etiqueta) señalando: corteza dorada de queso, textura esponjosa por dentro, y "sabe a recién horneado aunque estaba congelado". No requirió fotos nuevas — reutiliza `xoc-pandebono.jpg`, ya cargado en el tema. En mobile la foto se apila arriba del texto.
 
+### Tercera tanda de la propuesta Ryze: grid de insumos con fotos reales (29 jul)
+Generadas las 4 fotos de ingredientes en ChatGPT (harinas, lácteos, arequipe, empaques — ver [imágenes de branding generadas](../01-marca/imagenes-branding-generadas.md#fotos-de-ingredientes--grid-de-insumos-29-jul-2026)), convertidas a JPG optimizado (~100-240 KB) y agregadas como nueva sección "Nuestra próxima etapa" entre "Por qué ser aliado" y "FAQ" en `xoc-home.liquid`: grid de 4 tarjetas (foto + título + beneficio corto), reusando las clases `.xh-grid`/`.xh-card` que ya existían en el CSS pero habían quedado sin usar tras el rediseño del carrusel. Incluye una nota explícita de que la línea de insumos es visión a largo plazo, no oferta activa — consistente con [línea de insumos y materias primas](../02-producto/linea-insumos-materias-primas.md). Verificado en desktop y mobile (apila a 1 columna).
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
-- [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
-- [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Prueba social / testimonios (espera clientes del piloto post-feria).
 

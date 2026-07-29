@@ -46,6 +46,19 @@ Tras revisar los 4 frentes, el equipo pidió 2 rondas de correcciones (ver [brie
 
 **Si se retoma esta ronda**, los prompts ya están listos en [prompts-branding-logo-empaque.md](prompts-branding-logo-empaque.md) (sección "Corrección v3") — usar siempre el color `#7A1833` (sombras `#5C1226`, luces `#A82B4A`) explícito en el prompt, confirmado como el tono correcto tras medir la referencia original.
 
+## Fotos de ingredientes / grid de insumos (29 jul 2026)
+
+Las 4 fotos del patrón "grid de insumos" (ver [propuesta de arquitectura inspirada en Ryze](../08-shopify/propuesta-arquitectura-inspirada-ryze.md#4-arquitectura-de-secciones-propuesta), sección 7) ya están generadas con los prompts en [prompts-branding-logo-empaque.md](prompts-branding-logo-empaque.md#fotos-de-ingredientes--grid-de-insumos-patrón-ryze-agregado-22-jul), misma conversación de ChatGPT ("Xocolata Brand") para mantener consistencia visual con el resto del branding.
+
+| # | Archivo (`Material grafico/branding-generado/`) | Qué es |
+|---|---|---|
+| 9 | `xoc-brand-09-insumo-harinas.png` | Harina de trigo derramándose de un saco de arpillera |
+| 10 | `xoc-brand-10-insumo-lacteos.png` | Cuña de queso costeño + bloque de mantequilla |
+| 11 | `xoc-brand-11-insumo-rellenos.png` | Arequipe cayendo en hilo desde cuchara de madera |
+| 12 | `xoc-brand-12-insumo-empaques.png` | Rollos de film/kraft + bolsa doypack sin imprimir |
+
+Las 4 salieron correctas a la primera generación, sin necesidad de correcciones. Se convirtieron a JPG optimizado (~100-240 KB, 1000×1000) y se copiaron a `xocolata-theme/assets/xoc-insumo-{harinas,lacteos,rellenos,empaques}.jpg` para usarlas en la nueva sección "Nuestra próxima etapa" del home (`sections/xoc-home.liquid`) — grid de 4 tarjetas foto+beneficio corto, mismo patrón que el "6-Mushroom Blend" de Ryze, con nota explícita de que la línea de insumos es visión a largo plazo y no oferta activa hoy (ver [línea de insumos y materias primas](../02-producto/linea-insumos-materias-primas.md)).
+
 ## Pendiente (decisión del equipo)
 
 - [ ] **Elegir el motivo final** entre vapor dorado (opción 3, recomendada) y laurel (opción 4) — los 4 empaques ya generados usan vapor dorado; si se prefiere laurel, se regeneran los 4 frentes con ese motivo (cambio de una línea en cada prompt).
