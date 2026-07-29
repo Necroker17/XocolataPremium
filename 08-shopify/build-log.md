@@ -123,6 +123,13 @@ Se retiró `/pages/mayorista`:
 
 **Lección para futuras sesiones:** de ahora en adelante, cualquier verificación en Shopify debe hacerse contra `/` (la portada), no contra `/pages/mayorista` — esa ruta ya no existe como página independiente.
 
+### Tercer bug real confirmado y corregido (22 jul): la navegación se quedaba a mitad de camino
+Tras el fix de las flechas, el usuario probó en dos computadores distintos: en uno la navegación se quedaba atascada en Buñuelo (2da tarjeta), en el otro no avanzaba de Empanada. Dos causas combinadas, ambas en la lógica de clic:
+1. El botón calculaba a dónde saltar con `carousel.scrollTo({left: paso × índice})` — un valor en píxeles calculado a mano que podía no coincidir exactamente con el punto de "snap" real del navegador, y el navegador lo corregía de vuelta a una tarjeta distinta a la esperada.
+2. Ese cálculo dependía de `scrollWidth`/`clientWidth` para saber si ya se había llegado al final — una cuenta que no dio el mismo resultado en los dos computadores probados, dejando el botón "siguiente" deshabilitado antes de tiempo.
+
+**Corregido:** ahora la navegación apunta directo a la tarjeta con `scrollIntoView()` (nunca calcula un píxel a mano) y el estado deshabilitado de las flechas se decide por índice de tarjeta (0 a 3), no por matemática de scroll. También se corrigió que clics rápidos y consecutivos pisaran el índice a mitad de animación. Probado con clics rápidos consecutivos de ida y vuelta (Empanada → Pandebono → Empanada) sin quedarse atascado.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
