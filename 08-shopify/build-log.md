@@ -100,6 +100,11 @@ Los 5 quick wins de la [propuesta de arquitectura](propuesta-arquitectura-inspir
 - [x] **Badge de Garantía Triple Sello** repetible — versión compacta (ícono de escudo + una línea) agregada junto al CTA final.
 - [x] **Sección FAQ** con acordeón nativo (`<details>/<summary>`, sin JS extra) — 6 preguntas reales de comprador B2B (mínimos, cobertura, personal, garantía, precio, cumplimiento FDA). Contenido grounded en lo que ya existe en otros documentos — sin inventar datos como plazos de vencimiento o certificaciones no confirmadas (HACCP sigue pendiente, no se reclama como lista).
 
+### Bug real confirmado y corregido (22 jul, tarde): contenido invisible según tamaño de ventana
+El usuario reportó que partes de la página (la fila de atributos, el FAQ) se veían en blanco y solo aparecían **después de maximizar la ventana**. Se reprodujo: el sistema de reveals usaba `ScrollTrigger` de GSAP, que calcula de antemano la posición en píxeles donde debe dispararse cada animación. Esa posición se desincroniza del layout real en ciertos tamaños de ventana (no solo maximizada) y el contenido se queda en `opacity:0` permanentemente — hasta que un evento de resize fuerza a GSAP a recalcular.
+
+**Corregido:** se reemplazó `ScrollTrigger` por `IntersectionObserver` nativo del navegador para decidir cuándo animar cada elemento. `IntersectionObserver` no depende de una foto fija de posiciones — el navegador lo evalúa contra el layout real de forma continua, así que no se puede desincronizar de la misma manera. Se probó explícitamente en ventanas de 900×600 y 700×500 (sin maximizar ni redimensionar) y el contenido aparece correctamente desde la primera carga.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
