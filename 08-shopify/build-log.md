@@ -130,6 +130,11 @@ Tras el fix de las flechas, el usuario probó en dos computadores distintos: en 
 
 **Corregido:** ahora la navegación apunta directo a la tarjeta con `scrollIntoView()` (nunca calcula un píxel a mano) y el estado deshabilitado de las flechas se decide por índice de tarjeta (0 a 3), no por matemática de scroll. También se corrigió que clics rápidos y consecutivos pisaran el índice a mitad de animación. Probado con clics rápidos consecutivos de ida y vuelta (Empanada → Pandebono → Empanada) sin quedarse atascado.
 
+### Cuarto bug real confirmado y corregido (22 jul): saltos erráticos con trackpad
+Con las flechas ya funcionando, el usuario reportó que en trackpad el carrusel "se va o se devuelve al primero" de forma errática. Causa: el manejador que redirige la rueda del mouse a movimiento horizontal (agregado para usuarios de mouse normal, sin trackpad) también se activaba con gestos de trackpad — que ya generan su propio movimiento horizontal nativo (`deltaX`). Las dos cosas movían el carrusel al mismo tiempo, compitiendo entre sí y produciendo saltos.
+
+**Corregido:** el redirect de rueda ahora solo se activa cuando el evento no trae ningún componente horizontal (`deltaX === 0`) — la huella de un mouse de rueda simple. Cualquier gesto de trackpad (que siempre trae algo de `deltaX`) se ignora por completo y queda en manos del scroll nativo del navegador, sin interferencia.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
