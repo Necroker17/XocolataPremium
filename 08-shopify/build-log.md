@@ -168,6 +168,13 @@ Con la caché ya descartada, el usuario precisó el síntoma: en escritorio, cad
 
 **Corregido:** se reemplazó `card.offsetLeft` por un cálculo con `getBoundingClientRect()` (posición del borde de la tarjeta menos la posición del borde del carrusel, más el scroll actual) — mide la posición real dentro del contenido con scroll, sin depender de qué elemento ancestro tenga `position: relative`. Probado en 1280px de ancho: cada clic ahora mueve una tarjeta completa, ida y vuelta.
 
+### Se quitó el snap nativo del navegador por completo (22 jul, madrugada)
+El fix anterior (offsetLeft → getBoundingClientRect) se probó exitoso en el navegador de prueba, pero el usuario confirmó — cambiando de navegador y de computador — que en escritorio real seguía fallando (cada clic corría la imagen "un poquito" y nunca llegaba a Buñuelo), mientras que en celular sí funcionaba perfecto. Como el navegador de prueba no logró reproducir esto, no se pudo depurar más a fondo — así que se eliminó la variable en vez de seguir cazándola.
+
+**Cambio:** se quitó `scroll-snap-type` del carrusel por completo, y la navegación por flechas/segmentos ya no usa `scrollIntoView()` (que deja que el navegador decida el punto final) — ahora calcula el píxel exacto de destino con la misma matemática de `getBoundingClientRect()` que ya se había verificado, y mueve el carrusel ahí directamente con `scrollTo()`. Esto saca por completo cualquier lógica de "alineación" del navegador de la ecuación — si esto seguía fallando, la próxima sospecha es algo más profundo (zoom del navegador, configuración de accesibilidad, o un extensión/config específica de las máquinas de prueba).
+
+⚠️ **Sin confirmar todavía por el usuario en escritorio real** — pendiente de su próxima prueba.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
