@@ -196,6 +196,9 @@ El fix anterior (fijar la tarjeta activa en los extremos del scroll) resolvió q
 
 Probado ida y vuelta con clics programáticos + medición directa: 0→1→2→3 y 3→2→1→0, pasos parejos (217px cada uno), sin saltos, verificado también visualmente.
 
+### Segunda tanda de la propuesta Ryze: foto anotada con callouts (22 jul, madrugada)
+Construida la sección "La nostalgia como oportunidad" con el patrón de Ryze — layout de dos columnas (texto + foto), con la foto del Pandebono en Rosca ya existente en el tema y 3 callouts anotados (punto dorado + etiqueta) señalando: corteza dorada de queso, textura esponjosa por dentro, y "sabe a recién horneado aunque estaba congelado". No requirió fotos nuevas — reutiliza `xoc-pandebono.jpg`, ya cargado en el tema. En mobile la foto se apila arriba del texto.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
