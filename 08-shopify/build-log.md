@@ -135,6 +135,11 @@ Con las flechas ya funcionando, el usuario reportó que en trackpad el carrusel 
 
 **Corregido:** el redirect de rueda ahora solo se activa cuando el evento no trae ningún componente horizontal (`deltaX === 0`) — la huella de un mouse de rueda simple. Cualquier gesto de trackpad (que siempre trae algo de `deltaX`) se ignora por completo y queda en manos del scroll nativo del navegador, sin interferencia.
 
+### Quinto bug real confirmado y corregido (22 jul): se devolvía a la primera tarjeta al soltar el trackpad
+Reportado como "sí funciona pero se devuelve solo" — apenas soltaba el gesto en el trackpad, saltaba de inmediato de vuelta a Empanada de Cambray. Causa: `scroll-snap-type: x mandatory` en el carrusel. Con "mandatory", si un swipe no tiene suficiente impulso/distancia, algunos navegadores (sobre todo con trackpad) interpretan que no hubo intención real de cambiar de tarjeta y fuerzan el regreso a la posición de origen — un comportamiento nativo del navegador, no de nuestro código.
+
+**Corregido:** se cambió a `scroll-snap-type: x proximity`, que solo alinea a la tarjeta más cercana cuando el scroll ya está naturalmente cerca de un punto de snap, sin "pelear" contra el gesto ni forzar un regreso. La navegación por flechas (que usa `scrollIntoView`, no depende del snap-type) no se vio afectada.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
