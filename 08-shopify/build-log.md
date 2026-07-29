@@ -74,4 +74,30 @@ El usuario revisó un tema de pago ($270 USD, orientado a suplementos/wellness) 
 - [ ] **Fotos reales** reemplazan las provisionales del deck cuando estén (b-roll del 23 jul).
 - [ ] **WhatsApp:** el botón usa `mailto` hasta confirmar el número; se cambia en el setting `cta_url` de la sección.
 
+### Animaciones y UX cinematográfico (22 jul) — inspirado en Zeal y Ryze Superfoods
+
+Se vendorizó **GSAP + ScrollTrigger** localmente (`assets/gsap.min.js`, `assets/gsap-scrolltrigger.min.js` — sin CDN externo) y se creó `assets/xoc-animations.js` como motor de animación central:
+- Sistema de reveals por atributo (`data-anim="fade-up"`, `data-anim="stagger"`) reutilizable en cualquier sección nueva.
+- Respeta `prefers-reduced-motion` vía `gsap.matchMedia()`.
+- Red de seguridad: si algo falla, ningún elemento queda oculto permanentemente (timeout de rescate + `ScrollTrigger.refresh()` tras cargar fuentes web, para evitar el bug de triggers desincronizados por fuentes que cargan tarde).
+
+**Sección "La colección" reconstruida** como carrusel horizontal con scroll-snap nativo + barra de progreso segmentada sincronizada al scroll (patrón tomado de la sección "Core Vitality Collection" del tema Zeal) — cada una de las 4 tarjetas de producto escala/resalta al estar en foco, y los segmentos de la barra se llenan según cuánto se ha recorrido el carrusel.
+
+Se usó `shopify theme dev --theme 190111580448` para iterar en vivo (el tema live-sincroniza cambios en tiempo real, mismo patrón que ya se usaba con `--allow-live` en `theme push`).
+
+**Bugs encontrados y corregidos en esta sesión:**
+- El carrusel completo estaba envuelto en un `data-anim="fade-up"` — si el trigger de scroll se desincronizaba (ej. por carga tardía de fuentes), toda la sección de productos podía quedar invisible. Se quitó el fade del contenedor del carrusel; el contenido de producto ya no depende de un scroll-trigger para aparecer.
+- **Footer sin personalizar:** el bloque "Join our email list" seguía en inglés, genérico, con links a redes sociales placeholder (`facebook.com/`, `instagram.com/` sin handle real). Se reemplazó por un bloque de marca en español ("Xocolata Food Premium" + contacto) y se quitaron el formulario de newsletter y los links sociales falsos (decisión: no publicitar redes que no existen, mismo criterio que con el número de WhatsApp — ver [decisiones abiertas](../decisiones-abiertas.md)).
+- **Barra de anuncio en inglés:** "Welcome to our store" (default de Horizon) → reemplazado por el mensaje real de campaña ("Agenda tu degustación antes de la feria de Miami · 14–16 sep 2026").
+
+Ver la auditoría completa de patrones de Ryze Superfoods y el plan de adaptación en [propuesta de arquitectura inspirada en Ryze](propuesta-arquitectura-inspirada-ryze.md).
+
+### Pendiente de esta ronda
+- [ ] Ticker sticky (hoy solo vive en el hero).
+- [ ] Botón flotante "Hablemos" persistente.
+- [ ] Fila de atributos con ícono en "Cómo funciona".
+- [ ] Badge de garantía (Triple Sello) repetible cerca del CTA final.
+- [ ] FAQ (contenido disperso en otros documentos, falta consolidar).
+- [ ] Verificar en el navegador real del usuario (Chrome) que el fix del footer/anuncio se ve bien — la sesión anterior reportó partes "que no se veían bien" sin especificar cuáles; el footer y la barra de anuncio eran candidatos fuertes y ya se corrigieron, pero vale la pena una segunda confirmación.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
