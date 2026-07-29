@@ -189,6 +189,13 @@ Con el problema de espacio ya resuelto, quedó un detalle: Pandebono (la última
 
 **Corregido:** si el scroll ya llegó al principio o al final del todo, se usa esa posición límite directamente para decidir la tarjeta activa (primera o última), en vez de comparar distancias. Verificado con medición directa: `lastCardIsActive: true`, segmento de progreso al 100%, y confirmado visualmente en captura.
 
+### Rediseño final de la navegación (22 jul, madrugada): de "posición ideal por tarjeta" a proporción del espacio real
+El fix anterior (fijar la tarjeta activa en los extremos del scroll) resolvió que Pandebono nunca se seleccionara, pero expuso el problema de fondo: con el ancho comprimido, la posición "ideal" de **Almojábana también** quedaba fuera de lo que el scroll podía alcanzar — así que al hacer clic en "siguiente" desde Buñuelo, saltaba directo a Pandebono sin pasar por Almojábana.
+
+**Solución de fondo:** se abandonó por completo la idea de calcular la posición "ideal" en píxeles de cada tarjeta. Ahora se divide el espacio real de scroll que existe (`scrollWidth - clientWidth`, sea cual sea) en partes iguales — una por producto — y tanto "cuál tarjeta está activa" como "a dónde ir al hacer clic" usan esa misma proporción. Cada producto tiene garantizado un tramo alcanzable del scroll, sin importar cuán comprimido esté el espacio disponible.
+
+Probado ida y vuelta con clics programáticos + medición directa: 0→1→2→3 y 3→2→1→0, pasos parejos (217px cada uno), sin saltos, verificado también visualmente.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
