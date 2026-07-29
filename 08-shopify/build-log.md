@@ -105,6 +105,14 @@ El usuario reportó que partes de la página (la fila de atributos, el FAQ) se v
 
 **Corregido:** se reemplazó `ScrollTrigger` por `IntersectionObserver` nativo del navegador para decidir cuándo animar cada elemento. `IntersectionObserver` no depende de una foto fija de posiciones — el navegador lo evalúa contra el layout real de forma continua, así que no se puede desincronizar de la misma manera. Se probó explícitamente en ventanas de 900×600 y 700×500 (sin maximizar ni redimensionar) y el contenido aparece correctamente desde la primera carga.
 
+### Segundo bug real confirmado y corregido (22 jul): el carrusel no se podía mover con mouse normal
+El usuario reportó "el horizontal no está funcionando" — el carrusel de la colección técnicamente sí podía hacer scroll (confirmado por JS), pero **no había ninguna forma de activarlo con un mouse normal**: la scrollbar estaba escondida a propósito (por estética) y solo funcionaba con gestos de trackpad. Corregido con tres mecanismos:
+- **Botones de flecha** (prev/next) visibles a los lados del carrusel, con estado disabled/oculto en los extremos.
+- **Arrastre con mouse** (mousedown/mousemove) — cursor cambia a "grab"/"grabbing".
+- **Rueda del mouse traducida a horizontal** al pasar por encima del carrusel — pero solo mientras haya espacio para moverse en esa dirección, para que nunca "atrape" al visitante sin poder seguir bajando la página.
+
+Nota aparte: las flechas inicialmente se escondían por debajo de 700px de ancho — ese umbral resultó demasiado agresivo (ventanas de escritorio normales, sin maximizar, caen ahí) y las dejaba invisibles justo cuando más se necesitaban. Se quitó ese límite; ahora las flechas se ven en cualquier tamaño de ventana, solo se reducen un poco en pantallas muy angostas (<480px).
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
