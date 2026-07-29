@@ -175,6 +175,20 @@ El fix anterior (offsetLeft → getBoundingClientRect) se probó exitoso en el n
 
 ⚠️ **Sin confirmar todavía por el usuario en escritorio real** — pendiente de su próxima prueba.
 
+### Causa de fondo real encontrada (22 jul, madrugada): no era un bug de código, era de espacio físico — más un servidor de desarrollo caído a mitad de sesión
+Con un diagnóstico pedido directamente al usuario (clic programático + medición de `scrollLeft`), se confirmó: el paso entre tarjetas era consistente (~350px) pero el destino absoluto quedaba corto por ~39px — un desfase sistemático que no se pudo explicar con matemática de coordenadas. Al cambiar la navegación de "ir a una posición absoluta" (`scrollTo`) a "moverme el ancho de una tarjeta desde donde estoy" (`scrollBy`, relativo), se reprodujo el problema en el propio navegador de prueba por primera vez — lo que permitió depurarlo de verdad en vez de adivinar:
+
+**La causa real:** en pantallas muy anchas, el carrusel (que se extiende a todo el ancho de la ventana) es tan ancho que 3 de las 4 tarjetas ya caben visibles al mismo tiempo — dejando solo ~370px de espacio real para hacer scroll, menos que el ancho de una sola tarjeta (~400px). No era un bug de cálculo: **físicamente no había más espacio para desplazar**, por eso el primer clic "se quedaba corto" y los siguientes no hacían nada — ya se había llegado al máximo posible. Confirmado visualmente: tras un clic, Buñuelo + Almojábana + Pandebono ya estaban los tres visibles a la vez.
+
+**Corregido:** se le puso un límite al ancho máximo del carrusel (antes crecía sin límite con el ancho de la ventana) para que en pantallas ultra-anchas no se muestren casi todas las tarjetas de una vez, garantizando que siempre quede espacio real de scroll entre cada clic.
+
+**Hallazgo aparte, importante:** a mitad de esta sesión el servidor `shopify theme dev` se cayó en silencio (sin ningún mensaje de error visible) — los cambios de código dejaron de sincronizarse a la tienda durante un tramo sin que quedara evidencia de ello hasta revisar el log completo. Se reinició. **Si en el futuro un cambio "no aparece" a pesar de guardarse, lo primero a revisar es si el proceso de `theme dev` sigue vivo**, no asumir que el código está mal.
+
+### Último ajuste (22 jul, madrugada): Pandebono se veía pero nunca quedaba "seleccionado"
+Con el problema de espacio ya resuelto, quedó un detalle: Pandebono (la última tarjeta) sí llegaba a verse completo, pero nunca se marcaba como la tarjeta activa (ni se resaltaba, ni se llenaba su segmento en la barra de progreso) — el usuario lo describió como "la foto se ve pero no se selecciona". Causa: el sistema que decide "cuál tarjeta está más cerca" compara por distancia, pero la posición ideal de la última tarjeta puede quedar más allá de lo que el scroll físicamente alcanza una vez llega a su tope — así que Almojábana (la penúltima) siempre ganaba por distancia, aunque Pandebono ya estuviera completamente visible.
+
+**Corregido:** si el scroll ya llegó al principio o al final del todo, se usa esa posición límite directamente para decidir la tarjeta activa (primera o última), en vez de comparar distancias. Verificado con medición directa: `lastCardIsActive: true`, segmento de progreso al 100%, y confirmado visualmente en captura.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
