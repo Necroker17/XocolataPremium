@@ -156,6 +156,13 @@ Ahora cada clic pregunta directo al DOM "¿cuál tarjeta está más cerca del sc
 
 Probado: 3 clics con pausas hasta Pandebono (se queda quieto 3+ segundos sin tocar nada), y un clic extra ya en el límite (no rompe nada, se queda igual).
 
+### Bug raíz encontrado (22 jul, tarde-noche): "ni se mueve" — el carrusel dependía de GSAP sin necesitarlo
+Después de la simplificación, el usuario reportó que el carrusel **dejó de moverse por completo**. Causa real, y probablemente la explicación de varias de las rondas anteriores: el archivo tenía `if (typeof gsap === 'undefined') return;` casi al principio, y **todo el código del carrusel y del botón flotante estaba después de esa línea** — aunque ninguno de los dos usa GSAP para nada. Si GSAP fallaba en cargar por cualquier razón (bloqueador de anuncios, firewall corporativo, un fallo de red puntual, una extensión del navegador) todo el resto del script se cortaba silenciosamente, y ningún botón del carrusel quedaba conectado a nada — sin ningún error visible en consola sobre el carrusel mismo.
+
+**Corregido:** se reordenó el archivo. El botón flotante y el carrusel completo (flechas, arrastre, rueda, barra de progreso) ahora corren **siempre**, sin depender de si GSAP cargó. Solo las animaciones decorativas de entrada (fade-up/stagger) — que si son puramente estéticas — quedan detrás del chequeo de GSAP al final del archivo.
+
+**Nota para diagnósticos futuros:** si algo vuelve a "no moverse del todo" (a diferencia de "se mueve pero mal"), revisar primero si algún script externo (GSAP u otro) está fallando en cargar y cortando el resto del archivo silenciosamente.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Foto anotada con callouts en la sección de nostalgia (requiere foto de branding).
 - [ ] Grid de insumos con foto real de ingredientes (requiere fotos).
