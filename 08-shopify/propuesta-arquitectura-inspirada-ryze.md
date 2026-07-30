@@ -56,20 +56,20 @@ Mantiene el orden narrativo ya validado en el [brief de la página](brief-pagina
 
 | # | Sección | Qué existe hoy | Qué se adapta de Ryze | Estado |
 |---|---|---|---|---|
-| 0 | **Barra de anuncio + ticker sticky** | Ticker existe, solo vive en el hero | Hacerlo **sticky** (fijo arriba al hacer scroll), como el de Ryze | 🔧 Quick win, pendiente |
+| 0 | **Barra de anuncio + ticker sticky** | Ticker existe, solo vive en el hero | Hacerlo **sticky** (fijo arriba al hacer scroll), como el de Ryze | ✅ Construido |
 | 1 | **Hero** | Golpe emocional + 2 CTA | Ya tiene la estructura correcta | ✅ Sin cambios |
 | 2 | **Nostalgia** | Texto emotivo, sin foto anotada | Agregar foto del producto con **callouts anotados** (flechas + nota sensorial: "Hojaldre de capas visibles", "Contraste dulce-salado") en vez de solo texto | ✅ Construido — foto + cinemagraph en video (29 jul) |
 | 3 | **La colección** | Carrusel horizontal + barra de progreso segmentada (recién construido) | Ya adaptado — es la sección que más se parece a Ryze/Zeal en mecánica | ✅ Construido esta sesión |
-| 4 | **Cómo funciona** | 3 pasos con número | Agregar fila de atributos con ícono (estilo Ryze: 48mg cafeína, sin gluten...) → nuestra versión: **-18°C · 8 MIN · HUEVO PASTEURIZADO · PRODUCTO COLOMBIANO** | 🔧 Quick win |
-| 5 | **Triple Sello** | 3 bloques de texto | Convertir en badge visual repetible (como el "30-Day Guarantee" de Ryze), que se pueda reusar cerca del CTA final también | 🔧 Quick win |
+| 4 | **Cómo funciona** | 3 pasos con número | Agregar fila de atributos con ícono (estilo Ryze: 48mg cafeína, sin gluten...) → nuestra versión: **-18°C · 8 MIN · HUEVO PASTEURIZADO · PRODUCTO COLOMBIANO** | ✅ Construido |
+| 5 | **Triple Sello** | 3 bloques de texto | Convertir en badge visual repetible (como el "30-Day Guarantee" de Ryze), que se pueda reusar cerca del CTA final también | ✅ Construido |
 | 6 | **Por qué ser aliado** | Grid de 4 textos | Ya tiene la forma correcta (grid de atributos) | ✅ Sin cambios grandes |
 | 7 | **Insumos y materias primas** *(nueva, ya existe en brochure)* | Panel con íconos de línea | Rehacer como **grid de ingredientes con foto real** (harina, queso, relleno) — mismo patrón que el "6-Mushroom Blend" de Ryze | ✅ Construido (29 jul) |
 | 8 | **Quiénes somos / founder story** | No existe todavía en el home | Bloque con foto real de Marlen + texto personal de "por qué lo hicimos" | 🖼️ Requiere foto (pendiente del b-roll) |
 | 9 | **Prueba social** | No existe todavía (sin clientes) | Carrusel de testimonios con foto + "Aliado verificado" — dejar la sección **construida pero vacía/oculta** hasta tener el primer testimonio real post-feria | ⏳ Espera datos reales |
 | 10 | **Countdown a la feria** | Ya construido, con JS vanilla | Ya tiene la ejecución correcta | ✅ Sin cambios |
-| 11 | **FAQ** | No existe todavía | Acordeón con las preguntas reales de comprador B2B (mínimos, envíos, certificaciones, cómo se paga) | 🆕 Nuevo, contenido ya disperso en otros docs |
-| 12 | **CTA final** | Ya existe | Agregar el badge de garantía (repetido de la sección 5) junto al botón, como refuerzo de último momento | 🔧 Quick win |
-| — | **Botón flotante persistente** | No existe | CTA "Hablemos" flotante que sigue el scroll, como el "TRY IT" de Ryze — visible en todo momento sin tener que volver arriba | 🔧 Quick win, alto impacto |
+| 11 | **FAQ** | No existe todavía | Acordeón con las preguntas reales de comprador B2B (mínimos, envíos, certificaciones, cómo se paga) | ✅ Construido |
+| 12 | **CTA final** | Ya existe | Agregar el badge de garantía (repetido de la sección 5) junto al botón, como refuerzo de último momento | ✅ Construido |
+| — | **Botón flotante persistente** | No existe | CTA "Hablemos" flotante que sigue el scroll, como el "TRY IT" de Ryze — visible en todo momento sin tener que volver arriba | ✅ Construido |
 
 **Leyenda:** ✅ ya está bien así · 🔧 se puede construir ahora con lo que ya tenemos · 🖼️ necesita fotos/assets nuevos · 🆕 contenido nuevo por redactar · ⏳ espera datos reales (clientes, testimonios)
 
@@ -100,11 +100,11 @@ Vale la pena construir la arquitectura de la sección 4 pensando en que, si alg�
 ## 7. Plan de implementación sugerido
 
 **Ahora mismo (sin assets nuevos, con lo que ya existe):**
-1. Ticker sticky
-2. Botón flotante "Hablemos"
-3. Fila de atributos con ícono en "Cómo funciona"
-4. Badge de garantía repetible (Triple Sello)
-5. FAQ (contenido ya existe disperso, solo falta consolidar y maquetar)
+1. Ticker sticky — ✅ hecho
+2. Botón flotante "Hablemos" — ✅ hecho
+3. Fila de atributos con ícono en "Cómo funciona" — ✅ hecho
+4. Badge de garantía repetible (Triple Sello) — ✅ hecho
+5. FAQ (contenido ya existe disperso, solo falta consolidar y maquetar) — ✅ hecho
 
 **Con las fotos que ya tenemos de branding:**
 6. Foto anotada en la sección de nostalgia — ✅ hecho
