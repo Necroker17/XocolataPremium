@@ -59,6 +59,16 @@ Las 4 fotos del patrón "grid de insumos" (ver [propuesta de arquitectura inspir
 
 Las 4 salieron correctas a la primera generación, sin necesidad de correcciones. Se convirtieron a JPG optimizado (~100-240 KB, 1000×1000) y se copiaron a `xocolata-theme/assets/xoc-insumo-{harinas,lacteos,rellenos,empaques}.jpg` para usarlas en la nueva sección "Nuestra próxima etapa" del home (`sections/xoc-home.liquid`) — grid de 4 tarjetas foto+beneficio corto, mismo patrón que el "6-Mushroom Blend" de Ryze, con nota explícita de que la línea de insumos es visión a largo plazo y no oferta activa hoy (ver [línea de insumos y materias primas](../02-producto/linea-insumos-materias-primas.md)).
 
+## Foto de estilo de vida — mesa de cafetería (30 jul 2026)
+
+Generada con **Higgsfield → GPT Image 2** (no ChatGPT esta vez — ver [rol de Shopify](../08-shopify/build-log.md) para el porqué), usando las fotos reales `xoc-pandebono.jpg` y `xoc-bunuelo.jpg` como referencia de forma/textura para que el modelo no reinterpretara los productos.
+
+| # | Archivo (`Material grafico/branding-generado/`) | Qué es |
+|---|---|---|
+| 14 | `xoc-brand-14-cafe-mesa.png` | Mesa de cafetería con Pandebono en canasta de mimbre + Buñuelo partido (solo arequipe) + café — luz cálida de mañana, fondo de cafetería desenfocado |
+
+Usada como imagen protagonista (banner 16:9) de la sección "Se sienten en casa" del home, reemplazando el panel anterior de foto pequeña + texto. Versión web optimizada en `xocolata-theme/assets/xoc-cafe-mesa.jpg` (~210 KB, 1600px de ancho).
+
 ## Pendiente (decisión del equipo)
 
 - [ ] **Elegir el motivo final** entre vapor dorado (opción 3, recomendada) y laurel (opción 4) — los 4 empaques ya generados usan vapor dorado; si se prefiere laurel, se regeneran los 4 frentes con ese motivo (cambio de una línea en cada prompt).

@@ -223,6 +223,15 @@ Dos secciones nuevas en `xoc-home.liquid`, a pedido explícito del equipo tras r
 
 Verificado en desktop y mobile — ambas secciones apilan correctamente.
 
+### Sexta tanda: foto de cafetería para "Se sienten en casa" — segundo uso de Higgsfield, esta vez para imagen (30 jul)
+El equipo sintió que el panel "Se sienten en casa" quedó muy plano (foto de producto en estudio, mismo tratamiento que el resto del sitio) y pidió una escena de estilo de vida: una mesa de cafetería real con los productos servidos, para que un dueño de negocio se imagine el producto en su propio mostrador.
+
+Se generó con **Higgsfield → GPT Image 2** (el mismo motor que ChatGPT, pero sin la fricción del navegador — costo real: 7 créditos sobre un saldo de ~2.785, prácticamente gratis). Primer intento: escena de cafetería correcta en ambiente/luz, pero el modelo reinterpretó la forma del Pandebono y el Buñuelo en vez de respetar el producto real. **Corregido pasando las fotos reales (`xoc-pandebono.jpg`, `xoc-bunuelo.jpg`) como `--image_references`** para que el modelo copie la forma/textura exacta en vez de improvisar — funcionó a la segunda. Una tercera ronda ajustó el relleno del buñuelo a **solo arequipe** (sin mermelada) y bajó un poco el tamaño de los pandebonos en el encuadre. Aprobada por el equipo en la tercera versión.
+
+**Rediseño de la sección:** la foto pasó de ser una imagen pequeña al lado del panel de texto a ser la **protagonista** — banner de 16:9 a todo el ancho del contenido, con el panel "Sabor/Sensación" debajo (antes iban lado a lado). Nuevas clases `.xh-flavor-hero` (reemplaza `.xh-flavor`/`.xh-flavor__img`) y `.xh-flavor-panel` (reemplaza `.xh-flavor__panel`). En mobile la foto cambia a 4:3 para no recortar tanto. También se ajustó el copy de "Sensación" a pedido del equipo, cambiando el cierre de "vuelta en la cocina de su abuela" a "vuelta en casa" — más directo, coincide con el título de la sección.
+
+**Nota de herramienta:** el tema usa un contenedor interno `.page-wrapper` con su propio scroll (no `window`/`body`) en viewports de escritorio — hay que hacer scroll ahí, no en `window`, al depurar visualmente con capturas automatizadas. En mobile sí vuelve a ser el `body` normal.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
