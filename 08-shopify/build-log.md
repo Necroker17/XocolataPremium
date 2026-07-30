@@ -202,6 +202,15 @@ Construida la sección "La nostalgia como oportunidad" con el patrón de Ryze �
 ### Tercera tanda de la propuesta Ryze: grid de insumos con fotos reales (29 jul)
 Generadas las 4 fotos de ingredientes en ChatGPT (harinas, lácteos, arequipe, empaques — ver [imágenes de branding generadas](../01-marca/imagenes-branding-generadas.md#fotos-de-ingredientes--grid-de-insumos-29-jul-2026)), convertidas a JPG optimizado (~100-240 KB) y agregadas como nueva sección "Nuestra próxima etapa" entre "Por qué ser aliado" y "FAQ" en `xoc-home.liquid`: grid de 4 tarjetas (foto + título + beneficio corto), reusando las clases `.xh-grid`/`.xh-card` que ya existían en el CSS pero habían quedado sin usar tras el rediseño del carrusel. Incluye una nota explícita de que la línea de insumos es visión a largo plazo, no oferta activa — consistente con [línea de insumos y materias primas](../02-producto/linea-insumos-materias-primas.md). Verificado en desktop y mobile (apila a 1 columna).
 
+### Cuarta tanda: video cinemagraph en la sección de nostalgia, primer uso de Higgsfield (29-30 jul)
+Se conectó **Higgsfield AI** como herramienta de generación de video (CLI `@higgsfield/cli` + skills oficiales instalados vía `npx skills add higgsfield-ai/skills`, autenticado con `xocolatapremium@gmail.com`, plan Ultra). Es la vía recomendada para video de aquí en adelante — ChatGPT por navegador sigue siendo el camino correcto para fotos, pero no genera video.
+
+Con la misma foto de `xoc-pandebono.jpg` que ya vive en el tema, se generó un cinemagraph de 5s (Seedance 2.0, image-to-video): cámara prácticamente fija con un empuje mínimo, el pandebono se mantiene sin deformarse, y solo unos hilos de vapor cálido se mueven de fondo. Verificado frame a frame antes de integrarlo — el pan no cambia de forma entre cuadros, solo el vapor. Aprobado por el equipo a la primera.
+
+Reemplazado el `background-image` estático de `.xh-annotated__img` por un `<video autoplay muted loop playsinline>` posicionado encima (mismo contenedor, mismo `object-fit:cover`), con la foto original como `poster` y como fondo CSS de respaldo. Se oculta el video vía `prefers-reduced-motion:reduce`, dejando la foto estática como fallback accesible. El video de 4.3 MB que entrega Higgsfield se recomprimió con ffmpeg a ~600 KB (900×1200, CRF 23, sin audio, faststart) antes de subirlo a `assets/`. Los callouts existentes siguen funcionando sin cambios, ya que están posicionados sobre el contenedor, no sobre la imagen.
+
+**Nota operativa:** durante esta sesión el proceso `shopify theme dev` volvió a caer en silencio (tercera vez documentada en este log) — reiniciado. Además, se detectó que tanto `shopify theme dev` como `npx skills add ...` requieren Node ≥22, mientras el Node por defecto del sistema es v20.14 — se usa `fnm` (ya instalado) para invocar esos comandos con Node 22 (`fnm use 22.23.2`) sin tocar la instalación global.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Prueba social / testimonios (espera clientes del piloto post-feria).

@@ -58,7 +58,7 @@ Mantiene el orden narrativo ya validado en el [brief de la página](brief-pagina
 |---|---|---|---|---|
 | 0 | **Barra de anuncio + ticker sticky** | Ticker existe, solo vive en el hero | Hacerlo **sticky** (fijo arriba al hacer scroll), como el de Ryze | 🔧 Quick win, pendiente |
 | 1 | **Hero** | Golpe emocional + 2 CTA | Ya tiene la estructura correcta | ✅ Sin cambios |
-| 2 | **Nostalgia** | Texto emotivo, sin foto anotada | Agregar foto del producto con **callouts anotados** (flechas + nota sensorial: "Hojaldre de capas visibles", "Contraste dulce-salado") en vez de solo texto | 🖼️ Requiere foto (ya la tenemos de branding) |
+| 2 | **Nostalgia** | Texto emotivo, sin foto anotada | Agregar foto del producto con **callouts anotados** (flechas + nota sensorial: "Hojaldre de capas visibles", "Contraste dulce-salado") en vez de solo texto | ✅ Construido — foto + cinemagraph en video (29 jul) |
 | 3 | **La colección** | Carrusel horizontal + barra de progreso segmentada (recién construido) | Ya adaptado — es la sección que más se parece a Ryze/Zeal en mecánica | ✅ Construido esta sesión |
 | 4 | **Cómo funciona** | 3 pasos con número | Agregar fila de atributos con ícono (estilo Ryze: 48mg cafeína, sin gluten...) → nuestra versión: **-18°C · 8 MIN · HUEVO PASTEURIZADO · PRODUCTO COLOMBIANO** | 🔧 Quick win |
 | 5 | **Triple Sello** | 3 bloques de texto | Convertir en badge visual repetible (como el "30-Day Guarantee" de Ryze), que se pueda reusar cerca del CTA final también | 🔧 Quick win |
