@@ -211,8 +211,20 @@ Reemplazado el `background-image` estático de `.xh-annotated__img` por un `<vid
 
 **Nota operativa:** durante esta sesión el proceso `shopify theme dev` volvió a caer en silencio (tercera vez documentada en este log) — reiniciado. Además, se detectó que tanto `shopify theme dev` como `npx skills add ...` requieren Node ≥22, mientras el Node por defecto del sistema es v20.14 — se usa `fnm` (ya instalado) para invocar esos comandos con Node 22 (`fnm use 22.23.2`) sin tocar la instalación global.
 
+### Ajuste de callouts tras el video (30 jul)
+Al revisar el cinemagraph, el callout "Corteza dorada de queso" quedó flotando sobre el fondo, sin tocar el pan. Causa real: `.xh-callout` centraba con `transform:translate(-50%,-50%)` el ancla en el **centro de toda la etiqueta** (punto + texto), así que entre más largo el texto, más lejos quedaba el punto visual del lugar que en realidad se quería señalar — no era un problema de encuadre del video. Corregido a `translateY(-50%)` únicamente (el punto ahora sí marca el `top`/`left` literal, sin importar el largo del texto) y reubicados los 3 callouts según los rasgos reales del video (corteza arriba, miga al centro, pieza frontal abajo-izquierda).
+
+### Quinta tanda: "Se sienten en casa" + prueba social tentativa, adaptando el patrón "Supporting Everyday Wellness" de Ryze (30 jul)
+Dos secciones nuevas en `xoc-home.liquid`, a pedido explícito del equipo tras revisar capturas de la página de Ryze:
+
+**"Se sienten en casa"** (entre "La colección" y "Cómo funciona"): adapta la banda de tags de beneficio de Ryze ("Happiness Booster / Sharp Focus") a dos tags emocionales propios — **Sabe a casa** / **Nostalgia instantánea** — sobre una banda vinotinto con íconos dorados. Debajo, un panel de dos columnas "Sabor / Sensación" (equivalente a "Flavor / Feeling" de Ryze): checklist de sabor + párrafo de sensación, junto a la foto de `xoc-bunuelo.jpg` (arequipe derramándose) ya existente en el tema — no hizo falta generar ninguna imagen nueva. **Decisión deliberada:** no se agregaron badges tipo "Sin gluten" o "Sin conservantes" (el patrón de free-from claims de Ryze) porque la certificación gluten-free de Xocolata sigue sin confirmar con Daka (ver [empaques y alérgenos](../02-producto/empaques-y-alergenos.md)) — cualquier claim de ese tipo espera esa confirmación.
+
+**Prueba social tentativa** (entre "Por qué ser aliado" e "Insumos"): builds el bloque #9 de la propuesta Ryze que seguía pendiente. Como no hay ningún testimonio real todavía, **no se inventaron citas atribuidas a negocios reales** — eso sería presentar contenido falso como genuino en un sitio comercial en vivo. En su lugar, la sección queda completamente construida y funcional (3 tarjetas: avatar con iniciales, cita, nombre de negocio + ciudad) pero cada tarjeta está marcada explícitamente como **"(ejemplo)"** junto al nombre, y hay una nota bajo el título aclarando que son ejemplos ilustrativos que se reemplazan por testimonios reales después de la feria de Miami. Formato B2B (negocio + ciudad + cita operativa) en vez del patrón de reseña individual de Ryze (estrellas + "verified buyer").
+
+Verificado en desktop y mobile — ambas secciones apilan correctamente.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
-- [ ] Prueba social / testimonios (espera clientes del piloto post-feria).
+- [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
 
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).

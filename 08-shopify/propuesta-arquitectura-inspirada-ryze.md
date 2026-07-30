@@ -65,11 +65,12 @@ Mantiene el orden narrativo ya validado en el [brief de la página](brief-pagina
 | 6 | **Por qué ser aliado** | Grid de 4 textos | Ya tiene la forma correcta (grid de atributos) | ✅ Sin cambios grandes |
 | 7 | **Insumos y materias primas** *(nueva, ya existe en brochure)* | Panel con íconos de línea | Rehacer como **grid de ingredientes con foto real** (harina, queso, relleno) — mismo patrón que el "6-Mushroom Blend" de Ryze | ✅ Construido (29 jul) |
 | 8 | **Quiénes somos / founder story** | No existe todavía en el home | Bloque con foto real de Marlen + texto personal de "por qué lo hicimos" | 🖼️ Requiere foto (pendiente del b-roll) |
-| 9 | **Prueba social** | No existe todavía (sin clientes) | Carrusel de testimonios con foto + "Aliado verificado" — dejar la sección **construida pero vacía/oculta** hasta tener el primer testimonio real post-feria | ⏳ Espera datos reales |
+| 9 | **Prueba social** | No existe todavía (sin clientes) | Carrusel de testimonios con foto + "Aliado verificado" — dejar la sección **construida pero vacía/oculta** hasta tener el primer testimonio real post-feria | ✅ Construido con 3 ejemplos marcados "(ejemplo)" (30 jul) — falta cambiar por citas reales |
 | 10 | **Countdown a la feria** | Ya construido, con JS vanilla | Ya tiene la ejecución correcta | ✅ Sin cambios |
 | 11 | **FAQ** | No existe todavía | Acordeón con las preguntas reales de comprador B2B (mínimos, envíos, certificaciones, cómo se paga) | ✅ Construido |
 | 12 | **CTA final** | Ya existe | Agregar el badge de garantía (repetido de la sección 5) junto al botón, como refuerzo de último momento | ✅ Construido |
 | — | **Botón flotante persistente** | No existe | CTA "Hablemos" flotante que sigue el scroll, como el "TRY IT" de Ryze — visible en todo momento sin tener que volver arriba | ✅ Construido |
+| — | **"Se sienten en casa"** *(nueva, no estaba en esta tabla original)* | No existía | Adapta la sección "Supporting Everyday Wellness" de Ryze (banda de tags de beneficio + panel "Flavor/Feeling") a la narrativa emocional propia: tags "Sabe a casa"/"Nostalgia instantánea" + panel "Sabor/Sensación" con foto real del Buñuelo Relleno | ✅ Construido (30 jul), entre "La colección" y "Cómo funciona" |
 
 **Leyenda:** ✅ ya está bien así · 🔧 se puede construir ahora con lo que ya tenemos · 🖼️ necesita fotos/assets nuevos · 🆕 contenido nuevo por redactar · ⏳ espera datos reales (clientes, testimonios)
 
