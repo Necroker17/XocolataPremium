@@ -278,6 +278,11 @@ Verificado en desktop y mobile.
 ### Limpieza de la fila de atributos (31 jul)
 Se quitó "Huevo Pasteurizado" de la fila de atributos de "Cómo funciona" — era un dato de ingrediente/inocuidad mezclado entre datos de proceso y logística (-18°C, 8 MIN HORNO, PRODUCTO COLOMBIANO), se sentía fuera de tono. Quedan los 3 que sí cuentan una historia coherente de principio a fin. El dato de pasteurización sigue disponible en otras partes del sitio (ej. "Respaldo de exportación") y en la ficha técnica cuando se redacte.
 
+### Comparativa vs. proveedor típico en "Por qué ser aliado" (31 jul)
+El equipo pidió convertir las 4 tarjetas de texto de "No vendemos congelados. Construimos aliados." en una comparación directa contra el proveedor congelado típico del mercado — más persuasivo que 4 bullets sueltos. Se reformuló el mismo copy ya validado (portafolio, cocina, territorio, respaldo) en formato de tabla de 2 columnas: "Proveedor congelado típico" (gris, con ✕) vs. "Xocolata" (resaltado en dorado, con ✓), 4 filas. En mobile se apila por dimensión (nombre de la fila → ✕ típico → ✓ Xocolata) en vez de tabla, para que siga siendo legible.
+
+Reemplaza `.xh-grid--4txt`/`.xh-tile`, que quedaron sin uso — se limpiaron esas reglas CSS y sus referencias en los media queries compartidos con `.xh-grid`/`.xh-steps`. Verificado en desktop y mobile.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
