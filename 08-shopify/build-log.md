@@ -290,8 +290,25 @@ Reemplaza `.xh-grid--4txt`/`.xh-tile`, que quedaron sin uso — se limpiaron esa
 ### Ticker con íconos, inspirado en Ryze (31 jul)
 El equipo recordó que la cinta scrolleable de Ryze no es solo texto — cada frase lleva un ícono pequeño delante (visto en vivo en ryzesuperfoods.com para confirmar antes de construir, no se adivinó). Se rehizo `.xh-ticker` de Xocolata con el mismo patrón: un ícono de línea (ya usados en el resto del sitio, mismo lenguaje visual) antes de cada una de las 5 frases — reloj (8 min horno), escudo (Triple Sello), bandera (territorio), casa (tradición colombiana), globo (calidad global) — con un separador vertical entre cada una en vez de "·". Estructura HTML cambiada de un string largo con `&nbsp;·&nbsp;` a un `{% capture %}` con 5 `<span>` reales (más fácil de mantener), duplicado dos veces para el loop continuo sin corte, igual que antes. Verificado en desktop y mobile.
 
+### Habilitar inglés de verdad: Shopify Markets + selector de idioma (31 jul)
+Todo el copy bilingüe ya estaba escrito en el tema (`{% if en %}...{% else %}...{% endif %}` en cada sección), pero `/en` colapsaba silenciosamente a la raíz en español — el idioma inglés estaba "publicado" en `shopLocales` pero no era **enrutable**: en Shopify, publicar una traducción no basta, hace falta que un Market tenga una "web presence" que incluya ese locale.
+
+Diagnóstico vía GraphQL Admin:
+- `shopLocales`: `en` publicado (no primario), `es` primario y publicado — la traducción sí existe.
+- El único Market de la tienda ("Colombia", condición región = solo `CO`) tenía `webPresence: null` — sin ruta configurada para ningún locale alterno.
+- La consulta `webPresences` (a nivel de tienda, no de mercado) reveló que **ya existía** una web presence huérfana en el dominio principal (`defaultLocale: es`, `alternateLocales: []`, sin ningún mercado asociado) — probablemente creada automáticamente al activar el idioma inglés en el admin, pero nunca completada.
+
+Solución (2 mutaciones, sin tocar condiciones de mercado ni checkout):
+1. `webPresenceUpdate` sobre esa web presence existente, agregando `en` a `alternateLocales`.
+2. `marketUpdate` sobre el mercado "Colombia", con `webPresencesToAdd` apuntando a esa web presence.
+
+**Punto clave:** esto **no crea un mercado nuevo de Estados Unidos ni toca las condiciones del mercado Colombia** (que sigue restringido a `CO`). Solo agrega el ruteo `/en/` sobre el dominio existente. Respeta la restricción legal del [brief](brief-pagina-wholesale-b2b.md) — "el checkout no debe estar activo hacia clientes de EE. UU. todavía" — porque no se habilitó ningún mercado ni moneda para EE. UU., solo la ruta de idioma.
+
+Verificado en vivo: `/en` carga todo el sitio traducido (hero, ticker, colección, comparativa, FAQ, footer — todo). Además, el tema (Horizon) ya trae un selector de idioma nativo en el header (`show_language: true` en `header-group.json`), que antes no aparecía porque solo había un idioma disponible — en cuanto `en` quedó enrutable, el dropdown "Español ▾" apareció solo en el header, sin escribir código nuevo. Probado clic/selección real en el navegador: cambia todo el sitio a inglés al instante, mismo diseño, conservando la página actual. Verificado en desktop.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
+- [ ] Páginas de detalle de producto (las 4), bilingües, explicando contenido de caja/empaque por producto — en curso.
 
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
