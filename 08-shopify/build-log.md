@@ -262,6 +262,8 @@ Era la única sección del home que seguía siendo puro texto (3 pasos numerados
 
 Cada paso ahora tiene su foto (proporción 1:1, esquinas redondeadas, sombra) con el número flotando en la esquina superior en un badge translúcido, encima del texto que ya existía. Clases nuevas `.xh-step__img`/`.xh-num--onphoto`, sin tocar `.xh-steps`/`.xh-step` compartidas con la sección de Triple Sello (que sigue igual, verificado). Verificado en desktop y mobile.
 
+**Corrección de textura (31 jul, mismo día):** el equipo regeneró las 3 fotos con la corteza del Pandebono **lisa** en vez de la textura moteada/rugosa que salió en la primera ronda — más fiel al producto real. Reemplazadas con los mismos nombres de archivo. Al probar el cambio, la vista previa del navegador siguió mostrando las fotos viejas incluso después de reiniciar `shopify theme dev` — se confirmó con un fetch directo a la URL del asset (`cache: 'no-store'`) que el servidor ya tenía el archivo correcto; era únicamente el pintado/caché de la pestaña del navegador de prueba, resuelto con un `location.reload(true)`. **Nota para el futuro:** si un archivo remplazado con el mismo nombre "no cambia" en la vista previa, antes de sospechar del servidor o de `theme dev`, verificar el asset directo con fetch/`cache: no-store` — casi siempre es la pestaña, no el archivo.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
