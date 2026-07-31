@@ -333,6 +333,12 @@ Proceso técnico: se extrajo el lockup del arte final (recorte de alta resoluci�
 
 **Pendiente, no se pudo hacer por API:** el nombre de la tienda (`shop.name`, sigue en "Mi tienda") no es editable vía GraphQL Admin API por diseño de Shopify — hay que cambiarlo manualmente en el admin (Configuración → General). Es un cambio de 1 minuto para el equipo.
 
+### Dos bugs de mobile reportados y corregidos (31 jul)
+El equipo reportó, probando en celular real: (1) al abrir el menú hamburguesa desde el hero, la cinta dorada del ticker aparecía encima del panel del menú; (2) en la cuadrícula de productos, 3 de los 4 productos mostraban cuadros vacíos en vez de foto.
+
+1. **Cinta sobre el menú:** `.xh-ticker` tenía `z-index:40` (heredado de cuando era solo un elemento sticky sin overlays alrededor). El panel del menú móvil del tema Horizon usa `z-index:18` (y su fondo oscuro `z-index:16`) — al ser la cinta `position:sticky`, con un z-index mayor quedaba visualmente por encima del menú abierto aunque estuviera "detrás" en el DOM. Bajado a `z-index:10`, confirmado en vivo que el menú ahora tapa la cinta correctamente.
+2. **Cuadros vacíos en productos:** Empanada de Cambray, Buñuelo Relleno y Almojábana Especial nunca tuvieron una imagen subida al registro nativo de producto de Shopify (`featuredImage: null`) — solo Pandebono la tenía, de una sesión anterior. El carrusel del home no lo mostraba porque usa fotos hardcodeadas en el tema (`asset_url`), pero cualquier vista que use el sistema nativo de Shopify (cuadrícula de la colección `/collections/all`, recomendaciones "también te puede interesar") sí depende de esa imagen y salía en blanco. Se subieron las mismas 3 fotos ya usadas en el resto del sitio directamente al registro de cada producto vía la API (`stagedUploadsCreate` + `productCreateMedia`). Verificado en vivo: los 4 productos ya muestran foto en la cuadrícula de la colección.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
