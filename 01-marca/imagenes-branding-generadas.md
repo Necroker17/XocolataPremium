@@ -119,4 +119,15 @@ Generado con Higgsfield (Seedance 2.0, image-to-video) a partir de `xoc-hero.jpg
 
 Generada en ChatGPT (conversación "Xocolata Brand") con el PDF real del empaque (`XOCOLATA X4 REF.pdf`) como referencia, color corregido a `#7A1833`/`#5C1226`/`#A82B4A`. Corrección de textura aplicada en la misma sesión: empanada y pandebono deben verse lisos (masa de yuca/maíz, no trigo), no hojaldrados. Versión web en `xocolata-theme/assets/xoc-hero.jpg`, con cinemagraph de vapor regenerado sobre esta foto (`xoc-hero-cinemagraph.mp4`). Reemplaza la foto de "comida servida" anterior — ver [build log](../08-shopify/build-log.md).
 
+## Foto de cada producto en su empaque individual (31 jul)
+
+| # | Archivo | Descripción |
+|---|---|---|
+| 23 | `xoc-empanada-empaque.png` | Bolsa de Empanada de Cambray, empaque real, mármol oscuro |
+| 24 | `xoc-pandebono-empaque.png` | Bolsa de Pandebono en Rosca, empaque real, mármol oscuro |
+| 25 | `xoc-bunuelo-empaque.png` | Bolsa de Buñuelo Relleno, empaque real, mármol oscuro |
+| 26 | `xoc-almojabana-empaque.png` | Bolsa de Almojábana Especial, empaque real, mármol oscuro |
+
+Generadas en ChatGPT (conversación "Xocolata Brand") con el PDF real del empaque (`XOCOLATA X4 REF.pdf`) y la foto del hero como referencia, mismo color de marca (`#7A1833`/`#5C1226`/`#A82B4A`). Cada bolsa muestra el producto real a través de la ventana transparente. Versión web en `xocolata-theme/assets/xoc-{empanada,pandebono,bunuelo,almojabana}-empaque.jpg`, insertadas en la sección "Cómo viene tu pedido" de cada página de producto — ver [build log](../08-shopify/build-log.md).
+
 Ver también [brief-branding-profesional.md](brief-branding-profesional.md) e [identidad y posicionamiento](identidad-y-posicionamiento.md).
