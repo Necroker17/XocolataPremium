@@ -283,6 +283,8 @@ El equipo pidió convertir las 4 tarjetas de texto de "No vendemos congelados. C
 
 Reemplaza `.xh-grid--4txt`/`.xh-tile`, que quedaron sin uso — se limpiaron esas reglas CSS y sus referencias en los media queries compartidos con `.xh-grid`/`.xh-steps`. Verificado en desktop y mobile.
 
+**Ajuste (mismo día):** el equipo no quería que la tabla se "reacomodara" en celular perdiendo la forma de tabla — pidió que se viera igual, tipo tabla, en cualquier tamaño. Se cambió el enfoque: en vez de reflow a una columna en mobile, la tabla mantiene sus 3 columnas siempre (`min-width:660px`) dentro de un contenedor con scroll horizontal (`.xh-vs-scroll`), con una pista de texto "Desliza para ver la comparación completa →" visible solo en mobile. Confirmado que el scroll lateral funciona y revela la columna de Xocolata completa.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
