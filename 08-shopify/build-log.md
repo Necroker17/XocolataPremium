@@ -264,6 +264,9 @@ Cada paso ahora tiene su foto (proporción 1:1, esquinas redondeadas, sombra) co
 
 **Corrección de textura (31 jul, mismo día):** el equipo regeneró las 3 fotos con la corteza del Pandebono **lisa** en vez de la textura moteada/rugosa que salió en la primera ronda — más fiel al producto real. Reemplazadas con los mismos nombres de archivo. Al probar el cambio, la vista previa del navegador siguió mostrando las fotos viejas incluso después de reiniciar `shopify theme dev` — se confirmó con un fetch directo a la URL del asset (`cache: 'no-store'`) que el servidor ya tenía el archivo correcto; era únicamente el pintado/caché de la pestaña del navegador de prueba, resuelto con un `location.reload(true)`. **Nota para el futuro:** si un archivo remplazado con el mismo nombre "no cambia" en la vista previa, antes de sospechar del servidor o de `theme dev`, verificar el asset directo con fetch/`cache: no-store` — casi siempre es la pestaña, no el archivo.
 
+### Ajuste visual: insignias de la fila de atributos (31 jul)
+Los 4 atributos (-18°C, 8 MIN HORNO, HUEVO PASTEURIZADO, PRODUCTO COLOMBIANO) debajo de los pasos de "Cómo funciona" se sentían poco definidos — solo un ícono delgado flotando junto al texto, sin ningún fondo. Se envolvió cada ícono en una insignia circular con relleno degradado dorado y borde, y cada atributo completo pasó a ser una tarjeta con fondo sutil y borde — mismo lenguaje visual que el resto del sitio (círculos dorados de `.xh-num`, tarjetas translúcidas). Se agregó también un efecto sutil de elevación al pasar el mouse. Verificado en desktop y mobile.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
