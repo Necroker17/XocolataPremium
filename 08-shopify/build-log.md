@@ -254,6 +254,14 @@ El footer seguía siendo el bloque genérico de Shopify (título + un párrafo, 
 
 Se agregaron IDs de ancla a 4 secciones de `xoc-home.liquid` que no los tenían (`#xh-como-funciona`, `#xh-insumos`, `#xh-faq`, `#xh-contacto`) para que los enlaces del footer funcionen — solo `#xh-coleccion` ya existía, del carrusel. Verificado en desktop y mobile, y confirmado que el ancla navega al lugar correcto.
 
+### Décima tanda: fotos de proceso para "Cómo funciona" (31 jul)
+Era la única sección del home que seguía siendo puro texto (3 pasos numerados sin ninguna imagen), mientras el resto del sitio ya tenía foto o video en cada sección. Se generaron 3 fotos en ChatGPT (no Higgsfield esta vez, a pedido del equipo), mismo sistema visual de marca, contando el proceso con el Pandebono en Rosca como hilo conductor:
+- **Recibes:** el pandebono congelado, con escarcha y niebla fría azulada.
+- **Horneas:** el pandebono dorándose dentro de un horno con la puerta entreabierta, luz cálida intensa.
+- **Vendes:** varios pandebonos recién horneados en vitrina de panadería.
+
+Cada paso ahora tiene su foto (proporción 1:1, esquinas redondeadas, sombra) con el número flotando en la esquina superior en un badge translúcido, encima del texto que ya existía. Clases nuevas `.xh-step__img`/`.xh-num--onphoto`, sin tocar `.xh-steps`/`.xh-step` compartidas con la sección de Triple Sello (que sigue igual, verificado). Verificado en desktop y mobile.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).

@@ -88,6 +88,18 @@ Generadas con **Higgsfield → GPT Image 2**. Sin rostros de personas (ver [buil
 
 La foto de empaques (#18) reemplaza la imagen genérica de rollos de plástico sin marca que tenía la tarjeta "Empaques y soporte" en el grid de insumos del home — ahora muestra el empaque real de Xocolata. Versión web en `xocolata-theme/assets/xoc-insumo-empaques.jpg` (reemplaza el archivo anterior del mismo nombre).
 
+## Fotos del proceso "Cómo funciona" (31 jul 2026)
+
+Generadas en ChatGPT (conversación "Xocolata Brand"), mismo sistema visual, contando el proceso con el Pandebono en Rosca.
+
+| # | Archivo (`Material grafico/branding-generado/`) | Qué es |
+|---|---|---|
+| 19 | `xoc-brand-19-paso-recibes.png` | Pandebono congelado, escarcha y niebla fría — paso "Recibes" |
+| 20 | `xoc-brand-20-paso-horneas.png` | Pandebono dorándose en el horno, puerta entreabierta — paso "Horneas" |
+| 21 | `xoc-brand-21-paso-vendes.png` | Pandebonos horneados en vitrina de panadería — paso "Vendes" |
+
+Versión web en `xocolata-theme/assets/xoc-paso-{01-recibes,02-horneas,03-vendes}.jpg` (~160-206 KB). Cada foto acompaña su paso correspondiente en la sección "Cómo funciona" del home, con el número superpuesto en un badge translúcido.
+
 ## Pendiente (decisión del equipo)
 
 - [ ] **Elegir el motivo final** entre vapor dorado (opción 3, recomendada) y laurel (opción 4) — los 4 empaques ya generados usan vapor dorado; si se prefiere laurel, se regeneran los 4 frentes con ese motivo (cambio de una línea en cada prompt).
