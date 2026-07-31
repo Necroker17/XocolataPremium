@@ -352,4 +352,9 @@ El hero seguía siendo la única sección grande del home sin ningún tipo de mo
 
 Integrado en `.xh-hero` como `<video autoplay muted loop playsinline>` posicionado absoluto, con la foto estática de siempre como `poster`/fallback y respetando `prefers-reduced-motion` (oculta el video, deja la foto fija). El degradado de texto que antes iba pintado en el `background-image` se separó a su propio overlay (`.xh-hero__overlay`) para que quede encima del video sin taparlo. Verificado en vivo: el video hace loop correctamente en desktop y mobile.
 
+### Barra superior con ícono y countdown en vivo, inspirada en Ryze (31 jul)
+El equipo pidió, viendo la versión mobile de ryzesuperfoods.com, replicar su barra superior de anuncio: ícono + texto + countdown en vivo (verificado en el sitio real antes de construir). La barra de Xocolata era hasta ahora el bloque genérico de anuncio de Shopify (solo texto plano, sin ícono ni countdown). Se reemplazó por una sección a medida, `sections/xoc-topbar.liquid` — sello/escudo dorado + "Agenda tu degustación antes de la feria de Miami" + countdown compacto en línea (`44d 13h 48m 25s`), en `header-group.json` en el mismo lugar donde vivía el bloque genérico.
+
+Reutiliza el mismo patrón de countdown ya construido para la sección "Countdown feria" del home (`data-xh-countdown`/`data-target`), pero como la barra vive en el grupo de header (aparece en **todas** las páginas, no solo el home), el script de countdown se duplicó dentro de la propia sección con una bandera `data-xtb-init` para evitar que se inicialice dos veces en la página de inicio (donde coexisten la barra superior y la sección de countdown más abajo). Verificado en vivo: el countdown corre en tiempo real (los segundos bajan) en desktop, mobile, home y páginas de producto.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
