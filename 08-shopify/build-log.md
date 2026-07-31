@@ -344,7 +344,12 @@ El equipo reportó, probando en celular real: (1) al abrir el menú hamburguesa 
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
 - [ ] Pedir a Daka que corrija las instrucciones de preparación del empaque impreso (dicen "waffles", placeholder no actualizado) y agregue "Pasteurizada" a mantequilla/leche del Pandebono.
 - [ ] Confirmar con el equipo/Daka el peso real de la Empanada de Cambray (60 g usado en el sitio vs. 80 g del panel nutricional impreso).
-- [ ] Cambiar el nombre de la tienda a "Xocolata Food Premium" en el admin (Configuración → General) — no editable vía API.
+- [x] ~~Cambiar el nombre de la tienda a "Xocolata Food Premium" en el admin~~ — hecho por el equipo (31 jul), verificado vía API (`shop.name`) y en vivo (pestaña del navegador).
 - [ ] Número de WhatsApp comercial (sigue sin confirmar — todos los CTA "Hablemos" usan `mailto:` por ahora).
+
+### Cinemagraph en el hero (31 jul)
+El hero seguía siendo la única sección grande del home sin ningún tipo de movimiento (video/cinemagraph), mientras nostalgia e insumos ya lo tenían. Se usó la misma técnica ya validada del cinemagraph del pandebono (Higgsfield, Seedance 2.0, image-to-video, cámara fija) mismo sobre `xoc-hero.jpg` — foto que ya tenía vapor pintado de fondo, candidata ideal. Prompt: cámara estática sin movimiento, el pan sin deformarse, solo los hilos de vapor del fondo se mueven. Verificado frame a frame (1 por segundo, 5s totales): el pan es idéntico en todos los frames, solo cambia la forma del vapor. Aprobado a la primera.
+
+Integrado en `.xh-hero` como `<video autoplay muted loop playsinline>` posicionado absoluto, con la foto estática de siempre como `poster`/fallback y respetando `prefers-reduced-motion` (oculta el video, deja la foto fija). El degradado de texto que antes iba pintado en el `background-image` se separó a su propio overlay (`.xh-hero__overlay`) para que quede encima del video sin taparlo. Verificado en vivo: el video hace loop correctamente en desktop y mobile.
 
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).

@@ -100,6 +100,10 @@ Generadas en ChatGPT (conversación "Xocolata Brand"), mismo sistema visual, con
 
 Versión web en `xocolata-theme/assets/xoc-paso-{01-recibes,02-horneas,03-vendes}.jpg` (~160-206 KB). Cada foto acompaña su paso correspondiente en la sección "Cómo funciona" del home, con el número superpuesto en un badge translúcido.
 
+## Cinemagraph del hero (31 jul)
+
+Generado con Higgsfield (Seedance 2.0, image-to-video) a partir de `xoc-hero.jpg` (ya existente, con vapor pintado de fondo) — misma técnica del cinemagraph del pandebono (sección de nostalgia): cámara fija, el pan no se deforma, solo el vapor de fondo se mueve. 5 segundos, 1920×1080. Verificado frame a frame antes de integrar. Archivo: `xocolata-theme/assets/xoc-hero-cinemagraph.mp4` (~2.6 MB). Reemplaza la foto estática como fondo del hero (`<video autoplay muted loop playsinline>`, con la foto original como `poster`/fallback y respetando `prefers-reduced-motion`).
+
 ## Pendiente (decisión del equipo)
 
 - [ ] **Elegir el motivo final** entre vapor dorado (opción 3, recomendada) y laurel (opción 4) — los 4 empaques ya generados usan vapor dorado; si se prefiere laurel, se regeneran los 4 frentes con ese motivo (cambio de una línea en cada prompt).
