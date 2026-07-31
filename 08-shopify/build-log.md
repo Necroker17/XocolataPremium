@@ -232,6 +232,16 @@ Se generó con **Higgsfield → GPT Image 2** (el mismo motor que ChatGPT, pero 
 
 **Nota de herramienta:** el tema usa un contenedor interno `.page-wrapper` con su propio scroll (no `window`/`body`) en viewports de escritorio — hay que hacer scroll ahí, no en `window`, al depurar visualmente con capturas automatizadas. En mobile sí vuelve a ser el `body` normal.
 
+### Séptima tanda: prueba social más completa, inspirada en los reviews de Ryze (30-31 jul)
+El equipo pidió que la sección de testimonios se viera "tan completa como los de Ryze" (fotos + texto convincente), pero con un límite explícito: **no generar fotos de rostros de personas** para acompañar citas de negocios inventados — un texto marcado "(ejemplo)" ya es honesto por sí solo, pero ponerle una cara de IA a un nombre de negocio ficticio cruza a presentar una identidad falsa como real. Se optó por una alternativa sin ese riesgo: 3 fotos genéricas de interiores de negocio (mostrador de panadería, bodega de distribución, mostrador de cafetería — generadas en Higgsfield/GPT Image 2, sin personas, sin letreros ni marcas) en vez de un rostro.
+
+Rediseñada cada tarjeta: foto de negocio (16:9) con badge "Aliado verificado" superpuesto, 5 estrellas doradas (SVG), cita más larga y específica orientada al *significado* de trabajar con Xocolata (no solo beneficios operativos), nombre + ciudad + "(ejemplo)" se mantiene. Las 3 citas nuevas:
+- Panadería El Trigal (Miami, FL): ser los primeros con el sabor de Colombia cambió cómo los ven sus clientes.
+- Distribuidora Andina (Houston, TX): la garantía Triple Sello cumplida generó confianza en el resto de la relación.
+- Café Latino Express (Newark, NJ): el impacto emocional de ver a un cliente reaccionar al primer bocado.
+
+Verificado en desktop y mobile.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
