@@ -275,6 +275,9 @@ Agregados los 3 íconos de redes sociales (TikTok, Instagram, Facebook) en `xoc-
 
 Verificado en desktop y mobile.
 
+### Limpieza de la fila de atributos (31 jul)
+Se quitó "Huevo Pasteurizado" de la fila de atributos de "Cómo funciona" — era un dato de ingrediente/inocuidad mezclado entre datos de proceso y logística (-18°C, 8 MIN HORNO, PRODUCTO COLOMBIANO), se sentía fuera de tono. Quedan los 3 que sí cuentan una historia coherente de principio a fin. El dato de pasteurización sigue disponible en otras partes del sitio (ej. "Respaldo de exportación") y en la ficha técnica cuando se redacte.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
