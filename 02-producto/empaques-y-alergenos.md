@@ -32,6 +32,21 @@ Daka entregó el diseño de empaque final y listo para imprimir para los 4 produ
 - **Corrección de gluten aplicada solo parcialmente:** el problema de fondo (asociación visual con trigo) se resolvió, pero el hallazgo de que la Almojábana sí contiene trigo (ver arriba) sigue vigente — sin relación con el diseño gráfico, es la fórmula real del producto.
 - **Inconsistencia en la regla de "Pasteurizado" (ver abajo):** el ingrediente del Pandebono en Rosca lista "mantequilla" y "leche" **sin** el calificativo "pasteurizada/o", a diferencia de los otros 3 productos que sí lo aplican consistentemente en sus quesos. Vale la pena pedirle a Daka/la diseñadora que lo ajuste antes de imprimir, para mantener la consistencia de la regla definida el 21 jul (ver abajo).
 
+## Corrección final de gluten (31 jul, con el panel nutricional real leído completo)
+
+Al construir las páginas de detalle de producto se leyó línea por línea el panel nutricional real de los 4 productos (`XOCOLATA X4 REF.pdf`), no solo la ficha resumen usada en las correcciones anteriores. Resultado — **la lista de candidatos gluten-free cambia otra vez, y esta vez en sentido contrario**:
+
+| Producto | Harina | Declaración CONTIENE (empaque real) |
+|---|---|---|
+| Empanada de Cambray | Harina de **maíz** (no trigo) | Leche, derivados lácteos |
+| Pandebono en Rosca | Harina de maíz | Leche, derivados lácteos |
+| Buñuelo Relleno | Sin harina de trigo | Leche, derivados lácteos y huevo |
+| Almojábana Especial | Harina de **trigo** | **Leche y gluten** |
+
+Es decir: de los 4 productos, **solo la Almojábana Especial contiene gluten** — la Empanada de Cambray, que se había asumido con trigo desde el primer documento de este archivo, en realidad no lo lleva según el empaque final impreso. Esto invierte la suposición original ("solo la Empanada lleva trigo") y también la corrección del 31 jul anterior (que asumía Empanada + Almojábana como no-candidatas). Esta tabla, basada en el panel nutricional real, es la fuente de verdad más reciente.
+
+Ningún producto muestra un sello "Gluten Free" en el sitio — se optó por mostrar los ingredientes tal como están impresos en el empaque, sin hacer el claim, ya que la certificación formal con Daka sigue pendiente (ver siguiente paso, abajo). Aplicado en las páginas de detalle de producto — ver [build-log](../08-shopify/build-log.md).
+
 ## Regla de etiquetado: huevo y lácteos siempre como "pasteurizado"
 
 **Convención obligatoria (definida 21 jul):** en cualquier lista de ingredientes, ficha técnica o empaque, todo ingrediente a base de huevo o lácteo debe nombrarse con el calificativo **"Pasteurizado"** — nunca el ingrediente solo.

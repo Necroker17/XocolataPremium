@@ -306,9 +306,30 @@ Solución (2 mutaciones, sin tocar condiciones de mercado ni checkout):
 
 Verificado en vivo: `/en` carga todo el sitio traducido (hero, ticker, colección, comparativa, FAQ, footer — todo). Además, el tema (Horizon) ya trae un selector de idioma nativo en el header (`show_language: true` en `header-group.json`), que antes no aparecía porque solo había un idioma disponible — en cuanto `en` quedó enrutable, el dropdown "Español ▾" apareció solo en el header, sin escribir código nuevo. Probado clic/selección real en el navegador: cambia todo el sitio a inglés al instante, mismo diseño, conservando la página actual. Verificado en desktop.
 
+### Páginas de detalle de producto, las 4, bilingües (31 jul)
+Hasta ahora los 4 productos usaban la plantilla genérica de Shopify (galería + caja de compra con "Agregar al carrito" y precio $0,00 — rota para el modelo de cotización B2B). Se construyó una página a medida por producto, mismo patrón visual del resto del sitio (paleta vino/dorado, `{% if en %}` bilingüe): `sections/xoc-product-empanada.liquid`, `xoc-product-bunuelo.liquid`, `xoc-product-almojabana.liquid`, `xoc-product-pandebono.liquid`, cada una con su `templates/product.[handle].json` y asignada al producto vía `templateSuffix` (GraphQL `productUpdate`). Estructura común, definida primero en Empanada de Cambray y replicada en las otras 3:
+
+1. **Hero** — foto real del producto (reusa los assets ya existentes del home), eyebrow, tagline y pitch ya validados (mismo copy del carrusel del home), CTA "Hablemos" (mailto) en vez de botón de compra — sin precio, sin carrito, consistente con el modelo de cotización.
+2. **Cómo viene tu pedido** — 4 tarjetas estadísticas (peso por unidad, unidades por paquete/bolsa, paquetes/bolsas por caja, total por caja), mismos números ya usados en las tarjetas del home.
+3. **Preparación** — banda vino con -18°C / 8 MIN HORNO / PRODUCTO COLOMBIANO, más una línea de horno explícita: **precalentar a 180°C, ~8 minutos, sin descongelar** (dato pedido directo por el equipo, igual para los 4 productos).
+4. **Ingredientes y alérgenos** — texto real tomado del panel nutricional del empaque final (`XOCOLATA X4 REF.pdf`), no inventado, con tabla de información nutricional (calorías, grasa, sodio, carbohidratos, proteína) también real.
+5. **Cross-sell** — tarjetas a los otros 3 productos de la colección.
+6. **CTA final**.
+
+**Hallazgo importante de alérgenos (corrige el brain):** al leer el panel nutricional real, resultó que **la Empanada de Cambray usa harina de maíz (no de trigo)** y declara solo "Contiene: Leche" — no lleva gluten, al contrario de lo que decía este documento hasta hoy. La única de los 4 productos que sí lleva harina de trigo y declara "Contiene: Leche y gluten" es la **Almojábana Especial** — queda marcado explícitamente en su página. Ningún producto lleva un sello "Gluten Free" (la certificación formal con Daka sigue pendiente), solo se muestran los ingredientes tal como están impresos. Ver corrección aplicada en [empaques y alérgenos](../02-producto/empaques-y-alergenos.md).
+
+**Ajustes de datos, a pedido del equipo:**
+- El peso de la Empanada quedó en **60 g** (el ya validado en el resto del sitio), aunque el panel nutricional impreso dice 80 g — se mantuvieron los valores nutricionales reales (240 cal, etc.) con la etiqueta de porción en 60 g para no contradecir el resto del sitio.
+- Pandebono en Rosca: el ingrediente del empaque real dice "mantequilla" y "leche" sin el calificativo "pasteurizada" (inconsistencia ya flagged en el 31 jul). En el sitio web sí se aplicó el calificativo correcto ("mantequilla pasteurizada", "leche pasteurizada"), siguiendo la convención del 21 jul que exige esto en toda pieza de cara al cliente incluyendo la web — el empaque impreso sigue pendiente de que Daka lo corrija.
+
+**Bloqueo encontrado y resuelto:** los 4 productos estaban en estado Borrador (`DRAFT`), no publicados al canal de Tienda Online — cualquier URL de producto daba 404 incluso en la vista previa del tema. No es algo introducido en esta tanda, ya existía. Se confirmó con el equipo que esto no afecta el modelo de cotización (el precio sigue en $0, sin checkout real) y se publicaron los 4 (`productUpdate` a `ACTIVE` + `publishablePublish` al canal Tienda Online).
+
+Verificado en vivo: los 4 productos cargan correctamente en desktop y mobile, en español e inglés.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
-- [ ] Páginas de detalle de producto (las 4), bilingües, explicando contenido de caja/empaque por producto — en curso.
+- [ ] Pedir a Daka que corrija las instrucciones de preparación del empaque impreso (dicen "waffles", placeholder no actualizado) y agregue "Pasteurizada" a mantequilla/leche del Pandebono.
+- [ ] Confirmar con el equipo/Daka el peso real de la Empanada de Cambray (60 g usado en el sitio vs. 80 g del panel nutricional impreso).
 
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
