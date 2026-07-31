@@ -249,6 +249,11 @@ Las páginas del PDF (formato de imprenta, con anotaciones de medidas) se convir
 
 **Nota de continuidad de sesión:** a mitad de esta tanda la sesión se cortó (el proceso `shopify theme dev` y el estado del navegador se perdieron, igual que en otras ocasiones documentadas en este log). Los 4 trabajos de Higgsfield en curso en ese momento (3 fotos de testimonios de la séptima tanda + esta foto de empaques) **sí habían terminado del lado del servidor** — se recuperaron con `higgsfield generate list --json` en vez de regenerarlos, sin gastar créditos de más. Confirma que los jobs de Higgsfield son seguros de retomar así tras un corte: no hace falta reiniciarlos si ya se lanzaron.
 
+### Novena tanda: footer a medida (31 jul)
+El footer seguía siendo el bloque genérico de Shopify (título + un párrafo, sin estilo de marca, sin navegación). Se construyó `sections/xoc-footer.liquid` — sección nueva e independiente (no vive dentro de `xoc-home.liquid`, porque el footer se renderiza en `footer-group.json`), con la misma paleta vinotinto/dorado y tipografía serif del resto del sitio: columna de marca (wordmark + tagline + Cali, Colombia), columna "Explorar" con anclas a las secciones del home, columna "Hablemos" (correo + fecha de la feria + botón CTA), y una barra inferior con el sello Triple Sello + copyright. `footer-group.json` se actualizó para usar `"type": "xoc-footer"` en vez del bloque genérico, dejando `footer-utilities` (copyright automático + links de políticas) intacto debajo.
+
+Se agregaron IDs de ancla a 4 secciones de `xoc-home.liquid` que no los tenían (`#xh-como-funciona`, `#xh-insumos`, `#xh-faq`, `#xh-contacto`) para que los enlaces del footer funcionen — solo `#xh-coleccion` ya existía, del carrusel. Verificado en desktop y mobile, y confirmado que el ancla navega al lugar correcto.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
