@@ -75,6 +75,19 @@ Usada como imagen protagonista (banner 16:9) de la sección "Se sienten en casa"
 
 Revisado el contenido de ingredientes/alérgenos — ver la corrección importante en [empaques y alérgenos](../02-producto/empaques-y-alergenos.md): la Almojábana Especial sí contiene trigo (no es candidata gluten-free como se asumía antes), y el Pandebono tiene una inconsistencia menor en el uso del calificativo "Pasteurizado".
 
+## Fotos de negocio para prueba social + empaques con producto (30-31 jul 2026)
+
+Generadas con **Higgsfield → GPT Image 2**. Sin rostros de personas (ver [build-log](../08-shopify/build-log.md) para el razonamiento — no se fabrica una identidad falsa para acompañar una cita de ejemplo).
+
+| # | Archivo (`Material grafico/branding-generado/`) | Qué es |
+|---|---|---|
+| 15 | `xoc-brand-15-testimonio-panaderia.png` | Mostrador de panadería genérico, sin personas ni marcas — thumbnail del testimonio "Panadería El Trigal (ejemplo)" |
+| 16 | `xoc-brand-16-testimonio-distribuidora.png` | Bodega de distribución genérica — thumbnail del testimonio "Distribuidora Andina (ejemplo)" |
+| 17 | `xoc-brand-17-testimonio-cafe.png` | Mostrador de cafetería genérico — thumbnail del testimonio "Café Latino Express (ejemplo)" |
+| 18 | `xoc-brand-18-empaques-producto.png` | Empaque final real (Empanada Cambray + Pandebono Rosca) renderizado en 3D fotorrealista sobre mármol oscuro, con el producto correcto visible en cada ventana — generado usando el PDF de empaque final de Daka y las fotos reales de producto como referencia |
+
+La foto de empaques (#18) reemplaza la imagen genérica de rollos de plástico sin marca que tenía la tarjeta "Empaques y soporte" en el grid de insumos del home — ahora muestra el empaque real de Xocolata. Versión web en `xocolata-theme/assets/xoc-insumo-empaques.jpg` (reemplaza el archivo anterior del mismo nombre).
+
 ## Pendiente (decisión del equipo)
 
 - [ ] **Elegir el motivo final** entre vapor dorado (opción 3, recomendada) y laurel (opción 4) — los 4 empaques ya generados usan vapor dorado; si se prefiere laurel, se regeneran los 4 frentes con ese motivo (cambio de una línea en cada prompt).

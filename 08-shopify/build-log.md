@@ -242,6 +242,13 @@ Rediseñada cada tarjeta: foto de negocio (16:9) con badge "Aliado verificado" s
 
 Verificado en desktop y mobile.
 
+### Octava tanda: foto de empaques reales con producto, a partir del diseño final de Daka (31 jul)
+El equipo subió el diseño de empaque final y listo para imprimir de los 4 productos (`Material grafico/branding-generado/XOCOLATA X4 REF.pdf`, ver [empaques y alérgenos](../02-producto/empaques-y-alergenos.md) para los hallazgos de esa revisión) y pidió generar una foto de producto real usando esos empaques — para reemplazar la imagen genérica de rollos de plástico sin marca que tenía la tarjeta "Empaques y soporte" del grid de insumos.
+
+Las páginas del PDF (formato de imprenta, con anotaciones de medidas) se convirtieron a imagen con `pdftoppm` (Poppler, ya instalado) y se recortó el panel frontal de cada bolsa. Esos recortes, más las fotos reales de Empanada de Cambray y Pandebono en Rosca, se pasaron como `--image_references` a Higgsfield/GPT Image 2 para generar un render 3D fotorrealista de las dos bolsas reales de pie sobre mármol oscuro, con el producto correcto visible en cada ventana — mismo tratamiento visual que el resto de fotos de insumos. Salió bien a la primera. Reemplaza `assets/xoc-insumo-empaques.jpg`.
+
+**Nota de continuidad de sesión:** a mitad de esta tanda la sesión se cortó (el proceso `shopify theme dev` y el estado del navegador se perdieron, igual que en otras ocasiones documentadas en este log). Los 4 trabajos de Higgsfield en curso en ese momento (3 fotos de testimonios de la séptima tanda + esta foto de empaques) **sí habían terminado del lado del servidor** — se recuperaron con `higgsfield generate list --json` en vez de regenerarlos, sin gastar créditos de más. Confirma que los jobs de Higgsfield son seguros de retomar así tras un corte: no hace falta reiniciarlos si ya se lanzaron.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
