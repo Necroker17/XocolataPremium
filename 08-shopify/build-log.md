@@ -366,4 +366,17 @@ La foto se generó en ChatGPT (misma conversación "Xocolata Brand" usada para t
 
 Reemplaza `assets/xoc-hero.jpg` (mismo nombre de archivo, no requirió cambios de código) y se regeneró el cinemagraph de vapor (misma técnica Higgsfield/Seedance 2.0 ya validada) sobre la foto nueva — el vapor ahora sube detrás de las bolsas y en las luces cálidas desenfocadas del fondo, en vez de sobre comida servida. Verificado frame a frame y en vivo. Archivo fuente completo archivado en `Material grafico/branding-generado/xoc-brand-22-hero-empaques.png`.
 
+### Fotos de los 4 productos regeneradas con investigación real previa (31 jul)
+Las 4 fotos de producto (`xoc-empanada.jpg`, `xoc-pandebono.jpg`, `xoc-bunuelo.jpg`, `xoc-almojabana.jpg` — usadas tanto en el carrusel del home como en cada página de detalle de producto) tenían errores de realismo: la empanada se veía como hojaldre de trigo clásico (con repulgue trenzado), el pandebono tenía superficie craquelada, y no había forma de saber que la almojábana es más pequeña que los demás productos.
+
+Antes de generar, se investigó cómo es cada producto realmente (búsqueda web, no se adivinó):
+- **Empanada de Cambray**: receta tradicional del Valle del Cauca — masa de queso costeño y almidón de yuca (sin trigo), forma de media luna, masa lisa, relleno de dulce de guayaba y queso.
+- **Buñuelo Relleno**: a diferencia de la empanada y el pandebono, el buñuelo SÍ debe verse craquelado/agrietado — es masa frita, no horneada, así que esa textura es auténtica. Relleno de arequipe y queso mozzarella inyectado después de freír.
+- **Almojábana Especial**: tamaño real "pelota de golf" antes de hornear — debe verse claramente más pequeña que el pandebono o el buñuelo, disco aplanado, no bola grande.
+- **Pandebono en Rosca**: confirma lo ya sabido — rosca lisa y dorada, sin agrietado.
+
+Las 4 se regeneraron en la misma conversación de ChatGPT ("Xocolata Brand"), mismo mármol oscuro y luz cálida de marca. Reemplazan los archivos de tema con el mismo nombre (sin cambios de código) y ya están verificadas en vivo en el carrusel del home y en las páginas de producto.
+
+**Pendiente:** las imágenes nativas de producto en Shopify (subidas para arreglar el bug de "cuadros vacíos" en la colección, ver entrada anterior) todavía muestran las fotos viejas con la textura incorrecta — hay que resubirlas con las nuevas. No se pudo hacer en esta sesión porque el MCP de Shopify se desconectó; queda para la próxima.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
