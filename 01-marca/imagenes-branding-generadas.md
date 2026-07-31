@@ -69,6 +69,12 @@ Generada con **Higgsfield → GPT Image 2** (no ChatGPT esta vez — ver [rol de
 
 Usada como imagen protagonista (banner 16:9) de la sección "Se sienten en casa" del home, reemplazando el panel anterior de foto pequeña + texto. Versión web optimizada en `xocolata-theme/assets/xoc-cafe-mesa.jpg` (~210 KB, 1600px de ancho).
 
+## Diseño final de empaque (31 jul 2026) — ya no es IA, es el diseño de producción real
+
+`Material grafico/branding-generado/XOCOLATA X4 REF.pdf` — entregado por Daka/diseñadora externa, no generado con IA. Reemplaza toda la "ronda de correcciones v2/v3" de empaques con IA descrita arriba: es el arte final listo para imprimir de los 4 productos (Empanada de Cambray, Almojábana Especial, Buñuelo Relleno, Pandebono en Rosca), 16.75 × 25 cm, frente con ventana transparente + reverso completo (tabla nutricional, ingredientes, instrucciones de preparación, historia de marca, QR, código de barras, sello "Producto Colombiano Premium"). Usa el motivo de ramas doradas (laurel), no el de vapor ni el de espigas de trigo.
+
+Revisado el contenido de ingredientes/alérgenos — ver la corrección importante en [empaques y alérgenos](../02-producto/empaques-y-alergenos.md): la Almojábana Especial sí contiene trigo (no es candidata gluten-free como se asumía antes), y el Pandebono tiene una inconsistencia menor en el uso del calificativo "Pasteurizado".
+
 ## Pendiente (decisión del equipo)
 
 - [ ] **Elegir el motivo final** entre vapor dorado (opción 3, recomendada) y laurel (opción 4) — los 4 empaques ya generados usan vapor dorado; si se prefiere laurel, se regeneran los 4 frentes con ese motivo (cambio de una línea en cada prompt).
