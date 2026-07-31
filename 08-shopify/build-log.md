@@ -267,6 +267,14 @@ Cada paso ahora tiene su foto (proporción 1:1, esquinas redondeadas, sombra) co
 ### Ajuste visual: insignias de la fila de atributos (31 jul)
 Los 4 atributos (-18°C, 8 MIN HORNO, HUEVO PASTEURIZADO, PRODUCTO COLOMBIANO) debajo de los pasos de "Cómo funciona" se sentían poco definidos — solo un ícono delgado flotando junto al texto, sin ningún fondo. Se envolvió cada ícono en una insignia circular con relleno degradado dorado y borde, y cada atributo completo pasó a ser una tarjeta con fondo sutil y borde — mismo lenguaje visual que el resto del sitio (círculos dorados de `.xh-num`, tarjetas translúcidas). Se agregó también un efecto sutil de elevación al pasar el mouse. Verificado en desktop y mobile.
 
+### Redes sociales en el footer (31 jul)
+Agregados los 3 íconos de redes sociales (TikTok, Instagram, Facebook) en `xoc-footer.liquid`, debajo de "Cali, Colombia" en la columna de marca — mismas insignias circulares doradas que ya se usan en la fila de atributos de "Cómo funciona", abren en pestaña nueva (`target="_blank" rel="noopener"`). Enlaces reales:
+- TikTok: https://www.tiktok.com/@xocolatafoodpremium
+- Instagram: https://www.instagram.com/xocolatafoodpremium
+- Facebook: https://www.facebook.com/profile.php?id=61591942831611
+
+Verificado en desktop y mobile.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
