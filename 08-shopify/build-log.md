@@ -326,10 +326,19 @@ Hasta ahora los 4 productos usaban la plantilla genérica de Shopify (galería +
 
 Verificado en vivo: los 4 productos cargan correctamente en desktop y mobile, en español e inglés.
 
+### Logo real subido al header y favicon (31 jul)
+El header seguía mostrando el nombre de la tienda como texto plano ("Mi tienda") porque nunca se había subido ningún logo — pendiente desde el brief original. Se compararon 3 candidatos con el equipo (ver comparación visual): un monograma "X" suelto, un lockup generado con IA para fondo claro (nunca usado en producción), y **el logo real ya aprobado e impreso en el empaque final de Daka** (`XOCOLATA X4 REF.pdf`). Se eligió el tercero — es el único que ya pasó por aprobación de producción real; usar cualquier otro en la web crearía una discrepancia entre lo que el cliente ve en la página y lo que recibe en la caja física.
+
+Proceso técnico: se extrajo el lockup del arte final (recorte de alta resolución del panel frontal del empaque), se limpió el fondo vino con `ffmpeg colorkey` para dejarlo transparente (funciona tanto en el header claro como sobre fondos oscuros), y se recortó por separado solo la "X" caligráfica para el favicon (el lockup completo no se lee a 32px). Ambos archivos se subieron a Shopify vía la API (`stagedUploadsCreate` + `fileCreate`) y se referenciaron en `config/settings_data.json` (`settings.logo`, `settings.favicon` — son ajustes nativos del tema Horizon, no assets de tema). Verificado: el logo carga en el header (90×44px) y el favicon en la pestaña (32×32px, recortado).
+
+**Pendiente, no se pudo hacer por API:** el nombre de la tienda (`shop.name`, sigue en "Mi tienda") no es editable vía GraphQL Admin API por diseño de Shopify — hay que cambiarlo manualmente en el admin (Configuración → General). Es un cambio de 1 minuto para el equipo.
+
 ### Pendiente (siguiente tanda de la propuesta Ryze)
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
 - [ ] Pedir a Daka que corrija las instrucciones de preparación del empaque impreso (dicen "waffles", placeholder no actualizado) y agregue "Pasteurizada" a mantequilla/leche del Pandebono.
 - [ ] Confirmar con el equipo/Daka el peso real de la Empanada de Cambray (60 g usado en el sitio vs. 80 g del panel nutricional impreso).
+- [ ] Cambiar el nombre de la tienda a "Xocolata Food Premium" en el admin (Configuración → General) — no editable vía API.
+- [ ] Número de WhatsApp comercial (sigue sin confirmar — todos los CTA "Hablemos" usan `mailto:` por ahora).
 
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
