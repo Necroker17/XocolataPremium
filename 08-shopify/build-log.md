@@ -357,4 +357,13 @@ El equipo pidió, viendo la versión mobile de ryzesuperfoods.com, replicar su b
 
 Reutiliza el mismo patrón de countdown ya construido para la sección "Countdown feria" del home (`data-xh-countdown`/`data-target`), pero como la barra vive en el grupo de header (aparece en **todas** las páginas, no solo el home), el script de countdown se duplicó dentro de la propia sección con una bandera `data-xtb-init` para evitar que se inicialice dos veces en la página de inicio (donde coexisten la barra superior y la sección de countdown más abajo). Verificado en vivo: el countdown corre en tiempo real (los segundos bajan) en desktop, mobile, home y páginas de producto.
 
+### Foto base del hero cambiada a empaques reales, inspirada en Ryze (31 jul)
+El equipo revisó ryzesuperfoods.com en modo celular y notó que su hero es 100% empaque de producto (bolsas paradas sobre una superficie estilizada), lo opuesto a lo que tenía Xocolata (comida servida sin empaque visible). Se decidió reconstruir la foto del hero alrededor del empaque real aprobado, en vez de la foto de producto suelto.
+
+La foto se generó en ChatGPT (misma conversación "Xocolata Brand" usada para todo el branding previo, por consistencia), con el PDF real del empaque (`XOCOLATA X4 REF.pdf`) cargado como referencia de diseño/medidas, especificando el color correcto de la bolsa (`#7A1833`, sombras `#5C1226`, luces `#A82B4A`) para no repetir el error de tono más oscuro de versiones anteriores. Composición: 2 bolsas (Empanada de Cambray + Pandebono en Rosca) de pie sobre mármol oscuro, formato horizontal 16:9, con el lado izquierdo de la imagen más oscuro/despejado para sobreponer el texto del hero.
+
+**Corrección de textura en la misma sesión:** la primera versión mostró la empanada con corteza hojaldrada/rugosa en la ventana transparente — inconsistente con la masa real (almidón de yuca + harina de maíz, sin trigo), que debe ser lisa como el pandebono. Se pidió la corrección puntual (solo textura, sin tocar composición/color/mármol) y quedó resuelta a la segunda vuelta.
+
+Reemplaza `assets/xoc-hero.jpg` (mismo nombre de archivo, no requirió cambios de código) y se regeneró el cinemagraph de vapor (misma técnica Higgsfield/Seedance 2.0 ya validada) sobre la foto nueva — el vapor ahora sube detrás de las bolsas y en las luces cálidas desenfocadas del fondo, en vez de sobre comida servida. Verificado frame a frame y en vivo. Archivo fuente completo archivado en `Material grafico/branding-generado/xoc-brand-22-hero-empaques.png`.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
