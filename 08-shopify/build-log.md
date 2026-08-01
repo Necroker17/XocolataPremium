@@ -386,4 +386,9 @@ El equipo pidió una foto de cada producto ya dentro de su bolsa real, para que 
 
 Las 4 fotos (`xoc-empanada-empaque.jpg`, `xoc-pandebono-empaque.jpg`, `xoc-bunuelo-empaque.jpg`, `xoc-almojabana-empaque.jpg`) se agregaron como assets nuevos del tema y se insertaron en la sección "Cómo viene tu pedido" (`id="xpd-caja"`) de las 4 páginas de producto (`sections/xoc-product-*.liquid`), en un layout de dos columnas: foto del empaque a la izquierda, tarjetas de datos a la derecha (en mobile se apilan, foto arriba). Verificado en vivo en las 4 páginas, desktop y mobile.
 
+### Foto de la sección "Se sienten en casa" regenerada con los 4 productos y sus texturas definitivas (31 jul)
+La foto de esta sección del home (`xoc-cafe-mesa.jpg`) venía de antes de la investigación de texturas reales y solo mostraba panes en forma de rosca (sin relación clara con ningún producto específico del portafolio, con un relleno de arequipe que no correspondía a esa forma). Se regeneró en la misma conversación de ChatGPT ("Xocolata Brand") pidiendo los 4 productos juntos, cada uno con la textura ya validada: Empanada de Cambray y Pandebono en Rosca lisos en una canasta de mimbre, un Buñuelo Relleno partido al frente mostrando el craquelado auténtico de fritura y el relleno de arequipe/queso derramándose (coincide con el copy existente de la sección, "el relleno se derrama al partirlo"), y la Almojábana Especial en un plato aparte, visiblemente más pequeña que los otros tres. Mesa de madera rústica, luz cálida de ventana y taza de café humeante, mismo tono de marca que el resto de las fotos.
+
+Reemplaza `assets/xoc-cafe-mesa.jpg` (mismo nombre de archivo, sin cambios de código). Verificado en vivo en desktop y mobile.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).

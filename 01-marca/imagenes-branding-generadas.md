@@ -130,4 +130,12 @@ Generada en ChatGPT (conversación "Xocolata Brand") con el PDF real del empaque
 
 Generadas en ChatGPT (conversación "Xocolata Brand") con el PDF real del empaque (`XOCOLATA X4 REF.pdf`) y la foto del hero como referencia, mismo color de marca (`#7A1833`/`#5C1226`/`#A82B4A`). Cada bolsa muestra el producto real a través de la ventana transparente. Versión web en `xocolata-theme/assets/xoc-{empanada,pandebono,bunuelo,almojabana}-empaque.jpg`, insertadas en la sección "Cómo viene tu pedido" de cada página de producto — ver [build log](../08-shopify/build-log.md).
 
+## Foto "Se sienten en casa" con los 4 productos (31 jul)
+
+| # | Archivo | Descripción |
+|---|---|---|
+| 27 | `xoc-se-sienten-en-casa.png` | Los 4 productos horneados juntos (canasta + buñuelo partido + almojábanas), mesa rústica, café humeante |
+
+Generada en ChatGPT (conversación "Xocolata Brand"), reemplazando la foto anterior (solo panes en rosca genéricos) por una que muestra los 4 productos reales con sus texturas ya validadas: empanada y pandebono lisos, buñuelo craquelado partido mostrando el relleno de arequipe/queso, almojábana visiblemente más pequeña. Versión web en `xocolata-theme/assets/xoc-cafe-mesa.jpg`, sección "Se sienten en casa" del home — ver [build log](../08-shopify/build-log.md).
+
 Ver también [brief-branding-profesional.md](brief-branding-profesional.md) e [identidad y posicionamiento](identidad-y-posicionamiento.md).
