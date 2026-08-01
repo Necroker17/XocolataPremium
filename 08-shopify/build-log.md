@@ -391,4 +391,17 @@ La foto de esta sección del home (`xoc-cafe-mesa.jpg`) venía de antes de la in
 
 Reemplaza `assets/xoc-cafe-mesa.jpg` (mismo nombre de archivo, sin cambios de código). Verificado en vivo en desktop y mobile.
 
+### Sección "Nuestra Historia" en el home, basada en investigación real de la panadería (1 ago)
+El equipo pidió investigar a fondo la panadería real que da origen a la marca (panaderiaxocolata.com, Cali) para construir un "Sobre Nosotros" honesto, no inventado. Investigación (WebSearch/WebFetch, ver detalle completo compartido con el equipo en el chat):
+
+- **Origen confirmado**: Cali, Valle del Cauca. Su propio Instagram declara "11 años llevando pan a los hogares caleños" (~2014-2015 de fundación).
+- **7 sedes identificadas, todas dentro de Cali** (Capri, Bochalema, Autopista, Valle Lili, El Bosque, Guabal, Av. 4 Norte), operando bajo una sola página madre de Facebook ("Xocolata pyp") — confirma que es una sola marca con varios puntos, no una cadena nacional.
+- **Reputación real**: 4.2/5 con 400+ reseñas en Google (vía RestaurantGuru).
+- **Sin evidencia de expansión nacional**: se descartaron como negocios NO relacionados: "Xocolata" en Popayán (perfiles separados, sin mención cruzada a Cali), "Xocolata Pan Café y Algo Más" en Palmira (otro dueño) y "Xocolata Boutique S.A.S." en Barranquilla (chocolatería, empresa distinta de 2013).
+- **No se encontró** (y por tanto no se usó/inventó): nombre del fundador, año exacto de fundación, ni una historia fundacional detallada.
+
+Con esos datos verificados como base, se construyó la sección "Nuestra Historia" (`id="xh-historia"`) en `xoc-home.liquid`, ubicada entre "Por qué ser aliado" y "Prueba social". Estructura: gancho que conecta lo local con lo global ("11 años sirviendo pan a los hogares de Cali. Ahora, ese mismo sabor cruza fronteras"), párrafo sobre la raíz real del negocio, franja de 3 datos verificados (11 años, varios puntos en Cali, 4.2★), párrafo sobre el salto a la línea de exportación en 2026, checklist "Lo que no cambia" (receta, ingredientes reales, producción artesanal, calidad ya validada) y cierre con CTA. Fondo vino (mismo tratamiento que "Cómo funciona"), reutiliza los componentes `.xh-attrs` y `.xh-checklist` ya existentes (se agregó la variante `.xh-checklist--light` para legibilidad sobre fondo oscuro). Bilingüe ES/EN, verificado en vivo en desktop y mobile, ambos idiomas.
+
+**Decisión editorial**: por instrucción del equipo, no se nombra a ninguna persona en particular (framing institucional/"Xocolata", no "Marlen") — queda abierto agregar el nombre del fundador más adelante si se decide.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
