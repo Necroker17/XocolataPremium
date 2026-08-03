@@ -56,4 +56,4 @@ Brochure en dos versiones (B2B comercial e institucional): las 18 imágenes ya e
 4. HACCP y FUCE en trámite — bloquean el canal hoteles/cruceros mientras tanto.
 5. Rediseño de empaque (quitar espigas de trigo, evaluar "gluten free") — atrasado frente al despacho confirmado del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 
-Seguimiento semana a semana con checklist: [roadmap.md](roadmap.md). Detalle completo de pendientes: [decisiones abiertas](decisiones-abiertas.md). Quién es quién: [personas y contactos](personas-y-contactos.md).
+Seguimiento semana a semana con checklist: [roadmap.md](roadmap.md). Detalle completo de pendientes: [decisiones abiertas](decisiones-abiertas.md). Quién es quién: [personas y contactos](personas-y-contactos.md). Checklist específico para cerrar el bloque de Shopify: [checklist de cierre](08-shopify/checklist-cierre.md).
