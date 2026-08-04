@@ -463,4 +463,7 @@ El equipo reportó que la insignia dorada "RECOMENDADO" de la tabla comparativa 
 
 **Corregido:** se separó la insignia en un contenedor propio (`.xh-vs2-wrap`, sin `overflow:hidden`) que envuelve a la tarjeta de la tabla (`.xh-vs2`, que conserva su `overflow:hidden` para las esquinas). Verificado en vivo en 760 px (el ancho exacto donde el equipo lo vio cortado) y en 375 px — la insignia se ve completa y redondeada en ambos.
 
+### Foto de la fachada recortaba el letrero (4 ago)
+En "Nuestra Historia", la foto real de la fachada (`xoc-panaderia.jpg`, panorámica ~16:9) se mostraba dentro de un contenedor forzado a proporción 4:3 con `background-size:cover` — al ser más angosto que la foto real, el recorte se comía los bordes izquierdo/derecho, cortando justo el letrero ovalado "Xocolata pan y café" que está al extremo izquierdo de la toma. Se cambió a `background-size:contain` con un color de relleno (`var(--vino2)`, tono ya usado en el degradado vino de la sección) para las franjas que puedan quedar arriba/abajo — así se ve la foto completa, sin recortar nada, y el relleno se integra con la paleta en vez de verse como un espacio vacío. Verificado en vivo.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
