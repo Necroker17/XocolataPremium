@@ -455,4 +455,7 @@ El equipo compartió un mockup (Canva) con un formato más trabajado para la tab
 
 Los otros 3 ítems se mantuvieron alineados a hechos ya confirmados (portafolio relleno único, exclusividad de territorio, cumplimiento FDA/cadena de frío). Verificado en vivo en desktop y mobile — en mobile se simplifica a lista de valor (sin columnas Xocolata/Otros ni marcas ✓/✗, que no entraban bien con el contenido más largo de cada fila).
 
+### Centrado de la Garantía Triple Sello en pantallas chicas (4 ago)
+El equipo notó que en anchos menores a 900 px (tablet y celular) la sección de Garantía Triple Sello quedaba alineada a la izquierda — se veía descuadrada, sobre todo en el layout de 2 columnas donde el tercer ítem ("Acompañamiento continuo") quedaba solo del lado izquierdo. Se centró el eyebrow, el titular, y cada tarjeta (ícono + título + texto) para ese rango de pantalla, sin tocar el layout de escritorio (3 columnas, alineado a la izquierda). Verificado en vivo en 768 px y 375 px.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
