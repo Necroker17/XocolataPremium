@@ -21,7 +21,7 @@ Comprobar que la Empanada de Cambray es el producto correcto para venderle a neg
 
 - [ ] **Jueves 23 de julio, ~7:30pm** — Degustación grabada en la escuela de baile de San Antonio (20-30 personas, material clave para la feria). Guiones listos para grabar: [guiones de grabación — 23 jul](05-contenido-y-marketing/guiones-grabacion-23-jul.md). Logística: [degustaciones y producción](05-contenido-y-marketing/degustaciones-y-produccion.md).
 - [ ] **25 de julio** — Ficha de rentabilidad de la Cambray aprobada por los socios (Meta 1.1). Sin esto no hay ficha de rentabilidad para degustaciones ni landing.
-- [ ] **31 de julio** — Landing publicada en Shopify (o 5 ago según el documento — **confirmar cuál rige**, ver [decisiones abiertas](decisiones-abiertas.md)).
+- [x] **31 de julio** — Landing publicada en Shopify (o 5 ago según el documento — **confirmar cuál rige**, ver [decisiones abiertas](decisiones-abiertas.md)). — ✅ Hecho: la contradicción de fechas quedó sin efecto porque la landing (home, `xoc-home.liquid`) está publicada y en vivo desde el 21 de julio, antes de ambas fechas candidatas — y se ha seguido ampliando desde entonces. Ver [checklist de cierre](08-shopify/checklist-cierre.md) para lo que sí sigue pendiente del bloque Shopify.
 - [ ] **15 de agosto** — Despacho del contenedor. El rediseño de empaque (gluten free) debe estar cerrado antes de esta fecha.
 
 ## Fase 0 · Fundación comercial (14–31 jul)
@@ -30,7 +30,7 @@ Comprobar que la Empanada de Cambray es el producto correcto para venderle a neg
 - [ ] Meta 1.2 — Carpeta comercial completa (presentación mayoristas, propuesta 1 página, permisos FDA, ficha técnica) — **31 jul**
 - [ ] Meta 1.3 — Base de datos de 40 negocios objetivo con contacto verificado — **31 jul**
 - [ ] Meta 1.4 — Perfil de Facebook creado y en aprobación por Meta — iniciado **16 jul**
-- [ ] Meta 1.5 — Landing de la Cambray publicada en Shopify — **31 jul o 5 ago (confirmar)**
+- [x] Meta 1.5 — Landing de la Cambray publicada en Shopify — **31 jul o 5 ago (confirmar)** — ✅ Hecho, en vivo desde el 21 jul (ver nota en "Próximos hitos" arriba)
 - [ ] Rediseño de empaque: quitar espigas de trigo, validar con Daka qué productos certifican gluten free — antes del **15 ago**
 - [ ] Degustación grabada San Antonio — **23 jul**
 
@@ -70,7 +70,7 @@ _Detalle completo: [plan ejecutivo, OKRs e indicadores](04-estrategia-b2b/plan-e
 - [ ] **Certificación gluten free** — validar con Daka, coordinar rediseño con la diseñadora externa. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
 - [~] **Branding profesional (sistema de marca + empaque)** — las 8 piezas originales (2 de logo, 2 de motivo, 4 de empaque frente) están generadas. Ronda de correcciones (ventana transparente, perspectiva de producto real, cantidad/tamaño, nombre discreto, color `#7A1833`) quedó **incompleta** — cada uno de los 4 empaques quedó en una etapa distinta. Falta: terminar la ronda de correcciones, elegir el motivo final (vapor vs. laurel) y diseñar el reverso en vectorial real. Ver [imágenes generadas](01-marca/imagenes-branding-generadas.md).
 - [ ] **Grabación de contenido 23 jul** — guiones listos, falta grabar y editar. Ver [guiones de grabación](05-contenido-y-marketing/guiones-grabacion-23-jul.md) y [parrilla de contenido](05-contenido-y-marketing/parrilla-contenido.md).
-- [~] **Página Shopify wholesale B2B (bilingüe)** — construida: idioma EN habilitado, 4 productos (borrador), colección mayorista. **22 jul:** carrusel de colección con animación (GSAP), footer y barra de anuncio corregidos, y se retiró la landing duplicada `/pages/mayorista` (redirige a `/`) — **la página de inicio (`/`) es ahora la única landing oficial**. Pendiente: nombre de tienda, número de WhatsApp, fotos, USD, y el resto de mejoras UX de la [propuesta inspirada en Ryze](08-shopify/propuesta-arquitectura-inspirada-ryze.md). Ver [build log](08-shopify/build-log.md).
+- [~] **Página Shopify wholesale B2B (bilingüe)** — **estado real al 4 ago, muy por delante de esta nota (última actualización real: 22 jul).** Construida y en vivo: idioma EN enrutable con selector nativo, nombre de tienda y logo reales, home completo (hero con video, colección, Garantía Triple Sello, comparativa vs. competencia, insumos a futuro, FAQ, "Nuestra Historia"), 4 páginas de producto con ficha nutricional real y fotos reales en todo el sitio (hero, carrusel, empaques). La página de inicio (`/`) es la única landing oficial. **Pendiente real** (ver detalle en [checklist de cierre](08-shopify/checklist-cierre.md)): número de WhatsApp comercial, mercado/USD para EE. UU., traducción EN de la descripción nativa de producto en el Admin, 3 testimonios reales, founder story, certificación gluten free, analytics/tracking, revisión de páginas legales. Ver [build log](08-shopify/build-log.md) para el detalle día a día.
 
 ## Bloqueadores activos
 

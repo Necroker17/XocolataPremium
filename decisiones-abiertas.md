@@ -14,7 +14,7 @@ Lista viva de cosas que quedaron sin resolver o contradictorias entre los docume
 
 - El documento de estrategia B2B/feria (fechado 13 jul 2026) dice que la landing page se adelantó a **31 de julio** ("estaba 5/8", es decir, antes era 5 de agosto).
 - El Plan Ejecutivo (fechado 14 jul 2026, un día después) todavía tiene la Meta 1.5 (landing publicada) en **5 de agosto**.
-- **Acción:** confirmar con el equipo cuál fecha quedó vigente antes de comprometerse con ninguna de las dos.
+- ~~**Acción:** confirmar con el equipo cuál fecha quedó vigente antes de comprometerse con ninguna de las dos.~~ **✅ Sin efecto (verificado 4 ago):** la landing (home de Shopify, `xoc-home.liquid`) está publicada y en vivo desde el **21 de julio** — antes de ambas fechas candidatas. La discrepancia quedó obsoleta.
 
 ## Brecha entre el discurso a inversionistas y el plan operativo
 
@@ -35,10 +35,10 @@ Los .md originales subidos empiezan en "01" (empaques/gluten free, agregado 18 j
 
 ## Pendientes de la página Shopify (ver [brief](08-shopify/brief-pagina-wholesale-b2b.md))
 
-- **Número de WhatsApp comercial sin confirmar.** No aparece en ningún documento fuente. Necesario para la página, el brochure y todo el material de captación. Pedirlo al equipo — **no inventar** (en una versión anterior del brief del brochure se puso un número que no tenía respaldo; ya se corrigió).
-- **Decisión de fondo de la página:** ¿de acuerdo con que en esta fase la página sea una landing de captación → WhatsApp, **sin checkout** (por LLC en trámite + comprador cierra por WhatsApp)? Recomendado que sí. Si el equipo quiere checkout transaccional real, eso es una fase posterior a la LLC.
+- **Número de WhatsApp comercial sin confirmar.** No aparece en ningún documento fuente. Necesario para la página, el brochure y todo el material de captación. Pedirlo al equipo — **no inventar** (en una versión anterior del brief del brochure se puso un número que no tenía respaldo; ya se corrigió). Mientras tanto, todos los CTA "Hablemos" del sitio usan `mailto:xocolatapremium@gmail.com` (correo unificado el 4 ago).
+- ~~**Decisión de fondo de la página:** ¿de acuerdo con que en esta fase la página sea una landing de captación → WhatsApp, **sin checkout** (por LLC en trámite + comprador cierra por WhatsApp)? Recomendado que sí.~~ **✅ Resuelto — así está construido y en vivo:** el sitio funciona como landing de captación (CTA "Hablemos" → correo), sin checkout ni precios públicos. Si el equipo quiere checkout transaccional real, eso es una fase posterior a la LLC.
 - **Plan Shopify:** el B2B nativo (catálogos/listas de precio por cliente) requiere **Shopify Plus**; hoy la tienda está en **Basic**. Decidir más adelante si el portal de re-orden (Meta 4.4) se hace con área con contraseña, app de wholesale, o upgrade a Plus.
-- **Tag "sin gluten" en el producto Pandebono ya cargado:** está publicado con ese tag, pero la certificación gluten free todavía no está confirmada (ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md)). Quitar el tag hasta validarlo con la maquiladora.
+- ~~**Tag "sin gluten" en el producto Pandebono ya cargado:** está publicado con ese tag, pero la certificación gluten free todavía no está confirmada... Quitar el tag hasta validarlo con la maquiladora.~~ **✅ Resuelto (21 jul):** el tag se quitó al reconstruir el producto en Shopify — confirmado en el registro de esa misma sesión.
 
 ## Otros
 

@@ -15,7 +15,7 @@
 
 ## Consistencia de datos con la maquiladora (Daka)
 
-- [ ] **Peso real de la Empanada de Cambray.** El sitio usa 60 g, pero el panel nutricional impreso en el empaque final dice 80 g. Confirmar con Daka cuál es el correcto y ajustar donde haga falta (sitio y/o empaque impreso).
+- [x] **Peso real de la Empanada de Cambray.** ✅ Resuelto (3 ago): 80 g es el correcto (coincide con el panel nutricional impreso en el empaque final). Corregido en todo el sitio — carrusel, stat card y panel nutricional de la página de producto.
 - [ ] **Certificación gluten free.** Sin validar todavía con Daka qué productos pueden certificarse. Si cambia, hay que actualizar la sección de alérgenos de las páginas de producto correspondientes.
 
 ## Decisión de plataforma (no bloquea el cierre, pero hay que decidirla)
@@ -29,6 +29,6 @@
 
 ## Ya resuelto (referencia — no repetir)
 
-Todo lo demás del sitio ya está construido y verificado en vivo: home bilingüe completo (hero con video, "Nuestra Historia", cómo funciona, Garantía Triple Sello, comparativa vs. competencia, insumos a futuro, FAQ), 4 páginas de producto con ficha nutricional real, logo real integrado (header + favicon), footer de marca, countdown en vivo a la feria de Miami, carrusel de la colección enlazado a cada producto, inglés habilitado vía Shopify Markets. Detalle completo día a día en [build-log.md](build-log.md).
+Todo lo demás del sitio ya está construido y verificado en vivo: nombre de tienda y tema publicado, logo real integrado (header + favicon), inglés enrutable con selector nativo del tema, home bilingüe completo (hero con video, "Nuestra Historia" a nivel nacional, cómo funciona, Garantía Triple Sello con íconos reales, comparativa vs. competencia rediseñada con íconos, insumos a futuro, FAQ), 4 páginas de producto con ficha nutricional real, footer de marca, correo de contacto unificado en todos los puntos, countdown en vivo a la feria de Miami, carrusel de la colección enlazado a cada producto, peso real de la Empanada corregido (80 g). Detalle completo día a día en [build-log.md](build-log.md).
 
 Ver también [decisiones abiertas](../decisiones-abiertas.md), [roadmap.md](../roadmap.md) y [rol de Shopify](rol-de-shopify.md).

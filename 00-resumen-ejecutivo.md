@@ -12,7 +12,7 @@ Punto de entrada rápido al estado del proyecto. Para el detalle, seguir los enl
 
 El plan arrancó como **B2C** (Shopify + contenido) y se **redireccionó a B2B**, con un solo evento como bisagra: la **feria Americas Food & Beverage Show, Miami, 14-16 de septiembre de 2026**. Meta dura: **firmar un distribuidor máster antes del 31 de octubre de 2026**. Ver [plan B2B y feria de Miami](04-estrategia-b2b/plan-b2b-feria-miami.md).
 
-Como consecuencia, **Shopify cambió de rol**: de canal de venta principal a catálogo vivo + casa de la landing de captación + futuro portal de re-orden wholesale. Ver [rol de Shopify](08-shopify/rol-de-shopify.md) y el [brief de la página wholesale B2B](08-shopify/brief-pagina-wholesale-b2b.md) (bilingüe, en construcción).
+Como consecuencia, **Shopify cambió de rol**: de canal de venta principal a catálogo vivo + casa de la landing de captación + futuro portal de re-orden wholesale. La landing (home, bilingüe) está construida y en vivo desde el 21 de julio, con actualizaciones constantes desde entonces. Ver [rol de Shopify](08-shopify/rol-de-shopify.md), el [brief original](08-shopify/brief-pagina-wholesale-b2b.md) y el [checklist de cierre](08-shopify/checklist-cierre.md) con lo que falta para dar por cerrado el bloque.
 
 ## Cómo se produce y distribuye
 
@@ -51,9 +51,9 @@ Brochure en dos versiones (B2B comercial e institucional): las 18 imágenes ya e
 ## Lo que falta resolver ahora mismo
 
 1. Ficha de rentabilidad / tabla de márgenes para el colaborador B2B (Meta 1.1, **vence 25 jul**).
-2. Confirmar fecha real de publicación de la landing (31 jul vs. 5 ago).
-3. Validar costos finales de la Empanada de Cambray con la maquiladora.
-4. HACCP y FUCE en trámite — bloquean el canal hoteles/cruceros mientras tanto.
-5. Rediseño de empaque (quitar espigas de trigo, evaluar "gluten free") — atrasado frente al despacho confirmado del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
+2. Validar costos finales de la Empanada de Cambray con la maquiladora.
+3. HACCP y FUCE en trámite — bloquean el canal hoteles/cruceros mientras tanto.
+4. Rediseño de empaque (quitar espigas de trigo, evaluar "gluten free") — atrasado frente al despacho confirmado del **15 de agosto**. Ver [empaques y alérgenos](02-producto/empaques-y-alergenos.md).
+5. Número de WhatsApp comercial — sigue sin confirmar, bloquea los CTA reales de todo el sitio y el material de captación.
 
 Seguimiento semana a semana con checklist: [roadmap.md](roadmap.md). Detalle completo de pendientes: [decisiones abiertas](decisiones-abiertas.md). Quién es quién: [personas y contactos](personas-y-contactos.md). Checklist específico para cerrar el bloque de Shopify: [checklist de cierre](08-shopify/checklist-cierre.md).

@@ -20,13 +20,13 @@ Decisión del [brief](brief-pagina-wholesale-b2b.md): mientras la LLC esté en t
 
 ## Pendiente (no se pudo hacer por API o requiere decisión)
 
-- [ ] **Nombre de la tienda** sigue como "Mi tienda". No es editable por API → cambiarlo manualmente en Shopify Admin → *Configuración › Datos de la tienda* a **Xocolata Food Premium**.
-- [ ] **Número de WhatsApp:** los CTA de la landing hoy apuntan a `mailto:comercial@xocolatafoodpremium.com`. Cuando se confirme el número, reemplazar por `https://wa.me/{{WHATSAPP}}` (hay un comentario `TODO` en el HTML marcando los dos puntos). Ver [decisiones abiertas](../decisiones-abiertas.md).
-- [ ] **Fotos de producto:** los productos y las tarjetas de la landing no tienen foto real todavía (placeholders con el nombre). Falta la sesión de fotos / usar el b-roll de la [grabación del 23 jul](../05-contenido-y-marketing/guiones-grabacion-23-jul.md).
-- [ ] **Traducción EN a nivel de producto:** las descripciones de producto están en español (la landing sí es bilingüe). Registrar traducciones EN de los 4 productos vía *Translate & Adapt* cuando se activen (Fase B).
+- [x] **Nombre de la tienda** sigue como "Mi tienda". No es editable por API → cambiarlo manualmente en Shopify Admin → *Configuración › Datos de la tienda* a **Xocolata Food Premium**. — ✅ **Hecho por el equipo (31 jul)**, ver detalle más abajo.
+- [ ] **Número de WhatsApp:** los CTA de la landing hoy apuntan a `mailto:comercial@xocolatafoodpremium.com`. Cuando se confirme el número, reemplazar por `https://wa.me/{{WHATSAPP}}` (hay un comentario `TODO` en el HTML marcando los dos puntos). Ver [decisiones abiertas](../decisiones-abiertas.md). — sigue pendiente; correo unificado a `xocolatapremium@gmail.com` el 4 ago mientras tanto.
+- [x] **Fotos de producto:** los productos y las tarjetas de la landing no tienen foto real todavía (placeholders con el nombre). Falta la sesión de fotos / usar el b-roll de la [grabación del 23 jul](../05-contenido-y-marketing/guiones-grabacion-23-jul.md). — ✅ **Hecho** — fotos reales generadas y en vivo en hero, carrusel, páginas de producto y empaques (ver tandas del 29 jul al 1 ago más abajo).
+- [ ] **Traducción EN a nivel de producto:** las descripciones de producto están en español (la landing sí es bilingüe). Registrar traducciones EN de los 4 productos vía *Translate & Adapt* cuando se activen (Fase B). — sigue pendiente **solo para la descripción nativa en el Admin de Shopify**; las 4 páginas de producto a medida (`xoc-product-*.liquid`) sí son bilingües desde el 31 jul.
 - [x] **Verificar render en el tema:** confirmado en navegador — `/pages/mayorista` renderiza bien, el `<style>` no se recorta, sin errores de consola.
 - [ ] **Moneda/mercado USD:** hoy la tienda muestra COP. Para el visitante de EE. UU. conviene activar visualización en USD (mercado "Estados Unidos") — sin activar checkout con tarjeta mientras no exista la LLC.
-- [ ] **Selector de idioma del tema:** la landing trae su propio toggle interno, pero el resto de la tienda necesita el selector ES/EN del tema activado en la configuración del tema.
+- [x] **Selector de idioma del tema:** la landing trae su propio toggle interno, pero el resto de la tienda necesita el selector ES/EN del tema activado en la configuración del tema. — ✅ **Hecho (31 jul)** — apareció solo en el header nativo del tema en cuanto `/en` quedó enrutable, ver "Habilitar inglés de verdad" más abajo.
 
 ## Cómo actualizar la landing
 
@@ -67,12 +67,12 @@ El usuario revisó un tema de pago ($270 USD, orientado a suplementos/wellness) 
 - La página `/pages/mayorista` (versión previa al home a medida) seguía con contenido desactualizado — se corrigió también para que no quede una versión vieja del sitio dando vueltas.
 
 ### Pendiente del tema
-- [ ] **Publicarlo** (tu decisión) — desde Shopify Admin › Temas › "Xocolata Premium (desarrollo)" › Publicar.
-- [ ] **Nombre de la tienda** "Mi tienda" → "Xocolata Food Premium" (el encabezado del tema muestra ese nombre hasta que se cambie / se suba un logo).
-- [ ] **Logo** en el encabezado: subir PNG transparente en el editor de tema.
-- [ ] **Inglés visible para visitantes:** el contenido EN ya está en el tema, pero la ruta `/en` necesita que un **mercado** ofrezca inglés (hoy solo existe el mercado Colombia en ES). Al activar el mercado de EE. UU. con inglés (y USD), el selector de idioma empieza a funcionar. Pareado con la decisión de USD.
-- [ ] **Fotos reales** reemplazan las provisionales del deck cuando estén (b-roll del 23 jul).
-- [ ] **WhatsApp:** el botón usa `mailto` hasta confirmar el número; se cambia en el setting `cta_url` de la sección.
+- [x] **Publicarlo** (tu decisión) — desde Shopify Admin › Temas › "Xocolata Premium (desarrollo)" › Publicar. — ✅ Publicado el 21 jul, es el tema en vivo desde entonces (id `190111580448`).
+- [x] **Nombre de la tienda** "Mi tienda" → "Xocolata Food Premium" (el encabezado del tema muestra ese nombre hasta que se cambie / se suba un logo). — ✅ Hecho por el equipo (31 jul), verificado en vivo.
+- [x] **Logo** en el encabezado: subir PNG transparente en el editor de tema. — ✅ Logo real (recortado del arte final de empaque) + favicon subidos el 31 jul, ver "Logo real subido al header y favicon" más abajo.
+- [x] **Inglés visible para visitantes:** el contenido EN ya está en el tema, pero la ruta `/en` necesita que un **mercado** ofrezca inglés (hoy solo existe el mercado Colombia en ES). Al activar el mercado de EE. UU. con inglés (y USD), el selector de idioma empieza a funcionar. Pareado con la decisión de USD. — ✅ Resuelto el 31 jul **sin depender de USD**: se agregó la ruta `/en` a la web presence existente del mercado Colombia (ver "Habilitar inglés de verdad" más abajo). El mercado/USD para EE. UU. sigue pendiente por separado.
+- [x] **Fotos reales** reemplazan las provisionales del deck cuando estén (b-roll del 23 jul). — ✅ Hecho en varias tandas (29 jul – 1 ago): hero, carrusel, páginas de producto, empaques, "Se sienten en casa", "Nuestra Historia".
+- [ ] **WhatsApp:** el botón usa `mailto` hasta confirmar el número; se cambia en el setting `cta_url` de la sección. — sigue pendiente, correo unificado a `xocolatapremium@gmail.com` el 4 ago mientras tanto.
 
 ### Animaciones y UX cinematográfico (22 jul) — inspirado en Zeal y Ryze Superfoods
 
@@ -343,7 +343,7 @@ El equipo reportó, probando en celular real: (1) al abrir el menú hamburguesa 
 - [ ] Founder story con foto real de Marlen (espera b-roll).
 - [ ] Reemplazar los 3 testimonios de ejemplo por citas reales (espera clientes del piloto post-feria).
 - [ ] Pedir a Daka que corrija las instrucciones de preparación del empaque impreso (dicen "waffles", placeholder no actualizado) y agregue "Pasteurizada" a mantequilla/leche del Pandebono.
-- [ ] Confirmar con el equipo/Daka el peso real de la Empanada de Cambray (60 g usado en el sitio vs. 80 g del panel nutricional impreso).
+- [x] Confirmar con el equipo/Daka el peso real de la Empanada de Cambray (60 g usado en el sitio vs. 80 g del panel nutricional impreso). — ✅ Resuelto (3 ago): 80 g es el correcto (coincide con el empaque impreso), corregido en todo el sitio.
 - [x] ~~Cambiar el nombre de la tienda a "Xocolata Food Premium" en el admin~~ — hecho por el equipo (31 jul), verificado vía API (`shop.name`) y en vivo (pestaña del navegador).
 - [ ] Número de WhatsApp comercial (sigue sin confirmar — todos los CTA "Hablemos" usan `mailto:` por ahora).
 
