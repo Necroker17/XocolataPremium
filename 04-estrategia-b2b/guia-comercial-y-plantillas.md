@@ -2,6 +2,8 @@
 
 > Proceso estándar para construir y trabajar la lista de 40 negocios. Se ejecuta igual todas las veces — eso es lo que permite medir los [indicadores](plan-ejecutivo-okrs-e-indicadores.md).
 
+> **La lista de 40 ya existe:** [base-datos-40-prospectos.xlsx](base-datos-40-prospectos.xlsx) (armada 4 ago 2026, metodología completa en [base-datos-40-prospectos.md](base-datos-40-prospectos.md)). Lo que sigue de aquí es el proceso para trabajarla — no hace falta repetir el Paso 1 salvo para ampliarla.
+
 ## Paso 1 · Encontrar los negocios (Google Maps + directorios)
 
 Búsquedas en Google Maps: "panadería colombiana", "bakery latina", "supermercado latino", "restaurante colombiano" en Miami-Dade, Broward, Hialeah, Doral (segunda ola: Queens/Houston).

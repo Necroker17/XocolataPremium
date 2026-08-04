@@ -28,7 +28,7 @@ Comprobar que la Empanada de Cambray es el producto correcto para venderle a neg
 
 - [ ] Meta 1.1 — Ficha de rentabilidad de la Cambray aprobada por los socios — **25 jul**
 - [ ] Meta 1.2 — Carpeta comercial completa (presentación mayoristas, propuesta 1 página, permisos FDA, ficha técnica) — **31 jul**
-- [ ] Meta 1.3 — Base de datos de 40 negocios objetivo con contacto verificado — **31 jul**
+- [x] Meta 1.3 — Base de datos de 40 negocios objetivo con contacto verificado — **31 jul** — ✅ Hecho (4 ago): [base de datos real](04-estrategia-b2b/base-datos-40-prospectos.xlsx) con los 40, nombre + tipo + teléfono verificados en los 40; email y años en el mercado solo donde había dato público real (sin inventar). Falta ejecutar la secuencia de contacto (Meta 2.1).
 - [ ] Meta 1.4 — Perfil de Facebook creado y en aprobación por Meta — iniciado **16 jul**
 - [x] Meta 1.5 — Landing de la Cambray publicada en Shopify — **31 jul o 5 ago (confirmar)** — ✅ Hecho, en vivo desde el 21 jul (ver nota en "Próximos hitos" arriba)
 - [ ] Rediseño de empaque: quitar espigas de trigo, validar con Daka qué productos certifican gluten free — antes del **15 ago**
