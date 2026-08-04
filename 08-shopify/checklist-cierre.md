@@ -4,7 +4,7 @@
 
 ## Contenido comercial — bloquea CTAs reales en todo el sitio
 
-- [ ] **Número de WhatsApp comercial.** Sigue sin confirmar en ningún documento fuente. Todos los botones "Hablemos" usan `mailto:comercial@xocolatafoodpremium.com` como placeholder. Es el pendiente que más se repite en todo el registro del proyecto — no inventar el número, pedirlo directo al equipo.
+- [ ] **Número de WhatsApp comercial.** Sigue sin confirmar en ningún documento fuente. Todos los botones "Hablemos" usan `mailto:xocolatapremium@gmail.com` como placeholder (unificado el 4 ago — antes había dos correos distintos en el sitio). Es el pendiente que más se repite en todo el registro del proyecto — no inventar el número, pedirlo directo al equipo.
 - [ ] **Mercado EE. UU. en USD.** La tienda hoy solo muestra precios en COP. Para un visitante en Estados Unidos conviene activar visualización en USD (mercado "Estados Unidos"), sin activar checkout con tarjeta mientras la LLC siga en trámite.
 - [ ] **Traducción EN a nivel de producto.** El home y la sección "Nuestra Historia" son bilingües, pero las descripciones de los 4 productos en el panel de Shopify (Admin) siguen solo en español.
 
