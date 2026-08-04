@@ -40,6 +40,6 @@ El brochure de marca también muestra el empaque de producto bajo "Xocolata Food
 2. **Conveniencia bake-off** — formato congelado listo para hornear (8 minutos), elimina la necesidad de personal de panadería especializado en el punto de venta.
 3. **Trazabilidad corporativa** — cadena de frío garantizada, empaque premium adaptado a normativas FDA.
 
-> ⚠️ Composición y alérgenos: solo la Empanada de Cambray lleva harina de trigo — los otros 3 productos son candidatos a comunicarse como "gluten free". El empaque actual todavía no lo comunica y necesita rediseño. Ver [empaques y alérgenos](empaques-y-alergenos.md).
+> ⚠️ Composición y alérgenos (corregido con el panel nutricional real del empaque, ver [build-log 31 jul](../08-shopify/build-log.md)): la Empanada de Cambray usa harina de maíz (no de trigo) — es la **Almojábana Especial** la que sí lleva harina de trigo. Los otros 3 productos (Empanada, Pandebono, Buñuelo) son candidatos a comunicarse como "gluten free". El empaque actual todavía no lo comunica y necesita rediseño. Ver [empaques y alérgenos](empaques-y-alergenos.md).
 
 Ver también [modelo y permisos](../03-operacion/modelo-y-permisos.md) y [costos, precios y logística](../03-operacion/costos-precios-logistica.md).
