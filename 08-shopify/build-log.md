@@ -458,4 +458,9 @@ Los otros 3 ítems se mantuvieron alineados a hechos ya confirmados (portafolio 
 ### Centrado de la Garantía Triple Sello en pantallas chicas (4 ago)
 El equipo notó que en anchos menores a 900 px (tablet y celular) la sección de Garantía Triple Sello quedaba alineada a la izquierda — se veía descuadrada, sobre todo en el layout de 2 columnas donde el tercer ítem ("Acompañamiento continuo") quedaba solo del lado izquierdo. Se centró el eyebrow, el titular, y cada tarjeta (ícono + título + texto) para ese rango de pantalla, sin tocar el layout de escritorio (3 columnas, alineado a la izquierda). Verificado en vivo en 768 px y 375 px.
 
+### Insignia "RECOMENDADO" cortada — bug real, no solo de mobile (4 ago)
+El equipo reportó que la insignia dorada "RECOMENDADO" de la tabla comparativa se veía cortada por arriba en el celular. Causa real: el contenedor de la tabla (`.xh-vs2`) tiene `overflow:hidden` para lograr las esquinas redondeadas, pero la insignia está posicionada para sobresalir por encima del borde superior (`position:absolute; top:-13px`) — ese `overflow:hidden` recortaba la mitad superior de la insignia en **cualquier** ancho de pantalla, no solo en mobile (probablemente pasaba desapercibido en desktop por el tamaño de la insignia relativo al resto).
+
+**Corregido:** se separó la insignia en un contenedor propio (`.xh-vs2-wrap`, sin `overflow:hidden`) que envuelve a la tarjeta de la tabla (`.xh-vs2`, que conserva su `overflow:hidden` para las esquinas). Verificado en vivo en 760 px (el ancho exacto donde el equipo lo vio cortado) y en 375 px — la insignia se ve completa y redondeada en ambos.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
