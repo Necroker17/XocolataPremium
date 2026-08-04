@@ -435,4 +435,9 @@ El equipo detectó varias inexactitudes revisando la web contra el empaque y pan
 
 Todo publicado al tema en vivo (`shopify theme push --theme 190111580448 --allow-live`) y verificado directamente en `gjkkyq-ac.myshopify.com` (home y página de la Empanada de Cambray).
 
+### Ajuste de la Garantía Triple Sello + íconos reales (4 ago)
+El equipo pidió cambiar el primer pilar de "Reposición total" (promesa de reponer toda la orden si falla la cadena de frío) a **"Seguridad total"** ("Nuestra cadena de frío asegura productos seguros y de la más alta calidad") — un mensaje de aseguramiento de calidad en vez de una promesa de reposición específica. Se aplicó en la sección "Garantía Triple Sello" de `xoc-home.liquid` y se alineó la misma redacción en la fila correspondiente de la tabla comparativa "No vendemos congelados. Construimos aliados." para que no quedaran dos versiones distintas de la misma garantía en la página.
+
+El equipo también compartió 3 sellos/medallas doradas reales (diseño tipo insignia, 600×600 px, fondo transparente) para los 3 pilares de la garantía — seguridad (escudo + copo de nieve), rotación (gráfico de crecimiento) y acompañamiento (diadema + corazón). Se guardaron como `assets/xoc-seal-seguridad.png`, `assets/xoc-seal-rotacion.png` y `assets/xoc-seal-acompanamiento.png`, reemplazando el marcador "◆" de texto por el ícono correspondiente en cada tarjeta (72×72 px). Verificado en vivo en desktop y mobile — buen contraste contra el fondo crema de la sección, sin recorte ni deformación.
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
