@@ -448,4 +448,11 @@ Dos correcciones más pedidas por el equipo:
 
 Todo publicado al tema en vivo y verificado directamente en `gjkkyq-ac.myshopify.com` (home, footer y página de Pandebono).
 
+### Rediseño de la tabla comparativa "Por qué ser aliado" (4 ago)
+El equipo compartió un mockup (Canva) con un formato más trabajado para la tabla "No vendemos congelados. Construimos aliados.": ícono circular por fila, título en negrita + descripción con frases clave resaltadas, y un banner de cierre con estrella ("Más que un proveedor, tu socio estratégico para crecer sin límites"). Se implementó reutilizando el patrón de ícono circular ya existente en el tema (mismo estilo que "Cómo funciona"), con SVG en línea en vez de pedir PNG — evita depender de exportar imágenes nuevas.
+
+**Antes de publicar** se detectó una discrepancia real en el mockup: la fila de "Garantía Triple Sello" decía *"Si no estás satisfecho en 45 días, te devolvemos tu dinero sin preguntas"* — una devolución de dinero que no está documentada en ningún lado como parte de la garantía real. Se consultó al equipo, que confirmó mantener la garantía ya establecida (cadena de frío + degustaciones sin costo si no rota en 45 días, sin promesa de reembolso en efectivo) — evitando publicar un compromiso financiero no autorizado.
+
+Los otros 3 ítems se mantuvieron alineados a hechos ya confirmados (portafolio relleno único, exclusividad de territorio, cumplimiento FDA/cadena de frío). Verificado en vivo en desktop y mobile — en mobile se simplifica a lista de valor (sin columnas Xocolata/Otros ni marcas ✓/✗, que no entraban bien con el contenido más largo de cada fila).
+
 Ver también [brief](brief-pagina-wholesale-b2b.md), [copy](copy-pagina-wholesale.md) y [rol de Shopify](rol-de-shopify.md).
